@@ -1,0 +1,32 @@
+<ui:composition
+        xmlns="http://www.w3.org/1999/xhtml"
+        xmlns:f="http://java.sun.com/jsf/core"
+        xmlns:h="http://java.sun.com/jsf/html"
+        xmlns:ui="http://java.sun.com/jsf/facelets"
+        xmlns:p="http://primefaces.org/ui"
+        xmlns:po="http://primefaces.org/olympos">
+    <ul class="layout-tab-submenu" id="layout-categogy">
+        <li>
+            <a>Quản lý xe</a>
+            <ul>
+                <li>
+                    <h:outputLink styleClass="menulink" id="tab-6-2"
+                                  value="#{facesContext.externalContext.request.contextPath}/category/depentPropCat"
+                                  onclick="PF('blockDlgCommon').show()">
+                        <i class="fa fa-caret-right fa-lg"></i>
+                        <div class="DispBlock White Fs13 FontUtmAvoRegular">Danh mục xe</div>
+                    </h:outputLink>
+                </li>
+                <li>
+                    <h:outputLink styleClass="menulink" id="tab-6-3"
+                                  value="#{facesContext.externalContext.request.contextPath}/category/depentPropCat"
+                                  onclick="PF('blockDlgCommon').show()">
+                        <i class="fa fa-caret-right fa-lg"></i>
+                        <div class="DispBlock White Fs13 FontUtmAvoRegular">Quản lý chuyến hàng</div>
+                    </h:outputLink>
+                </li>
+            </ul>
+        </li>
+    </ul>
+
+</ui:composition>

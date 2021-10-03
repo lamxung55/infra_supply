@@ -1,0 +1,68 @@
+<ui:composition 
+
+    xmlns="http://www.w3.org/1999/xhtml"
+    xmlns:f="http://java.sun.com/jsf/core"
+    xmlns:h="http://java.sun.com/jsf/html"
+    xmlns:ui="http://java.sun.com/jsf/facelets"
+    xmlns:p="http://primefaces.org/ui">
+
+
+    <div class="Container100" id="layout-footer">
+        <div class="Card">
+
+            <!-- FOOTER  -->
+            <div class="Container100 NoIndent" style="border-bottom:dashed 1px #ccc;" id="footerlinks">
+                <h:graphicImage name="images/logo-dark.svg" styleClass="Fleft" library="olympos-layout" style="height:20px; display: none;" />
+
+                <div class="DispInlBlock Fright" style="display: none;">
+                    <a href="#layout-footer" class="Leaden Fs22"><i class="fa fa-facebook-square"></i></a>
+                    <a href="#layout-footer" class="Leaden Fs22"><i class="fa fa-twitter-square"></i></a>
+                    <a href="#layout-footer" class="Leaden Fs22"><i class="fa fa-linkedin-square"></i></a>
+                    <a href="#layout-footer" class="Leaden Fs22"><i class="fa fa-google-plus-square"></i></a>
+                </div>
+
+                <div class="EmptyBox10"></div>
+            </div>
+
+            <div class="EmptyBox10"></div>
+
+            <div class="Container50 NoIndent Responsive100">
+                <div class="Container100 NoIndent" style="display: none;">
+                    <a href="#" class="DispInlBlock FontLatoRegular Blue Fs12 Fleft HoverEffect">TERMS OF CONDITIONS</a>
+                    <span class="Fleft Black Fs12" style="padding:0px 5px;">|</span>
+                    <a href="#" class="DispInlBlock FontLatoRegular Blue Fs12 Fleft HoverEffect">SITEMAP</a>
+                    <span class="Fleft Black Fs12" style="padding:0px 5px;">|</span>
+                    <a href="#" class="DispInlBlock FontLatoRegular Blue Fs12 Fleft HoverEffect">PRIVACY</a>
+                    <span class="Fleft Black Fs12" style="padding:0px 5px;">|</span>
+                    <a href="#" class="DispInlBlock FontLatoRegular Blue Fs12 Fleft HoverEffect">LINKING POLICY</a>
+                </div>
+            </div>
+
+            <div class="EmptyBox10 ShowOnMobile"></div>
+
+            <div class="Container100 NoIndent Responsive100">
+                <span class="DispBlock FontLatoRegular Black Fs12 HoverEffect TexAlLeft FloatNoneOnMobile">
+                	<i class="fa fa-copyright Fs16"> Công ty Cổ phần Thương mại Du lịch và Đầu tư Thiên Trường </i></span>
+                <div class="EmptyBox10"></div>
+                <!--<span class="DispBlock FontLatoRegular Black Fs12 HoverEffect TexAlLeft"> <i class="icon-services1 Fs13"> Nghiệp vụ: Nguyễn Đức Dũng (0982588803, dungnd18@viettel.com.vn) </i></span>-->
+                <!--<span class="DispBlock FontLatoRegular Black Fs12 HoverEffect TexAlLeft"> <i class="icon-services1 Fs13"> Phần mềm: Nguyễn Trung Hiếu (0986680024, hieunt9@viettel.com.vn) </i></span>-->
+            </div>
+
+        </div>
+    </div>
+	<script type="text/javascript">
+		
+//		function submit(){
+//			$('#flang1').submit();
+//			window.location.reload();
+//		}
+	</script>
+    <p:dialog modal="true" class="transparent-dialog" showHeader="false" 
+              widgetVar="blockDlgCommon" draggable="false" closable="false" resizable="false" >
+        <span class="fa-stack fa-2x" style="width: 5em; height: 5em; line-height: 5em;" >
+            <i class="fa fa-fire fa-stack-1x" style="bottom: 40px; color: #FAFAFA; font-size: 0.8em"  ></i>
+            <i class="fa fa-spinner fa-pulse fa-3x fa-fw fa-stack-2x" style="color: #006d84; font-size: 3em;"></i>
+            <i class="fa fa-coffee fa-stack-1x" style="color: #975524; bottom: 20px;font-size: 1.2em"></i>
+        </span>
+    </p:dialog>
+</ui:composition>

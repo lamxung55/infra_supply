@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration packages="com.viettel.plugins" monitorInterval="60">
+	<properties>
+		<property name="pattern">%d{yyyy-MM-dd HH:mm:ss.SSS} | %-5.5p | [%t] (%F:%L) - %m%n</property>
+
+		<property name="com.viettel">IIM</property>
+	</properties>
+	<appenders>
+		<!-- file appender -->
+		<RollingFile name="com.viettel" fileName="../logs/${com.viettel}.log"
+			append="true" filePattern="../logs/$${date:yyyy-MM-dd}/${com.viettel}-%d{MM-dd-yyyy}-%i.log.gz">			
+			<PatternLayout pattern="${pattern}" />
+			<Policies>
+				<TimeBasedTriggeringPolicy />
+				<SizeBasedTriggeringPolicy size="200 MB" />
+			</Policies>
+		</RollingFile>
+
+		<!-- console appender -->
+		<Console name="STDOUT" target="SYSTEM_ERR">
+			<PatternLayout pattern="${pattern}" />
+		</Console>
+	</appenders>
+	<loggers>
+		<!-- the root category -->
+		<root level="INFO" additivity="true">
+			<AppenderRef ref="STDOUT" />
+			<AppenderRef ref="com.viettel" />
+		</root>
+		<logger name="com.viettel" level="TRACE">
+			<AppenderRef ref="com.viettel" />
+		</logger>
+		<!-- Dinh nghia them logger o day -->
+	</loggers>
+</configuration>

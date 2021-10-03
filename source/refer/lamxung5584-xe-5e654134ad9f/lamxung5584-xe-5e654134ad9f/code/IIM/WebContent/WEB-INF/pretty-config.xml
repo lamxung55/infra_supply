@@ -1,0 +1,124 @@
+<pretty-config xmlns="http://ocpsoft.org/schema/rewrite-config-prettyfaces"
+               xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+               xsi:schemaLocation="http://ocpsoft.org/schema/rewrite-config-prettyfaces
+                      http://ocpsoft.org/xml/ns/prettyfaces/rewrite-config-prettyfaces.xsd">
+
+    <url-mapping id="default">
+        <pattern value="/" />
+        <view-id value="/faces/default/index.xhtml" />
+    </url-mapping>
+    <url-mapping id="home">
+        <pattern value="/home" />
+        <view-id value="/faces/home/index.xhtml" />
+    </url-mapping>
+
+    <url-mapping id="error">
+        <pattern value="/error" />
+        <view-id value="/error.xhtml" />
+    </url-mapping>
+    <url-mapping id="permission" >
+        <pattern value="/permission" />
+        <view-id value="/access-denied.xhtml" />
+    </url-mapping>
+    <!-- Phần config của tab manager -->
+    <url-mapping id="manager">
+        <pattern value="/manager" />
+        <view-id value="/faces/manager/index.xhtml" />
+    </url-mapping>
+	
+    <url-mapping id="manager-example" parentId="manager">
+        <pattern value="/example" />
+        <view-id value="/faces/manager/example/index.xhtml" />
+    </url-mapping>
+        
+    <url-mapping id="database-manager" >
+        <pattern value="/resource/database" />
+        <view-id value="/faces/resource/database/database-index.xhtml" />
+    </url-mapping>
+    <url-mapping id="resource" >
+        <pattern value="/resource" />
+        <view-id value="" />
+    </url-mapping>
+    <url-mapping id="serverNew-manager">
+        <pattern value="/resource/serverNew" />
+        <view-id value="/faces/resource/serverNew/index.xhtml" />
+    </url-mapping>
+    <url-mapping id="server-manager" >
+        <pattern value="/resource/server" />
+        <view-id value="/faces/resource/server/index.xhtml" />
+    </url-mapping>
+    <url-mapping id="checklistDb" >
+        <pattern value="/checklistDb" />
+        <view-id value="/faces/checklistDb/catChecklistDb/index.xhtml" />
+    </url-mapping>
+        
+    <url-mapping id="app-manager" >
+        <pattern value="/resource/serviceManagement" />
+        <view-id value="/faces/resource/application/index.xhtml" />
+    </url-mapping>
+        
+    <url-mapping id="bgwSourceManager" >
+        <pattern value="/resource/bgwSource" />
+        <view-id value="/faces/resource/bwgSource/bwgSource-index.xhtml" />
+    </url-mapping>
+        
+    <url-mapping id="bgwCdrFlowManager" >
+        <pattern value="/resource/bgwCdrFlow" />
+        <view-id value="/faces/resource/bgwCdrFlow/bgwCdrFlow-index.xhtml" />
+    </url-mapping>
+    <url-mapping id="serverNotInRule-manager">
+        <pattern value="/resource/serverNotInRule" />
+        <view-id value="/faces/resource/serverNewOther/serverNewOther-index.xhtml" />
+    </url-mapping>
+    <url-mapping id="manager-group">
+        <pattern value="/manager/group" />
+        <view-id value="/faces/manager/group/index.xhtml" />
+    </url-mapping>
+        
+    <url-mapping id="manager-password" >
+        <pattern value="/manager/password" />
+        <view-id value="/faces/manager/password/index.xhtml" />
+    </url-mapping>
+        
+    <url-mapping id="category-ipRanges" >
+        <pattern value="/category/ipRanges" />
+        <view-id value="/faces/category/ipRanges/ipRanges-index.xhtml" />
+    </url-mapping>
+    <url-mapping id="service-manager" >
+        <pattern value="/service/serviceManagement" />
+        <view-id value="/faces/services/services-index.xhtml" />
+    </url-mapping>
+    <url-mapping id="lifecycleServer" >
+        <pattern value="/resource/lifecycleServer" />
+        <view-id value="/faces/resource/lifecycleServer/lifecycleServer-index.xhtml" />
+    </url-mapping>
+    <url-mapping id="category-catItem" >
+        <pattern value="/category/catItem" />
+        <view-id value="/faces/category/catItem/catItem-index.xhtml" />
+    </url-mapping>
+    <url-mapping id="depent-prop-cat" >
+        <pattern value="/category/depentPropCat" />
+        <view-id value="/faces/category/depentPropCat/depentPropCat-index.xhtml" />
+    </url-mapping>
+    <url-mapping id="category-servicegroup" >
+        <pattern value="/category/servicegroup" />
+        <view-id value="/faces/category/servicegroup/servicegroup-index.xhtml" />
+    </url-mapping>
+
+    <url-mapping id="modules-new" >
+        <pattern value="/service/modulesNew" />
+        <view-id value="/faces/newModules/newModules-index.xhtml" />
+    </url-mapping>
+    <url-mapping id="modules" >
+        <pattern value="/modules" />
+        <view-id value="/faces/modules/module-index.xhtml" />
+    </url-mapping>
+    <url-mapping id="chassis" >
+        <pattern value="/chassis" />
+        <view-id value="/faces/serverEsx/chassis.xhtml" />
+    </url-mapping>
+    <url-mapping id="blade" >
+        <pattern value="/blade" />
+        <view-id value="/faces/serverEsx/blade.xhtml" />
+    </url-mapping>
+</pretty-config>

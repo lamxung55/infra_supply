@@ -1,0 +1,23 @@
+﻿(2 ngày)
+1. Chức năng quản lý xe 
+- Biến kiểm soát
+- Họ tên lái xe
+- ...
+(Thêm/Sửa/Xóa/Clone/Export)
+
+(4 ngày)
+2. Chức năng quản lý chuyến hàng 
+- Thêm/Sửa/Xóa/In xác nhận/In 3 phơi/Clone/Export
+3. Chức năng quản lý gói hàng trong chuyến hàng
+- Thêm/Sửa/Xóa/Clone/
+
+(4 ngày)
+4. Chức năng báo cáo
+- Báo cáo ngày
+- Báo cáo tháng
+- Báo cáo chi tiết từng xe
+(1 ngày)
+5. Chức năng quản lý địa điểm
+- Quản lý theo dạng cây: Tỉnh/Huyện/Xã/Địa chỉ/
+
+==> Tổng: 11 ngày x 1 triệu = 11 triệu
