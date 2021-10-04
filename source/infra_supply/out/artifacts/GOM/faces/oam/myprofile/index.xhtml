@@ -1,0 +1,48 @@
+<ui:composition template="/layout/olympos/template.xhtml"
+                xmlns="http://www.w3.org/1999/xhtml"
+                xmlns:f="http://java.sun.com/jsf/core"
+                xmlns:h="http://java.sun.com/jsf/html"
+                xmlns:ui="http://java.sun.com/jsf/facelets"
+                xmlns:p="http://primefaces.org/ui">
+    <ui:define name="content">
+		<p:panel style="background-color: lightcyan;text-align: left">
+			<h:outputText value="Change Password" style="font-size: large; font-weight: bold;color: red;" />
+		</p:panel>
+		<h:form id="changePassword">
+                    <p:messages  id="messages" showDetail="true" showSummary="false" closable="true" autoUpdate="true"/>
+                    <p:panel style="width: 400px;">
+				<div class="dialog">
+					<h:panelGrid columns="2" rowClasses="prop"
+                                                     columnClasses="name,value" cellpadding="8px">
+                                            <p:outputLabel for="oldpass" style="color: blue;">Mật khẩu cũ : </p:outputLabel>
+                                            <p:password id="oldpass" value="#{loginController.oldPassword}"
+                                                             required="true" requiredMessage="Bắt buộc phải nhập Mật khẩu cũ!"/>
+                                            <p:outputLabel for="newpass" style="color: blue;">Mật khẩu mới : </p:outputLabel>
+                                            <p:password id="newpass" value="#{loginController.newPassword}" feedback="true"
+                                                        required="true" requiredMessage="Bắt buộc phải nhập Mật khẩu mới!"  match="confirmpass">
+                                                <f:validateLength minimum="6"/>
+                                            </p:password>
+                                            <p:outputLabel for="confirmpass" style="color: blue">Nhắc lại: </p:outputLabel>
+                                            <p:password id="confirmpass"/>
+					</h:panelGrid>
+				</div>
+			
+			<div class="actionButtons">
+                            <p:commandButton id="submit" value="#{msg['button.save']}" style="color: seagreen;margin-left: 140px;margin-top: 20px; margin-bottom: 10px"
+                                             actionListener="#{loginController.savePassword}" update="messages"/>
+                            <p:commandButton id="cancel" value="#{msg['button.cancel']}" style="color: seagreen;margin-left: 10px;margin-top: 20px; margin-bottom: 10px" 
+                                             onclick="history.back(-1)" immediate="true"/>
+			</div>
+                        </p:panel>
+		</h:form>
+        
+        <script type="text/javascript">
+            $(document).ready(function() {
+                var currentTabID = "tab-8";
+                var currentIconID = "350";
+                ChangeTab(currentTabID, currentIconID);
+                   
+            });
+        </script>
+    </ui:define>
+</ui:composition>

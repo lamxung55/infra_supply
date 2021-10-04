@@ -1,0 +1,101 @@
+package com.mine.util;///*
+// * Created on Jun 7, 2013
+// *
+// * Copyright (C) 2013 by mine Network Company. All rights reserved
+// */
+//package com.mine.util;
+//
+//import java.io.Serializable;
+//
+//import javax.faces.context.FacesContext;
+//import javax.servlet.http.HttpServletRequest;
+//import javax.servlet.http.HttpSession;
+//
+//import com.mine.vsa.token.ObjectToken;
+//import com.mine.vsa.token.UserToken;
+//
+///**
+//* Các hàm thao tác với session cơ bản của cả hệ thống. 
+//*
+//* @author
+//* @since Jun 7, 2013
+//* @version 1.0.0
+//*/
+//
+//public class SessionWrapper implements Serializable{
+//	private static final long serialVersionUID 	= -8318262775763386620L;
+//	private static final String _VSA_USER_TOKEN = "vsaUserToken";
+//	private static final String _VSA_USER_ID 	= "netID";
+//	
+//	/**
+//	 * Get current session cua he thong.
+//	 * 
+//	 * @return current session
+//	 */
+//	public static HttpSession getCurrentSession() {
+//		HttpServletRequest request = (HttpServletRequest) FacesContext
+//				.getCurrentInstance().getExternalContext().getRequest();
+//		return request.getSession();
+//	}
+//	
+//	/**
+//	 * Lay gia tri session attribute.
+//	 * 
+//	 * @param attributeName
+//	 * @return
+//	 */
+//	public String getSessionAttribute(String attributeName){
+//		return (String) getCurrentSession().getAttribute(attributeName);
+//	}
+//
+//	/**
+//	 * Lay thong tin cua user hien tai dang login.
+//	 */
+//	public static String getCurrentUsername(){
+//		HttpSession s= getCurrentSession();
+//		return ((UserToken) s.getAttribute(_VSA_USER_TOKEN)) == null? "" : ((UserToken) s.getAttribute(_VSA_USER_TOKEN)).getUserName();
+//	}
+//	
+//	/**
+//	 * Kiem tra xem URL nay co duoc truy cap khong.
+//	 * 
+//	 * @return
+//	 */
+//	public boolean getUrlDisplay(String urlCode){
+//		HttpSession session = getCurrentSession();
+//		boolean result = false;
+//		
+//		String objToken = "";
+//		UserToken userToken = (UserToken) session.getAttribute(_VSA_USER_TOKEN);
+//		if (userToken != null) {
+//			for (ObjectToken ot : userToken.getObjectTokens()) {
+//				objToken = ot.getObjectUrl();
+//				if (objToken.equalsIgnoreCase(urlCode)){
+//					result = true;
+//					break;
+//				}
+//			}
+//		}
+//		
+//		return result;
+//	}	
+//	
+//	protected static Boolean getUrlByKey(String key){
+//		HttpSession session = getCurrentSession();
+//		String url = "";
+//		UserToken userToken = (UserToken) session.getAttribute(_VSA_USER_TOKEN);
+//		if (userToken != null) {
+//			for (ObjectToken ot : userToken.getObjectTokens()) {
+//				url = ot.getObjectUrl();
+//				if (key.equalsIgnoreCase(url))
+//					return true;
+//				else 
+//					url = "";
+//			}
+//		} else {
+//			return false;
+//		}
+//		
+//		return false;
+//	}
+//}// End class

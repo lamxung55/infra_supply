@@ -1,0 +1,50 @@
+body .md-inputfield {
+	display: block;
+	position: relative;
+}
+
+body .md-inputfield input:focus ~ label, body .md-inputfield input.ui-state-filled 
+	~ label {
+	top: -20px;
+	font-size: 14px;
+	color: #027FAC;
+}
+body .md-inputfield textarea:focus ~ label, body .md-inputfield textarea.ui-state-filled 
+	~ label {
+	top: -20px;
+	font-size: 14px;
+	color: #027FAC;
+}
+
+body .md-inputfield label {
+	color: #999;
+	font-weight: normal;
+	position: absolute;
+	pointer-events: none;
+	left: 9px;
+	top: 7px;
+	transition: 0.3s ease all;
+	-moz-transition: 0.3s ease all;
+	-webkit-transition: 0.3s ease all;
+}
+
+.title-top {
+	display: block;
+	position: relative;
+}
+.title-top .title-elem{
+	color: #999;
+	font-weight: normal;
+	position: absolute;
+	pointer-events: none;
+	left: 9px;
+	top: 7px;
+	transition: 0.3s ease all;
+	-moz-transition: 0.3s ease all;
+	-webkit-transition: 0.3s ease all;
+	
+	top: -20px;
+	font-size: 14px;
+	color: #027FAC;
+}
+	

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC
+        "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+
+    <session-factory>
+        <property name="hibernate.bytecode.use_reflection_optimizer">false</property>
+        <property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
+        <property name="hibernate.connection.url">jdbc:mysql://localhost:3306/infra_supply</property>
+        <property name="hibernate.connection.username">root</property>
+        <property name="hibernate.connection.password"></property>
+        <property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
+        <property name="show_sql">true</property>
+        <property name="hibernate.connection.characterEncoding">utf8</property>
+        <property name="hibernate.c3p0.acquire_increment">1</property>
+        <property name="hibernate.c3p0.min_size">1</property>
+        <property name="hibernate.c3p0.max_size">100</property>
+        <property name="hibernate.c3p0.max_statements">100</property>
+        <property name="hibernate.c3p0.timeout">300</property>
+        <property name="hibernate.c3p0.idle_test_period">3000</property>
+        <property name="hibernate.c3p0.unreturnedConnectionTimeout">60</property>
+        <property name="hibernate.c3p0.debugUnreturnedConnectionStackTraces">true</property>
+
+
+        <!-- Tạo bảng trên database từ file model -->
+        <!--<property name="hbm2ddl.auto" >update</property>-->
+
+        <mapping class="com.mine.authen.bean.OamUser" />
+        <mapping class="com.mine.authen.bean.OamUserRole" />
+        <mapping class="com.mine.authen.bean.OamUserRoleMapping" />
+        <mapping class="com.mine.datamodel.BbbgEntity"/>
+        <mapping class="com.mine.datamodel.ContractEntity"/>
+        <mapping class="com.mine.datamodel.HaEntity"/>
+        <mapping class="com.mine.datamodel.PoolEntity"/>
+        <mapping class="com.mine.datamodel.ProjectEntity"/>
+        <mapping class="com.mine.datamodel.UnitEntity"/>
+
+    </session-factory>
+
+</hibernate-configuration>

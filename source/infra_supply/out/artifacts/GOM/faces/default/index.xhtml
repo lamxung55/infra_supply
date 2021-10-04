@@ -1,0 +1,15 @@
+<ui:composition template="/layout/olympos/template.xhtml"
+	xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:p="http://primefaces.org/ui">
+	<ui:define name="content">
+		<h:graphicImage  height="100%" width="100%" title="Active" library="dashboard" name="dashboard.png"/>
+		<script type="text/javascript">
+            $(window).on('load', function() {
+                setUpTab('tab-0','tab-0-0');
+            });
+		</script>
+	</ui:define>
+</ui:composition>

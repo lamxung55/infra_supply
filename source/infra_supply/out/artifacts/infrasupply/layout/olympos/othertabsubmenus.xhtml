@@ -1,0 +1,47 @@
+<ui:composition
+        xmlns="http://www.w3.org/1999/xhtml"
+        xmlns:f="http://java.sun.com/jsf/core"
+        xmlns:h="http://java.sun.com/jsf/html"
+        xmlns:ui="http://java.sun.com/jsf/facelets"
+        xmlns:p="http://primefaces.org/ui"
+        xmlns:po="http://primefaces.org/olympos">
+    <ul class="layout-tab-submenu" id="layout-categogy">
+        <li>
+            <ul>
+                <li>
+                    <h:outputLink styleClass="menulink" id="tab-6-3"
+                                  value="#{facesContext.externalContext.request.contextPath}/game"
+                                  onclick="PF('blockDlgCommon').show()">
+                        <i class="fa fa-suitcase"></i>
+                        <div class="DispBlock White Fs13 FontUtmAvoRegular">Quản lý Game</div>
+                    </h:outputLink>
+                </li>
+                <li>
+                    <h:outputLink styleClass="menulink" id="tab-6-5"
+                                  value="#{facesContext.externalContext.request.contextPath}/user-management/role"
+                                  onclick="PF('blockDlgCommon').show()">
+                        <i class="fa fa-users"></i>
+                        <div class="DispBlock White Fs13 FontUtmAvoRegular">Quản lý nhóm người dùng</div>
+                    </h:outputLink>
+                </li>
+                <li>
+                    <h:outputLink styleClass="menulink" id="tab-6-6"
+                                  value="#{facesContext.externalContext.request.contextPath}/user-management/user"
+                                  onclick="PF('blockDlgCommon').show()">
+                        <i class="fa fa-users"></i>
+                        <div class="DispBlock White Fs13 FontUtmAvoRegular">Quản lý người dùng</div>
+                    </h:outputLink>
+                </li>
+                <li>
+                    <h:outputLink styleClass="menulink" id="tab-6-4"
+                                  value=""
+                                  onclick="PF('blockDlgCommon').show()">
+                        <i class="fa fa-bar-chart"></i>
+                        <div class="DispBlock White Fs13 FontUtmAvoRegular">Thống kê báo cáo</div>
+                    </h:outputLink>
+                </li>
+            </ul>
+        </li>
+    </ul>
+
+</ui:composition>

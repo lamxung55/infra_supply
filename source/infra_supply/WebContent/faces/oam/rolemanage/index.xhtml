@@ -1,0 +1,141 @@
+<ui:composition template="/layout/olympos/template.xhtml"
+                xmlns="http://www.w3.org/1999/xhtml"
+                xmlns:f="http://java.sun.com/jsf/core"
+                xmlns:h="http://java.sun.com/jsf/html"
+                xmlns:ui="http://java.sun.com/jsf/facelets"
+                xmlns:p="http://primefaces.org/ui"
+                xmlns:c="http://java.sun.com/jsp/jstl/core">
+    <ui:define name="content">
+        <h:form id="form1" enctype="multipart/form-data">
+            <p:panel id="main_panel">
+                <p:messages  id="messages" showDetail="true" showSummary="false" closable="true" autoUpdate="false"/>
+                <p:panel id="add_panel" style="background-color: pink; text-align: left">
+                    <p:commandLink id="addButton" value="Add" style="color: blue;margin-right:20px;" actionListener="#{oamRoleController.preAdd}" oncomplete="PF('addDialog').show()"
+                                   update=":form2" rendered="#{smscCheckRoles.hasRightAction('add')}"/>
+                </p:panel>
+                       
+            
+            <p:contextMenu for="main_table">
+                <p:menuitem value="Edit" icon="ui-icon-pencil" update=":form2" oncomplete="PF('addDialog').show()" actionListener="#{oamRoleController.preEdit(oamRoleController.selectedRole)}" rendered="#{smscCheckRoles.hasRightAction('edit')}"/>
+                <p:menuitem value="Delete" icon="ui-icon-close" onclick="deleteConfirmation.show();" rendered="#{smscCheckRoles.hasRightAction('delete')}"/>
+                <p:menuitem value="View" icon="ui-icon-search" update="dialog" oncomplete="showInformation.show()"/>
+            </p:contextMenu>
+            
+            <p:dataTable id="main_table" var="role" value="#{oamRoleController.roleList}" rowKey="#{role.roleId}"
+                         paginator="true" rows="10" rowsPerPageTemplate="5,10,20"
+                         paginatorPosition="bottom" selection="#{oamRoleController.selectedRole}" selectionMode="single"
+                         resizableColumns="true" liveResize="true" rowIndexVar="rowIndex" >
+                
+                <f:facet name="header">
+                    Danh sách Role
+                </f:facet>
+                
+                <p:column style="width: 3%;text-align: center;" headerText="STT">
+                    <h:outputText value="#{rowIndex+1}"/>
+                </p:column>
+                
+                <p:column headerText="Role ID" style="text-align: center;width: 5%" sortBy="#{role.roleId}">
+                    <h:outputText value="#{role.roleId}"/>
+                </p:column>
+                
+                <p:column headerText="Role Name" style="text-align: center;" sortBy="#{role.roleName}">
+                    <h:outputText value="#{role.roleName}"/>
+                </p:column>
+                
+                <p:column headerText="Page URL" style="text-align: center; width: 22%;" sortBy="#{role.pageUrl}">
+                    <h:outputText value="#{role.pageUrl}"/>
+                </p:column>
+                
+                <p:column headerText="Action Code" style="text-align: center; width: 22%;" sortBy="#{role.actionId}">
+                    <h:outputText value="#{role.actionId}"/>
+                </p:column>
+                
+                <p:column headerText="Description" style="text-align: center;width: 15%;" sortBy="#{role.description}">
+                    <h:outputText value="#{role.description}"/>
+                </p:column>
+                
+                 <p:column headerText="Action" style="text-align: center; font-weight: bold; width: 10%" >
+                    <p:commandLink id="deleteButton" update=":form1" value="Delete" oncomplete="deleteConfirmation.show();" style="color: red;" rendered="#{smscCheckRoles.hasRightAction('delete')}">
+                        <f:setPropertyActionListener value="#{role}" target="#{oamRoleController.selectedRole}"/>
+                    </p:commandLink> |                      
+                    <p:commandLink id="editButton" update=":form2" value="Edit" style="color: royalblue"   actionListener="#{oamRoleController.preEdit(role)}"
+                                   oncomplete="PF('addDialog').show()" rendered="#{smscCheckRoles.hasRightAction('edit')}" />
+                     
+                </p:column>
+              
+            </p:dataTable>
+            <p:confirmDialog id="deleteConfirmDialog" message="Do you really want to delete this role?"
+                             header="Delete Role" severity="alert"
+                             widgetVar="deleteConfirmation">
+                <p:commandButton id="confirm" value="Yes Sure"               
+                                 oncomplete="deleteConfirmation.hide();" update="main_table, messages"
+                                 actionListener="#{oamRoleController.onDelete}" />
+                <p:commandButton id="decline" value="Not Yet"
+                                 onclick="deleteConfirmation.hide();" type="button" />
+            </p:confirmDialog>
+            
+           
+                <p:dialog id="dialog" widgetVar="showInformation" header="Role Details" resizable="false"
+                          hideEffect="fold" showEffect="clip">
+                    <h:panelGrid id="display" columns="2" cellpadding="4">  
+  
+                            <h:outputText value="Role ID:" />  
+                            <h:outputText value="#{oamRoleController.selectedRole.roleId}"/>  
+  
+                            <h:outputText value="Role Name:" />  
+                            <h:outputText value="#{oamRoleController.selectedRole.roleName}" style="font-weight:bold"/>  
+  
+                            <h:outputText value="Page URL:" />  
+                            <h:outputText value="#{oamRoleController.selectedRole.pageUrl}" style="font-weight:bold; font-size: medium"/>  
+  
+                            <h:outputText value="Action:" />  
+                            <h:outputText value="#{oamRoleController.selectedRole.actionId}" style="font-weight:bold; font-size: medium"/>  
+                            
+                            <h:outputText value="Description:" />  
+                            <h:outputText value="#{oamRoleController.selectedRole.description}" style="font-weight:bold"/>  
+                        </h:panelGrid>  
+                    
+                </p:dialog>
+               
+                </p:panel>     
+        </h:form>
+        
+        <h:form id="form2">
+            <p:dialog id="dialog" header="#{oamRoleController.dialogHeader}" widgetVar="addDialog" resizable="false"  
+                      showEffect="clip" hideEffect="clip" >
+                <p:messages  id="messages" showDetail="true" showSummary="false" closable="true" autoUpdate="false"/>
+               
+                <h:panelGrid columns="2" cellpadding="8">
+                    <p:outputLabel for="roleName" value="Role Name :" style="color: blue"/>
+                    <p:inputText id="roleName" value="#{oamRoleController.oamRoleFormBean.roleName}" required="true"
+                                 requiredMessage="Chưa nhập Role Name!" validatorMessage="Role Name phải lơn hơn 3 kí tự.">
+                        <f:validateLength minimum="3"/>
+                    </p:inputText>
+
+
+                    <p:outputLabel for="pageUrl" value="Choose PageURL :" style="color: blue"/>
+                    <p:inputTextarea id="pageUrl" value="#{oamRoleController.oamRoleFormBean.pageUrl}" cols="40" rows="1"/>
+
+
+                    <p:outputLabel for="actionCode" value="Choose Action :" style="color: blue"/>
+                    <p:inputTextarea id="actionCode" value="#{oamRoleController.oamRoleFormBean.actionId}" cols="40" rows="1"/>
+
+
+                    <p:outputLabel for="description" value="Description :" style="color: blue"/>
+                    <p:inputTextarea id="description" value="#{oamRoleController.oamRoleFormBean.description}" cols="40" rows="5"/>
+
+              
+                     <f:facet name="footer">
+                         <p:commandButton id="updateBtn" value="Update" style="font-size: medium;margin-left: 130px; margin-top: 10px; margin-bottom: 10px"
+                                          update=":form1" oncomplete="if (!args.validationFailed) PF('addDialog').hide()" actionListener="#{oamRoleController.onEdit}" rendered="#{oamRoleController.isRoleEdit}"/>
+                         <p:commandButton id="addBtn" value="Add" style="font-size: medium;margin-left: 130px; margin-top: 10px; margin-bottom: 10px"
+                                          update=":form1" oncomplete="if (!args.validationFailed) PF('addDialog').hide()" actionListener="#{oamRoleController.onAdd}" rendered="#{!oamRoleController.isRoleEdit}"/>
+                         <p:commandButton id="closeBtn" value="Cancel" style="font-size: medium;margin-left: 20px;" onclick="PF('addDialog').hide()" immediate="true"/>
+                    </f:facet>
+                </h:panelGrid>
+             </p:dialog>
+        </h:form>
+        
+
+    </ui:define>
+</ui:composition>

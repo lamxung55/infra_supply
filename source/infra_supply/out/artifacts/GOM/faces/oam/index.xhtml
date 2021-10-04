@@ -1,0 +1,20 @@
+<ui:composition template="/layout/olympos/template.xhtml"
+	xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:p="http://primefaces.org/ui">
+	<ui:define name="content">
+		<h:form id="insertEditForm">
+		</h:form>
+		
+		<script type="text/javascript">
+			$(document).ready(function() {
+				var currentTabID = "tab-8";
+				var currentIconID = "";
+				ChangeTab(currentTabID, currentIconID);
+                                
+			});
+		</script>
+	</ui:define>
+</ui:composition>

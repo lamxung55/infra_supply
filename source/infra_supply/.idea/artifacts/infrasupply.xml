@@ -1,0 +1,29 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="infrasupply">
+    <output-path>$PROJECT_DIR$/out/artifacts/infrasupply</output-path>
+    <root id="root">
+      <element id="javaee-facet-resources" facet="infrasupply/web/Web" />
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="infrasupply" />
+        </element>
+        <element id="directory" name="lib">
+          <element id="library" level="project" name="jaxb" />
+          <element id="library" level="project" name="passportv3" />
+          <element id="library" level="module" name="lib" module-name="xe" />
+          <element id="library" level="module" name="passport" module-name="xe" />
+          <element id="file-copy" path="$PROJECT_DIR$/WebContent/WEB-INF/richeslibs/sac-1.3.jar" />
+          <element id="file-copy" path="$PROJECT_DIR$/WebContent/WEB-INF/richeslibs/guava-19.0.jar" />
+          <element id="file-copy" path="$PROJECT_DIR$/WebContent/WEB-INF/richeslibs/cssparser-0.9.18.jar" />
+          <element id="file-copy" path="$PROJECT_DIR$/WebContent/WEB-INF/richeslibs/richfaces-a4j-4.5.17.Final.jar" />
+          <element id="file-copy" path="$PROJECT_DIR$/WebContent/WEB-INF/richeslibs/richfaces-core-4.5.17.Final.jar" />
+          <element id="file-copy" path="$PROJECT_DIR$/WebContent/WEB-INF/richeslibs/richfaces-rich-4.5.17.Final.jar" />
+          <element id="file-copy" path="$PROJECT_DIR$/WebContent/WEB-INF/richeslibs/richfaces-page-fragments-4.5.17.Final.jar" />
+          <element id="file-copy" path="$PROJECT_DIR$/WebContent/WEB-INF/richeslibs/cache/ehcache-2.8.3.jar" />
+          <element id="file-copy" path="$PROJECT_DIR$/WebContent/WEB-INF/richeslibs/push/atmosphere-runtime-2.4.3.jar" />
+          <element id="library" level="module" name="lib" module-name="infrasupply" />
+        </element>
+      </element>
+    </root>
+  </artifact>
+</component>

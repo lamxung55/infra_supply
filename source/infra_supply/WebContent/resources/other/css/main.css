@@ -1,0 +1,176 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Sep 6, 2016, 4:39:41 PM
+    Author     : hienhv4
+*/
+span.cd-text-required:after{
+    content: '*';
+    color: red;
+}
+
+.cd-btn-table {
+    background-color: transparent !important;
+    min-width: 25px !important;
+}
+
+.cd-btn-table:hover {
+    background-color: #eeeeee !important;
+    min-width: 25px !important;
+}
+
+.cd-btn-table .ui-button-text {
+    background-color: transparent !important;
+    border: medium none !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    min-width: 15px;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    width: auto !important;
+}
+
+#tableCommand table tbody .ui-state-highlight > td {
+    background-color: #cbfff9;
+}
+
+.responsive125 {
+    box-sizing: border-box;
+    float: left;
+    padding: 0.5em;
+    width: 12.5%;
+}
+
+.responsive875 {
+    box-sizing: border-box;
+    float: left;
+    padding: 0.5em;
+    width: 87.5%;
+}
+
+.input-number-fix {
+    margin-left: -0.5em;
+}
+
+.input-number-fix input {
+    width: 98.5%;
+}
+
+.transparent-dialog {
+    background: transparent !important;
+    box-shadow: none !important;
+}
+
+.transparent-dialog .ui-dialog-content {
+    padding: 0;
+}
+
+.transparent-dialog .ui-widget-content {
+    padding: 0;
+}
+
+.Container27 {
+    width: 27%;
+    box-sizing: border-box;
+    float: left;
+    padding: 0.5em;
+}
+
+.ui-selectonemenu-filter-container{
+    width: calc(100% - 14px) !important;
+}
+.ui-selectonemenu-filter-container input {
+    width: calc(100% - 40px) !important;
+}
+
+/*vietnv14 add*/
+.ui-datatable table thead{
+    background: #109bdc   none repeat scroll 0 0;
+
+}
+.upperColumnTitle .ui-column-title{
+    color: white !important;
+    text-transform: uppercase;
+}
+.ui-datatable .ui-datatable-header {
+    background: transparent;
+    color: #333333;
+    font-weight: bold;
+}
+.ui-datatable table thead tr th.ui-state-hover{
+    background:#0094b4 !important;
+}
+.ui-datatable table thead tr th.ui-state-active{
+    background-color: #0094b4 !important;
+}
+
+.ui-datatable .ui-column-filter {
+    margin-top: 2px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.rowColorYellow{
+    background-color: #ffff66 !important;
+
+}
+.clearfix{
+    clear: both;
+    /*content: ".";*/
+    display: block;
+    width: 0px;
+    height: 0px;
+}
+/*
+.ui-button-icon-only {
+    width: 2.4em;
+}
+.ui-button-icon-only {
+    border-radius: 3px !important;
+    max-width: 30px !important;
+    min-width: 15px !important;
+    max-height: 10px !important;
+}
+.ui-button-text{
+    max-height: 5px !important;
+    max-width: 20px !important;
+}*/
+
+.ui-button-icon-only{
+	width: 25px !important;
+	min-width: 25px !important;
+	height: 25px !important;
+	min-height: 25px !important;
+        margin-top: 0px !important;
+
+}
+.ui-button-icon-only .ui-button-text{
+        margin-top: 0px !important;
+	min-height: 1px !important;
+	height: 11px !important;
+}
+
+.SmallButton {
+	width: 25px !important;
+	min-width: 25px !important;
+	height: 25px !important;
+	min-height: 25px !important;
+        margin-top: 0px !important;
+
+}
+.SmallButton .ui-button-text{
+        margin-top: 0px !important;
+	min-height: 1px !important;
+	height: 11px !important;
+}
+.SmallIconStatus{
+    width: 20px ;
+    height: 20px ;
+}
+.ui-autocomplete-dropdown .ui-button-text{
+        visibility: hidden;
+    	height: 27px !important;
+
+}

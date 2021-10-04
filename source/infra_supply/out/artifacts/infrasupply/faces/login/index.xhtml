@@ -1,0 +1,63 @@
+<ui:composition template="/layout/olympos/template.xhtml"
+                xmlns="http://www.w3.org/1999/xhtml"
+                xmlns:f="http://java.sun.com/jsf/core"
+                xmlns:h="http://java.sun.com/jsf/html"
+                xmlns:ui="http://java.sun.com/jsf/facelets"
+                xmlns:p="http://primefaces.org/ui">
+    <ui:define name="content">
+
+        <script type="text/javascript">
+            //var ctx =  #{facesContext.externalContext.requestContextPath};
+            function reloadCaptcha() {
+                var root = '#{facesContext.externalContext.requestContextPath}';
+                document.getElementById('imgCaptchaId').src = root + '/captcha.jpg?' + Math.random();
+            }
+
+        </script>
+        <p:panel style="background-color: lightcyan;text-align: left">
+            <h:outputText value="Login"
+                          style="font-size: large; font-weight: bold;color: red;"/>
+        </p:panel>
+        <h:form id="loginForm">
+            <p:messages id="messages" showDetail="true" showSummary="false"
+                        closable="true" autoUpdate="true"/>
+            <p:panel style="width: 600px;margin-left: 30%">
+
+                <div class="dialog">
+                    <h:panelGrid columns="2" rowClasses="prop"
+                                 columnClasses="name,value" cellpadding="8px">
+                        <p:outputLabel for="username" style="color: blue;"
+                                       value="Tên đăng nhập: "/>
+                        <p:inputText id="username" value="#{loginController.username}"
+                                     required="true"
+                                     requiredMessage="Bắt buộc phải nhập Tên đăng nhập!"/>
+                        <p:outputLabel for="password" style="color: blue;"
+                                       value="Mật khẩu: "/>
+                        <p:password id="password" value="#{loginController.password}"
+                                    required="true" requiredMessage="Bắt buộc phải nhập Mật khẩu !"/>
+                        <h:outputLabel for="captchaCode"
+                                       value="Mã xác nhận:" style="color: blue;"/>
+                        <img id="imgCaptchaId"
+                             onclick="reloadCaptcha();"
+                             src="#{facesContext.externalContext.request.contextPath}/captcha.jpg"/>
+
+
+                        <h:outputLabel value=""/>
+                        <p:inputText required="true" requiredMessage="Bắt buộc phải nhập mã xác nhận!" id="captchaCode"
+                                     value="#{loginController.captchaCode}">
+                            <f:validator validatorId="captchaValidator"/>
+                        </p:inputText>
+
+                    </h:panelGrid>
+                </div>
+
+                <div class="actionButtons">
+                    <p:commandButton id="submit" value="Login"
+                                     style="color: seagreen;margin-left: 150px;margin-top: 20px; margin-bottom: 10px"
+                                     actionListener="#{loginController.login}"
+                                     oncomplete="reloadCaptcha();"/>
+                </div>
+            </p:panel>
+        </h:form>
+    </ui:define>
+</ui:composition>
