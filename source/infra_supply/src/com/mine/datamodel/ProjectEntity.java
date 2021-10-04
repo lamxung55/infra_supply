@@ -17,7 +17,7 @@ public class ProjectEntity {
     private String name;
     private String owner;
     private Date createTime;
-    private Integer status;
+    private String status;
     private String note;
 
     @Id
@@ -65,11 +65,11 @@ public class ProjectEntity {
 
     @Basic
     @Column(name = "STATUS")
-    public Integer getStatus() {
+    public String getStatus() {
         return status;
     }
 
-    public void setStatus(Integer status) {
+    public void setStatus(String status) {
         this.status = status;
     }
 

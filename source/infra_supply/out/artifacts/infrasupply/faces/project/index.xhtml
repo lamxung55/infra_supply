@@ -11,6 +11,7 @@
             <p:growl id="mainMessage" showDetail="true" showSummary="false"/>
             <p:dataTable value="#{projectController.lazyModel}" id="myTable" widgetVar="myTable"
                          lazy="true" var="obj" rowKey="#{obj.id}"
+                         selection="#{projectController.selectedObj}"
                          rowIndexVar="cusIdx" editable="true" editMode="cell"
                          rows="20" paginator="true" paginatorPosition="bottom"
                          paginatorTemplate="{CurrentPageReport} {FirstPageLink} {PreviousPageLink} {PageLinks} {NextPageLink} {LastPageLink} {RowsPerPageDropdown}"
@@ -32,7 +33,8 @@
                             <p:commandButton icon="fa fa-plus-circle"
                                              update="addDlg"
                                              actionListener="#{projectController.preInsert}"
-                                             oncomplete="PF('addDlg').show();"
+                                             onclick="PF('blockDlgCommon').show()"
+                                             oncomplete="PF('blockDlgCommon').hide();PF('addDlg').show()"
                                              title="Thêm mới" value="Thêm mới"
                             />
                             <p:commandButton icon="fa fa-download" ajax="false" title="Export" value="Export">
@@ -67,12 +69,31 @@
                 </p:column>
                 <p:column headerText="Tên dự án" filterStyle="width:70%"
                           filterBy="#{obj.name}" sortBy="#{obj.name}" groupRow="true"
-                          visible="#{projectController.togglerColumn[2]}">
+                          visible="#{projectController.togglerColumn[1]}">
                     <h:outputText value="#{obj.name}"/>
                 </p:column>
+                <p:column headerText="Người phụ trách" filterStyle="width:70%"
+                          filterBy="#{obj.owner}" sortBy="#{obj.owner}" groupRow="true"
+                          visible="#{projectController.togglerColumn[3]}">
+                    <h:outputText value="#{obj.owner}"/>
+                </p:column>
+                <p:column headerText="Thời gian tạo" filterStyle="width:70%"
+                          filterBy="#{obj.createTime}" sortBy="#{obj.createTime}" groupRow="true"
+                          visible="#{projectController.togglerColumn[4]}">
+                    <h:outputText value="#{obj.createTime}"/>
+                </p:column>
+                <p:column headerText="Tình trạng" filterStyle="width:70%"
+                          filterBy="#{obj.status}" sortBy="#{obj.status}" groupRow="true"
+                          visible="#{projectController.togglerColumn[5]}">
+                    <h:outputText value="#{obj.status}"/>
+                </p:column>
+                <p:column headerText="Ghi chú" filterStyle="width:70%"
+                          filterBy="#{obj.note}" sortBy="#{obj.note}" groupRow="true"
+                          visible="#{projectController.togglerColumn[5]}">
+                    <h:outputText value="#{obj.note}"/>
+                </p:column>
                 <p:column width="100px" exportable="false"
-                          headerText="Thao tác" style="text-align:center;"
-                          visible="#{projectController.togglerColumn[1]}">
+                          headerText="Thao tác" style="text-align:center;">
 
                     <p:tooltip position="left"/>
                     <p:commandButton
@@ -104,16 +125,13 @@
             <h:form id="depentPropCatDlgForm">
                 <p:growl id="growldepentPropCatDlg" showDetail="true" showSummary="false"/>
                 <h:panelGrid columns="4" width="100%" cellpadding="5" id="panelGridId">
-                    <div class="ui-g">
-                        <div class="ui-g">
-                            <div class="ui-g-2">
-                                <h:outputText class="cd-text-required" value="Mã dự án:"
-                                              style="margin-left: 15px;"/>
-                            </div>
-                            <div class="ui-g-3">
-                                <p:inputText maxlength="100" 
-                                             value="#{projectController.newObj.code}"/>
-                            </div>
+                        <div class="ui-g-2">
+                            <h:outputText class="cd-text-required" value="Mã dự án:"
+                                          style="margin-left: 15px;"/>
+                        </div>
+                        <div class="ui-g-3">
+                            <p:inputText maxlength="100"
+                                         value="#{projectController.newObj.code}"/>
                         </div>
                         <div class="ui-g-2">
                             <h:outputText class="cd-text-required" value="Tên dự án:" style="margin-left: 15px;"/>
@@ -130,12 +148,25 @@
                             <p:inputText maxlength="100" 
                                          value="#{projectController.newObj.owner}"/>
                         </div>
-                    </div>
-                    <div class="ui-g">
                         <div class="ui-g-2">
                             <h:outputText value="Thời gian tạo" style="margin-left: 15px;"/>
                         </div>
                         <p:calendar id="popup" value="#{projectController.newObj.createTime}"/>
+
+                        <div class="ui-g-2">
+                            <h:outputText value="Ghi chú" style="margin-left: 15px;"/>
+                        </div>
+                        <p:inputTextarea maxlength="100"
+                                     value="#{projectController.newObj.note}"/>
+                    <div class="ui-g">
+                        <div class="ui-g-2">
+                            <h:outputText value="Tình trạng" style="margin-left: 15px;"/>
+                        </div>
+                        <p:selectOneMenu value="#{projectController.newObj.status}">
+                            <f:selectItem itemLabel="Mới" itemValue="Mới" />
+                            <f:selectItem itemLabel="Đang thực hiện" itemValue="Đang thực hiện" />
+                            <f:selectItem itemLabel="Hoàn thành" itemValue="Hoàn thành" />
+                        </p:selectOneMenu>
                     </div>
 
 
@@ -144,7 +175,7 @@
                      style="margin-bottom: 10px; text-align: center;margin-left: auto;margin-right: auto;display: block">
                     <p:commandButton style="color: white;" icon="fa fa-save"
                                      actionListener="#{projectController.onSaveOrUpdate()}"
-                                     onclick="PF('addDlg').hide()"
+                                     oncomplete="PF('addDlg').hide();"
                                      update=":depentPropCatForm, :depentPropCatDlgForm:growldepentPropCatDlg"
                                      value="Lưu"/>
                     <p:commandButton style="color: white;" icon="fa fa-close" styleClass="RedButton"

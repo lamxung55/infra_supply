@@ -7,9 +7,9 @@ package com.mine.controller;
 
 import com.mine.common.util.Constant;
 import com.mine.common.util.StringUtils;
-import com.mine.datamodel.ProjectEntity;
+import com.mine.datamodel.ContractEntity;
 import com.mine.lazy.LazyDataModelBaseNew;
-import com.mine.persistence.ProjectServiceImpl;
+import com.mine.persistence.ContractServiceImpl;
 import com.mine.util.MessageUtil;
 import org.primefaces.context.RequestContext;
 import org.primefaces.event.ToggleEvent;
@@ -29,31 +29,31 @@ import java.util.*;
  */
 @ViewScoped
 @ManagedBean
-public class ProjectController {
-    protected static final Logger logger = LoggerFactory.getLogger(ProjectController.class);
-    @ManagedProperty(value = "#{projectService}")
-    private ProjectServiceImpl projectService;
-    private LazyDataModel<ProjectEntity> lazyModel;
+public class ContractController {
+    protected static final Logger logger = LoggerFactory.getLogger(ContractController.class);
+    @ManagedProperty(value = "#{contractService}")
+    private ContractServiceImpl contractService;
+    private LazyDataModel<ContractEntity> lazyModel;
     private List<Boolean> togglerColumn = new ArrayList<>();
-    private ProjectEntity newObj;
+    private ContractEntity newObj;
     private Boolean isEdit = false;
-    private List<ProjectEntity> selectedObj;
+    private List<ContractEntity> selectedObj;
 
     @PostConstruct
     public void onStart() {
         Map<String, Object> filters = new HashMap<>();
         LinkedHashMap<String, String> orders = new LinkedHashMap<>();
         orders.put("name", Constant.ORDERS.ASC);
-        lazyModel = new LazyDataModelBaseNew<>(projectService, filters, orders);
+        lazyModel = new LazyDataModelBaseNew<>(contractService, filters, orders);
         togglerColumn = Arrays.asList(true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true);
     }
 
     public void preInsert() {
-        newObj = new ProjectEntity();
+        newObj = new ContractEntity();
         isEdit = false;
     }
 
-    public void preUpdate(ProjectEntity node) {
+    public void preUpdate(ContractEntity node) {
         try {
             newObj = node;
             isEdit = true;
@@ -68,7 +68,7 @@ public class ProjectController {
             return;
         }
         try {
-            projectService.saveOrUpdate(newObj);
+            contractService.saveOrUpdate(newObj);
             //RequestContext.getCurrentInstance().execute("PF('addDlg').hide();");
             MessageUtil.setInfoMessage("Thao tác thành công");
         } catch (Exception e) {
@@ -77,10 +77,10 @@ public class ProjectController {
         }
     }
 
-    public void delete(ProjectEntity delObj) {
+    public void delete(ContractEntity delObj) {
         if (delObj != null) {
             try {
-                projectService.delete(delObj);
+                contractService.delete(delObj);
                 MessageUtil.setInfoMessage("Xóa thành công");
             } catch (Exception e) {
                 logger.error(e.getMessage(), e);
@@ -91,7 +91,7 @@ public class ProjectController {
 
     public void onDelete() {
         try {
-            projectService.delete(selectedObj);
+            contractService.delete(selectedObj);
             MessageUtil.setInfoMessage("Thao tác thành công");
         } catch (Exception ex) {
             logger.error(ex.toString());
@@ -117,11 +117,11 @@ public class ProjectController {
     }
 
 
-    public LazyDataModel<ProjectEntity> getLazyModel() {
+    public LazyDataModel<ContractEntity> getLazyModel() {
         return lazyModel;
     }
 
-    public void setLazyModel(LazyDataModel<ProjectEntity> lazyModel) {
+    public void setLazyModel(LazyDataModel<ContractEntity> lazyModel) {
         this.lazyModel = lazyModel;
     }
 
@@ -137,11 +137,11 @@ public class ProjectController {
         togglerColumn.set((Integer) e.getData(), e.getVisibility() == Visibility.VISIBLE);
     }
 
-    public ProjectEntity getNewObj() {
+    public ContractEntity getNewObj() {
         return newObj;
     }
 
-    public void setNewObj(ProjectEntity newObj) {
+    public void setNewObj(ContractEntity newObj) {
         this.newObj = newObj;
     }
 
@@ -153,19 +153,19 @@ public class ProjectController {
         this.isEdit = isEdit;
     }
 
-    public ProjectServiceImpl getProjectService() {
-        return projectService;
+    public ContractServiceImpl getContractService() {
+        return contractService;
     }
 
-    public void setProjectService(ProjectServiceImpl projectService) {
-        this.projectService = projectService;
+    public void setContractService(ContractServiceImpl contractService) {
+        this.contractService = contractService;
     }
 
-    public List<ProjectEntity> getSelectedObj() {
+    public List<ContractEntity> getSelectedObj() {
         return selectedObj;
     }
 
-    public void setSelectedObj(List<ProjectEntity> selectedObj) {
+    public void setSelectedObj(List<ContractEntity> selectedObj) {
         this.selectedObj = selectedObj;
     }
 }

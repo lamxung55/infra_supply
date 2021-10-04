@@ -10,8 +10,6 @@ import javax.persistence.*;
 @Entity
 @Table(name = "contract", schema = "infra_supply")
 public class ContractEntity {
-    @GenericGenerator(name = "generator", strategy = "increment")
-    @GeneratedValue(generator = "generator")
     private Integer id;
     private String code;
     private String name;
@@ -24,6 +22,8 @@ public class ContractEntity {
 
     @Id
     @Column(name = "ID")
+    @GenericGenerator(name = "generator", strategy = "increment")
+    @GeneratedValue(generator = "generator")
     public Integer getId() {
         return id;
     }
