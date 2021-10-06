@@ -94,6 +94,11 @@
                           visible="#{contractController.togglerColumn[5]}">
                     <h:outputText value="#{obj.owner}"/>
                 </p:column>
+                <p:column headerText="Ghi chú" filterStyle="width:70%"
+                          filterBy="#{obj.note}" sortBy="#{obj.note}" groupRow="true"
+                          visible="#{contractController.togglerColumn[5]}">
+                    <h:outputText value="#{obj.note}"/>
+                </p:column>
 
                 <p:column width="100px" exportable="false"
                           headerText="Thao tác" style="text-align:center;">

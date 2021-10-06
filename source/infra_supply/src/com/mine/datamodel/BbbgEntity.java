@@ -12,8 +12,7 @@ import java.util.Date;
 @Entity
 @Table(name = "bbbg", schema = "infra_supply")
 public class BbbgEntity {
-    @GenericGenerator(name = "generator", strategy = "increment")
-    @GeneratedValue(generator = "generator")
+
     private Integer id;
     private String code;
     private String name;
@@ -24,6 +23,8 @@ public class BbbgEntity {
 
     @Id
     @Column(name = "ID")
+    @GenericGenerator(name = "generator", strategy = "increment")
+    @GeneratedValue(generator = "generator")
     public Integer getId() {
         return id;
     }
