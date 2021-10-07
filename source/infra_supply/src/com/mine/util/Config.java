@@ -18,7 +18,7 @@ public class Config {
         
         public static final String ICON_IMAGE_FOLDER = "images/icon";
         public static final String GAME_IMAGE_FOLDER = "images/game";
-        public static final String GAME_FILE_FOLDER = "execute";
+        public static final String GAME_FILE_FOLDER = "file_upload";
 	
 	public static int ROW_LANG_NAME = 3;
 	public static int COL_LANG_NAME = 2;

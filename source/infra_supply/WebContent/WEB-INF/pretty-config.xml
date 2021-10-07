@@ -21,14 +21,35 @@
         <view-id value="/access-denied.xhtml" />
     </url-mapping>
 
-    <url-mapping id="game" >
-        <pattern value="/game" />
-        <view-id value="/faces/game/index.xhtml" />
+    <url-mapping id="project" >
+        <pattern value="/project" />
+        <view-id value="/faces/project/index.xhtml" />
     </url-mapping>
-    <url-mapping id="report" >
-        <pattern value="/report" />
-        <view-id value="/faces/report/index.xhtml" />
+    <url-mapping id="contract" >
+        <pattern value="/contract" />
+        <view-id value="/faces/contract/index.xhtml" />
     </url-mapping>
+    <url-mapping id="bbbg" >
+        <pattern value="/bbbg" />
+        <view-id value="/faces/bbbg/index.xhtml" />
+    </url-mapping>
+    <url-mapping id="ha" >
+        <pattern value="/ha" />
+        <view-id value="/faces/ha/index.xhtml" />
+    </url-mapping>
+    <url-mapping id="pool" >
+        <pattern value="/pool" />
+        <view-id value="/faces/pool/index.xhtml" />
+    </url-mapping>
+    <url-mapping id="unit" >
+        <pattern value="/unit" />
+        <view-id value="/faces/unit/index.xhtml" />
+    </url-mapping>
+    <url-mapping id="device" >
+        <pattern value="/device" />
+        <view-id value="/faces/device/index.xhtml" />
+    </url-mapping>
+
 
     <url-mapping id="oam">
         <pattern value="/user-management" />

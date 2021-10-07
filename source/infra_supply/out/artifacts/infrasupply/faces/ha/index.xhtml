@@ -9,9 +9,9 @@
     <ui:define name="content">
         <h:form id="depentPropCatForm">
             <p:growl id="mainMessage" showDetail="true" showSummary="false"/>
-            <p:dataTable value="#{contractController.lazyModel}" id="myTable" widgetVar="myTable"
+            <p:dataTable value="#{haController.lazyModel}" id="myTable" widgetVar="myTable"
                          lazy="true" var="obj" rowKey="#{obj.id}"
-                         selection="#{contractController.selectedObj}"
+                         selection="#{haController.selectedObj}"
                          rowIndexVar="cusIdx" editable="true" editMode="cell"
                          rows="20" paginator="true" paginatorPosition="bottom"
                          paginatorTemplate="{CurrentPageReport} {FirstPageLink} {PreviousPageLink} {PageLinks} {NextPageLink} {LastPageLink} {RowsPerPageDropdown}"
@@ -29,12 +29,12 @@
 
                         </div>
                         <div class="Container40 Responsive40">
-                            <h:outputText styleClass="Fs18" value="Danh sách hợp đồng"/>
+                            <h:outputText styleClass="Fs18" value="Danh sách HA"/>
                         </div>
                         <div class="Container40" style="text-align: right;">
                             <p:commandButton icon="fa fa-plus-circle"
                                              update="addDlg"
-                                             actionListener="#{contractController.preInsert}"
+                                             actionListener="#{haController.preInsert}"
                                              onclick="PF('blockDlgCommon').show()"
                                              oncomplete="PF('blockDlgCommon').hide();PF('addDlg').show()"
                                              title="Thêm mới" value="Thêm mới"
@@ -45,7 +45,7 @@
                             </p:commandButton>
                             <p:commandButton icon="fa fa-trash"
                                              onclick="PF('blockDlgCommon').show()"
-                                             actionListener="#{contractController.onDelete}"
+                                             actionListener="#{haController.onDelete}"
                                              oncomplete="PF('blockDlgCommon').hide()"
                                              update="myTable"
                                              value="Xóa"/>
@@ -53,7 +53,7 @@
                             <p:commandButton id="toggler" type="button"
                                              icon="fa fa-sliders" value="Hiển thị"/>
                             <p:columnToggler datasource="myTable" trigger="toggler">
-                                <p:ajax event="toggle" listener="#{contractController.onToggler}"/>
+                                <p:ajax event="toggle" listener="#{haController.onToggler}"/>
 
                             </p:columnToggler>
                         </div>
@@ -61,42 +61,33 @@
 
                 </f:facet>
                 <p:column headerText="STT" width="20" style="text-align: center"
-                          visible="#{contractController.togglerColumn[0]}">
+                          visible="#{haController.togglerColumn[0]}">
                     <h:outputText value="#{cusIdx +1 }"/>
                 </p:column>
-                <p:column headerText="Mã dự án" filterStyle="width:70%"
+                <p:column headerText="Mã HA" filterStyle="width:70%"
                           filterBy="#{obj.code}" sortBy="#{obj.code}" groupRow="true"
-                          visible="#{contractController.togglerColumn[2]}">
+                          visible="#{haController.togglerColumn[2]}">
                     <h:outputText value="#{obj.code}"/>
                 </p:column>
-                <p:column headerText="Tên dự án" filterStyle="width:70%"
+                <p:column headerText="Tên HA" filterStyle="width:70%"
                           filterBy="#{obj.name}" sortBy="#{obj.name}" groupRow="true"
-                          visible="#{contractController.togglerColumn[1]}">
+                          visible="#{haController.togglerColumn[1]}">
                     <h:outputText value="#{obj.name}"/>
                 </p:column>
-                <p:column headerText="Tiến độ" filterStyle="width:70%"
-                          filterBy="#{obj.progressPercent}" sortBy="#{obj.progressPercent}" groupRow="true"
-                          visible="#{contractController.togglerColumn[3]}">
-                    <h:outputText value="#{obj.progressPercent}"/>
+                <p:column headerText="Loại hạ tầng" filterStyle="width:70%"
+                          filterBy="#{obj.infraType}" sortBy="#{obj.infraType}" groupRow="true"
+                          visible="#{haController.togglerColumn[3]}">
+                    <h:outputText value="#{obj.infraType}"/>
                 </p:column>
-                <p:column headerText="Tình trạng" filterStyle="width:70%"
-                          filterBy="#{obj.progressDesc}" sortBy="#{obj.progressDesc}" groupRow="true"
-                          visible="#{contractController.togglerColumn[5]}">
-                    <h:outputText value="#{obj.progressDesc}"/>
+                <p:column headerText="Loại cấp phát" filterStyle="width:70%"
+                          filterBy="#{obj.supplyType}" sortBy="#{obj.supplyType}" groupRow="true"
+                          visible="#{haController.togglerColumn[5]}">
+                    <h:outputText value="#{obj.supplyType}"/>
                 </p:column>
-                <p:column headerText="Đối tác" filterStyle="width:70%"
-                          filterBy="#{obj.partner}" sortBy="#{obj.partner}" groupRow="true"
-                          visible="#{contractController.togglerColumn[4]}">
-                    <h:outputText value="#{obj.partner}"/>
-                </p:column>
-                <p:column headerText="Người phụ trách" filterStyle="width:70%"
-                          filterBy="#{obj.owner}" sortBy="#{obj.owner}" groupRow="true"
-                          visible="#{contractController.togglerColumn[5]}">
-                    <h:outputText value="#{obj.owner}"/>
-                </p:column>
+
                 <p:column headerText="Ghi chú" filterStyle="width:70%"
                           filterBy="#{obj.note}" sortBy="#{obj.note}" groupRow="true"
-                          visible="#{contractController.togglerColumn[5]}">
+                          visible="#{haController.togglerColumn[5]}">
                     <h:outputText value="#{obj.note}"/>
                 </p:column>
 
@@ -107,13 +98,13 @@
                     <p:commandButton
                             title="Sửa" styleClass="Fs14 White GreenButton"
                             icon="fa fa-edit" update="addDlg"
-                            actionListener="#{contractController.preUpdate(obj)}"
+                            actionListener="#{haController.preUpdate(obj)}"
                             oncomplete="PF('addDlg').show();"
                             style="color:green; font-weight: bold;font-size: 13px ">
                     </p:commandButton>
 
                     <p:spacer width="2px;"/>
-                    <p:commandButton icon="fa fa-trash" actionListener="#{contractController.delete(obj)}"
+                    <p:commandButton icon="fa fa-trash" actionListener="#{haController.delete(obj)}"
                                      update="myTable, depentPropCatForm:mainMessage"
                                      title="Xóa" styleClass="White RedButton Fs14 MarTop5">
                         <p:confirm header="Xác nhận xóa" message="Bạn chắc chắn xóa?" icon="ui-icon-alert"/>
@@ -127,59 +118,45 @@
         <p:dialog widgetVar="addDlg" width="60%" id="addDlg"
                   height="50%" modal="true" showEffect="size" closeOnEscape="true">
             <f:facet name="header">
-                <h:outputText value="Sửa" rendered="#{contractController.isEdit}"/>
-                <h:outputText value="Thêm" rendered="#{!contractController.isEdit}"/>
+                <h:outputText value="Sửa" rendered="#{haController.isEdit}"/>
+                <h:outputText value="Thêm" rendered="#{!haController.isEdit}"/>
             </f:facet>
             <h:form id="depentPropCatDlgForm">
                 <p:growl id="growldepentPropCatDlg" showDetail="true" showSummary="false"/>
                 <h:panelGrid columns="4" width="100%" cellpadding="5" id="panelGridId">
 
                     <div class="ui-g-2">
-                        <h:outputText class="cd-text-required" value="Mã dự án:"
+                        <h:outputText class="cd-text-required" value="Mã HA:"
                                       style="margin-left: 15px;"/>
                     </div>
                     <div class="ui-g-3">
                         <p:inputText maxlength="100"
-                                     value="#{contractController.newObj.code}"/>
+                                     value="#{haController.newObj.code}"/>
                     </div>
                     <div class="ui-g-2">
-                        <h:outputText class="cd-text-required" value="Tên dự án:" style="margin-left: 15px;"/>
+                        <h:outputText class="cd-text-required" value="Tên HA:" style="margin-left: 15px;"/>
                     </div>
                     <div class="ui-g-3">
                         <p:inputText maxlength="100"
-                                     value="#{contractController.newObj.name}"/>
+                                     value="#{haController.newObj.name}"/>
                     </div>
                     <div class="ui-g-2">
-                        <h:outputText class="cd-text-required" value="Tiến độ:" style="margin-left: 15px;"/>
+                        <h:outputText class="cd-text-required" value="Loại hạ tầng:" style="margin-left: 15px;"/>
                     </div>
                     <div class="ui-g-3">
-                        <p:inputText maxlength="100"
-                                     value="#{contractController.newObj.progressPercent}"/>
+                        <p:selectOneMenu value="#{haController.newObj.infraType}">
+                            <f:selectItem itemLabel="Cloud" itemValue="Cloud" />
+                            <f:selectItem itemLabel="Datalake" itemValue="Datalake" />
+                        </p:selectOneMenu>
                     </div>
                     <div class="ui-g">
                         <div class="ui-g-2">
-                            <h:outputText value="Tình trạng" style="margin-left: 15px;"/>
+                            <h:outputText value="Loại cấp phát:" style="margin-left: 15px;"/>
                         </div>
-                        <p:selectOneMenu value="#{contractController.newObj.progressDesc}">
-                            <f:selectItem itemLabel="Mới" itemValue="Mới" />
-                            <f:selectItem itemLabel="Đang thực hiện" itemValue="Đang thực hiện" />
-                            <f:selectItem itemLabel="Hoàn thành" itemValue="Hoàn thành" />
+                        <p:selectOneMenu value="#{haController.newObj.supplyType}">
+                            <f:selectItem itemLabel="Ảo hóa" itemValue="Ảo hóa" />
+                            <f:selectItem itemLabel="Vật lý" itemValue="Vật lý" />
                         </p:selectOneMenu>
-                    </div>
-                    <div class="ui-g-2">
-                        <h:outputText class="cd-text-required" value="Đối tác:" style="margin-left: 15px;"/>
-                    </div>
-                    <div class="ui-g-3">
-                        <p:inputText maxlength="100"
-                                     value="#{contractController.newObj.partner}"/>
-                    </div>
-                    <div class="ui-g-2">
-                        <h:outputText class="cd-text-required" value="Người phụ trách:"
-                                      style="margin-left: 15px;"/>
-                    </div>
-                    <div class="ui-g-3">
-                        <p:inputText maxlength="100"
-                                     value="#{contractController.newObj.owner}"/>
                     </div>
                     <div class="ui-g-2">
                         <h:outputText class="cd-text-required" value="Ghi chú:"
@@ -187,7 +164,7 @@
                     </div>
                     <div class="ui-g-3">
                         <p:inputTextarea maxlength="100"
-                                     value="#{contractController.newObj.note}"/>
+                                     value="#{haController.newObj.note}"/>
                     </div>
 
 
@@ -195,7 +172,7 @@
                 <div class="row"
                      style="margin-bottom: 10px; text-align: center;margin-left: auto;margin-right: auto;display: block">
                     <p:commandButton style="color: white;" icon="fa fa-save"
-                                     actionListener="#{contractController.onSaveOrUpdate()}"
+                                     actionListener="#{haController.onSaveOrUpdate()}"
                                      oncomplete="PF('addDlg').hide();"
                                      update=":depentPropCatForm, :depentPropCatDlgForm:growldepentPropCatDlg"
                                      value="Lưu"/>

@@ -10,10 +10,14 @@ import com.mine.datamodel.BbbgEntity;
 import com.mine.datamodel.BbbgEntity;
 import com.mine.lazy.LazyDataModelBaseNew;
 import com.mine.persistence.BBBGServiceImpl;
+import com.mine.util.AccentRemover;
+import com.mine.util.Config;
 import com.mine.util.MessageUtil;
+import com.mine.util.Util;
 import org.primefaces.event.FileUploadEvent;
 import org.primefaces.event.ToggleEvent;
 import org.primefaces.model.LazyDataModel;
+import org.primefaces.model.UploadedFile;
 import org.primefaces.model.Visibility;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -22,6 +26,11 @@ import javax.annotation.PostConstruct;
 import javax.faces.bean.ManagedBean;
 import javax.faces.bean.ManagedProperty;
 import javax.faces.bean.ViewScoped;
+import javax.faces.context.FacesContext;
+import javax.servlet.http.HttpServletResponse;
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.IOException;
 import java.util.*;
 
 /**
@@ -38,6 +47,8 @@ public class BBBGController {
     private BbbgEntity newObj;
     private Boolean isEdit = false;
     private List<BbbgEntity> selectedObj;
+
+    private UploadedFile uploadedFile;
 
     @PostConstruct
     public void onStart() {
@@ -100,8 +111,52 @@ public class BBBGController {
         }
     }
 
-    public void handleGameUpload(FileUploadEvent event) {
-        newObj.setAttachFile(event.getFile());
+    public void handleFileUpload(FileUploadEvent event) {
+        logger.info("Uploading...");
+        uploadedFile = event.getFile();
+        if (uploadedFile != null) {
+            String savedFilename = (new Date()).getTime() + "_" + AccentRemover.removeAccent(uploadedFile.getFileName()).replaceAll("  ", " ").replace(" ", "_");
+            String savedFilePath = Util.storeFile(Config.GAME_FILE_FOLDER, uploadedFile, savedFilename);
+            if (savedFilePath == null) {
+                MessageUtil
+                        .setErrorMessageFromRes("Không lưu được file chạy của game");
+                return;
+            }
+            newObj.setAttachFile(savedFilePath);
+        }
+        logger.info("Uploaded");
+    }
+
+    public void downloadFile(String filePath) throws IOException {
+        logger.info("downloading the log file");
+        File file = new File(filePath);
+        //FileUtils.writeStringToFile(file, selectedLog.getMessageContent(), Charset.defaultCharset());
+        FacesContext facesContext = FacesContext.getCurrentInstance();
+        HttpServletResponse response = (HttpServletResponse) facesContext.getExternalContext().getResponse();
+        response.setHeader("Content-Disposition", "attachment;filename=" + file.getName());
+        response.setContentLength((int) file.length());
+        FileInputStream input = null;
+        try {
+            int i = 0;
+            input = new FileInputStream(file);
+            byte[] buffer = new byte[1024];
+            while ((i = input.read(buffer)) != -1) {
+                response.getOutputStream().write(buffer);
+                response.getOutputStream().flush();
+            }
+            facesContext.responseComplete();
+            facesContext.renderResponse();
+        } catch (IOException e) {
+            logger.error(e.getMessage());
+        } finally {
+            try {
+                if (input != null) {
+                    input.close();
+                }
+            } catch (IOException e) {
+                logger.error(e.getMessage());
+            }
+        }
     }
 
     public boolean validate() {
@@ -171,5 +226,13 @@ public class BBBGController {
 
     public void setSelectedObj(List<BbbgEntity> selectedObj) {
         this.selectedObj = selectedObj;
+    }
+
+    public UploadedFile getUploadedFile() {
+        return uploadedFile;
+    }
+
+    public void setUploadedFile(UploadedFile uploadedFile) {
+        this.uploadedFile = uploadedFile;
     }
 }

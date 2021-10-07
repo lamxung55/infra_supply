@@ -10,8 +10,6 @@ import javax.persistence.*;
 @Entity
 @Table(name = "pool", schema = "infra_supply")
 public class PoolEntity {
-    @GenericGenerator(name = "generator", strategy = "increment")
-    @GeneratedValue(generator = "generator")
     private Integer id;
     private String code;
     private String name;
@@ -19,6 +17,8 @@ public class PoolEntity {
 
     @Id
     @Column(name = "ID")
+    @GenericGenerator(name = "generator", strategy = "increment")
+    @GeneratedValue(generator = "generator")
     public Integer getId() {
         return id;
     }

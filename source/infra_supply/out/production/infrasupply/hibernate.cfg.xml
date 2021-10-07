@@ -35,6 +35,7 @@
         <mapping class="com.mine.datamodel.PoolEntity"/>
         <mapping class="com.mine.datamodel.ProjectEntity"/>
         <mapping class="com.mine.datamodel.UnitEntity"/>
+        <mapping class="com.mine.datamodel.DeviceEntity"/>
 
     </session-factory>
 

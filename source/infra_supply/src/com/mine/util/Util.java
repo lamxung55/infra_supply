@@ -123,7 +123,7 @@ public class Util {
 //        }
 //        return false;
 //    }
-    public static boolean storeFile(String handleFoder, UploadedFile fileUpload, String fileName) {
+    public static String storeFile(String handleFoder, UploadedFile fileUpload, String fileName) {
         File file = new File(getUploadFolder(handleFoder) + File.separator
                 + fileName);
         FileOutputStream out = null;
@@ -135,12 +135,17 @@ public class Util {
         } finally {
             try {
                 out.close();
-                return true;
+                return file.getPath();
             } catch (IOException e) {
                 e.printStackTrace();
             }
         }
-        return false;
+        return null;
+    }
+
+    public static String getFullFilePath(String relatePath) {
+        return getUploadFolder(Config.GAME_FILE_FOLDER) + File.separator
+                + relatePath;
     }
     
     public static JSONObject createJSON(Object obj) {

@@ -77,7 +77,7 @@
         <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
       </PATH_ELEMENT>
       <PATH_ELEMENT>
-        <option name="myItemId" value="project" />
+        <option name="myItemId" value="device" />
         <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
       </PATH_ELEMENT>
     </PATH>
@@ -88,166 +88,127 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="BbbgEntity.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/mine/datamodel/BbbgEntity.java">
+      <file leaf-file-name="index.xhtml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/WebContent/faces/device/index.xhtml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="24">
+              <caret line="111" column="53" lean-forward="false" selection-start-line="111" selection-start-column="53" selection-end-line="111" selection-end-column="53" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="olympos-layout.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/WebContent/resources/olympos-layout/css/olympos-layout.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="406">
+              <caret line="219" column="23" lean-forward="false" selection-start-line="219" selection-start-column="23" selection-end-line="219" selection-end-column="23" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="topbar.xhtml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/WebContent/layout/olympos/topbar.xhtml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="255">
+              <caret line="15" column="91" lean-forward="true" selection-start-line="15" selection-start-column="91" selection-end-line="15" selection-end-column="91" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="logo.png" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/WebContent/resources/olympos-layout/images/logo.png">
+          <provider selected="true" editor-type-id="images">
+            <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="hibernate.cfg.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/hibernate.cfg.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="187">
+              <caret line="11" column="55" lean-forward="false" selection-start-line="11" selection-start-column="55" selection-end-line="11" selection-end-column="55" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="hibernate.reveng.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/hibernate.reveng.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DeviceEntity.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/mine/datamodel/DeviceEntity.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="292">
-              <caret line="82" column="16" lean-forward="false" selection-start-line="82" selection-start-column="16" selection-end-line="82" selection-end-column="16" />
+              <caret line="22" column="30" lean-forward="true" selection-start-line="22" selection-start-column="30" selection-end-line="22" selection-end-column="30" />
               <folding>
-                <element signature="e#1706#1707#0" expanded="true" />
-                <element signature="e#1750#1751#0" expanded="true" />
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.xhtml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/WebContent/faces/contract/index.xhtml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="328">
-              <caret line="98" column="55" lean-forward="false" selection-start-line="98" selection-start-column="55" selection-end-line="98" selection-end-column="55" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.xhtml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/WebContent/faces/bbbg/index.xhtml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2737">
-              <caret line="161" column="26" lean-forward="false" selection-start-line="161" selection-start-column="26" selection-end-line="161" selection-end-column="26" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.xhtml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/WebContent/faces/project/index.xhtml">
+      <file leaf-file-name="HaEntity.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/mine/datamodel/HaEntity.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="425">
-              <caret line="153" column="95" lean-forward="true" selection-start-line="153" selection-start-column="24" selection-end-line="153" selection-end-column="95" />
-              <folding />
+              <caret line="29" column="5" lean-forward="true" selection-start-line="19" selection-start-column="4" selection-end-line="29" selection-end-column="5" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ContractController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/mine/controller/ContractController.java">
+      <file leaf-file-name="DeviceController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/mine/controller/DeviceController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="598">
-              <caret line="163" column="32" lean-forward="false" selection-start-line="163" selection-start-column="32" selection-end-line="163" selection-end-column="32" />
+            <state relative-caret-position="190">
+              <caret line="153" column="45" lean-forward="false" selection-start-line="153" selection-start-column="32" selection-end-line="153" selection-end-column="45" />
               <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#4101#4102#0" expanded="true" />
-                <element signature="e#4133#4134#0" expanded="true" />
+                <element signature="e#3978#3979#0" expanded="true" />
+                <element signature="e#4010#4011#0" expanded="true" />
+                <element signature="e#4081#4082#0" expanded="true" />
+                <element signature="e#4123#4124#0" expanded="true" />
+                <element signature="e#4170#4171#0" expanded="true" />
                 <element signature="e#4206#4207#0" expanded="true" />
-                <element signature="e#4248#4249#0" expanded="true" />
-                <element signature="e#4295#4296#0" expanded="true" />
-                <element signature="e#4331#4332#0" expanded="true" />
-                <element signature="e#4396#4397#0" expanded="true" />
-                <element signature="e#4446#4447#0" expanded="true" />
-                <element signature="e#4628#4629#0" expanded="true" />
-                <element signature="e#4657#4658#0" expanded="true" />
-                <element signature="e#4709#4710#0" expanded="true" />
-                <element signature="e#4745#4746#0" expanded="true" />
-                <element signature="e#4779#4780#0" expanded="true" />
-                <element signature="e#4808#4809#0" expanded="true" />
-                <element signature="e#4853#4854#0" expanded="true" />
-                <element signature="e#4889#4890#0" expanded="true" />
-                <element signature="e#4944#4945#0" expanded="true" />
-                <element signature="e#4982#4983#0" expanded="true" />
-                <element signature="e#5057#5058#0" expanded="true" />
-                <element signature="e#5111#5112#0" expanded="true" />
-                <element signature="e#5163#5164#0" expanded="true" />
-                <element signature="e#5197#5198#0" expanded="true" />
-                <element signature="e#5265#5266#0" expanded="true" />
-                <element signature="e#5311#5312#0" expanded="true" />
+                <element signature="e#4271#4272#0" expanded="true" />
+                <element signature="e#4321#4322#0" expanded="true" />
+                <element signature="e#4501#4502#0" expanded="true" />
+                <element signature="e#4530#4531#0" expanded="true" />
+                <element signature="e#4580#4581#0" expanded="true" />
+                <element signature="e#4616#4617#0" expanded="true" />
+                <element signature="e#4650#4651#0" expanded="true" />
+                <element signature="e#4679#4680#0" expanded="true" />
+                <element signature="e#4724#4725#0" expanded="true" />
+                <element signature="e#4760#4761#0" expanded="true" />
+                <element signature="e#4811#4812#0" expanded="true" />
+                <element signature="e#4847#4848#0" expanded="true" />
+                <element signature="e#4916#4917#0" expanded="true" />
+                <element signature="e#4966#4967#0" expanded="true" />
+                <element signature="e#5016#5017#0" expanded="true" />
+                <element signature="e#5050#5051#0" expanded="true" />
+                <element signature="e#5116#5117#0" expanded="true" />
+                <element signature="e#5162#5163#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.xhtml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/WebContent/faces/game/index.xhtml">
+      <file leaf-file-name="DeviceServiceImpl.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/mine/persistence/DeviceServiceImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="330">
-              <caret line="219" column="87" lean-forward="false" selection-start-line="219" selection-start-column="87" selection-end-line="219" selection-end-column="87" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="GameController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/mine/controller/GameController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="355">
-              <caret line="171" column="53" lean-forward="true" selection-start-line="169" selection-start-column="12" selection-end-line="171" selection-end-column="53" />
-              <folding>
-                <element signature="e#2596#2597#0" expanded="true" />
-                <element signature="e#2651#2652#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Game.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/mine/model/Game.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1400">
-              <caret line="266" column="5" lean-forward="true" selection-start-line="266" selection-start-column="5" selection-end-line="266" selection-end-column="5" />
-              <folding>
-                <element signature="e#6046#6047#0" expanded="true" />
-                <element signature="e#6077#6078#0" expanded="true" />
-                <element signature="e#6131#6132#0" expanded="true" />
-                <element signature="e#6171#6172#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="BBBGController.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/com/mine/controller/BBBGController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="309">
-              <caret line="112" column="43" lean-forward="false" selection-start-line="112" selection-start-column="43" selection-end-line="112" selection-end-column="43" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#3382#3383#0" expanded="true" />
-                <element signature="e#3435#3436#0" expanded="true" />
-                <element signature="e#4137#4138#0" expanded="true" />
-                <element signature="e#4169#4170#0" expanded="true" />
-                <element signature="e#4238#4239#0" expanded="true" />
-                <element signature="e#4280#4281#0" expanded="true" />
-                <element signature="e#4327#4328#0" expanded="true" />
-                <element signature="e#4363#4364#0" expanded="true" />
-                <element signature="e#4428#4429#0" expanded="true" />
-                <element signature="e#4478#4479#0" expanded="true" />
-                <element signature="e#4656#4657#0" expanded="true" />
-                <element signature="e#4685#4686#0" expanded="true" />
-                <element signature="e#4733#4734#0" expanded="true" />
-                <element signature="e#4769#4770#0" expanded="true" />
-                <element signature="e#4803#4804#0" expanded="true" />
-                <element signature="e#4832#4833#0" expanded="true" />
-                <element signature="e#4877#4878#0" expanded="true" />
-                <element signature="e#4913#4914#0" expanded="true" />
-                <element signature="e#4960#4961#0" expanded="true" />
-                <element signature="e#4994#4995#0" expanded="true" />
-                <element signature="e#5057#5058#0" expanded="true" />
-                <element signature="e#5103#5104#0" expanded="true" />
-                <element signature="e#5151#5152#0" expanded="true" />
-                <element signature="e#5185#5186#0" expanded="true" />
-                <element signature="e#5249#5250#0" expanded="true" />
-                <element signature="e#5295#5296#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ContractServiceImpl.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/mine/persistence/ContractServiceImpl.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="20" column="68" lean-forward="false" selection-start-line="20" selection-start-column="68" selection-end-line="20" selection-end-column="68" />
+            <state relative-caret-position="102">
+              <caret line="15" column="2" lean-forward="true" selection-start-line="15" selection-start-column="2" selection-end-line="15" selection-end-column="2" />
               <folding />
             </state>
           </provider>
@@ -265,56 +226,38 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>depentPropCatForm</find>
-      <find>converter=&quot;trimConverter&quot;</find>
-      <find>growldepentPropCatDlg</find>
-      <find>hideshiw</find>
-      <find>blockDlgCommon</find>
+      <find>Quản l</find>
+      <find>Quản lý g</find>
+      <find>Quản lý ga</find>
+      <find>Quản lý gam</find>
+      <find>Quản lý game</find>
+      <find>Quản lý</find>
+      <find>Quản lý</find>
       <find>G</find>
-      <find>GOM</find>
-      <find>s</find>
-      <find>selec</find>
-      <find>select</find>
-      <find>xxx</find>
-      <find>save</find>
-      <find>status</find>
-      <find>hide</find>
-      <find>addDepentDlg</find>
-      <find>type</find>
-      <find>selected</find>
-      <find>onDelete</find>
-      <find>ProjectController</find>
-      <find>projectService</find>
-      <find>ProjectServiceImpl</find>
-      <find>ProjectEntity</find>
-      <find>projectController</find>
-      <find>selectedObj</find>
-      <find>đối</find>
-      <find>contractService</find>
-      <find>ContractEntity</find>
-      <find>contractController</find>
-      <find>bbbgController</find>
-      <find>upload</find>
+      <find>Gam</find>
+      <find>HaEntity</find>
+      <find>HaServiceImpl</find>
+      <find>haService</find>
+      <find>poolController</find>
+      <find>PoolServiceImpl</find>
+      <find>PoolEntity</find>
+      <find>poolService</find>
+      <find>unitController</find>
+      <find>cấu</find>
+      <find>deviceService</find>
+      <find>style=&quot;margin-left: 15px;&quot;</find>
+      <find>note</find>
+      <find>groupRow=&quot;true&quot;</find>
+      <find>Game</find>
+      <find>#layout-topbar-left</find>
+      <find>l</find>
+      <find>logo</find>
+      <find>logo.</find>
+      <find>logo.p</find>
+      <find>logo.pn</find>
+      <find>logo.png</find>
     </findStrings>
     <replaceStrings>
-      <replace>shippingController</replace>
-      <replace>widTable</replace>
-      <replace>package</replace>
-      <replace>myPack</replace>
-      <replace>100%;padding:</replace>
-      <replace>)</replace>
-      <replace>@author</replace>
-      <replace>@author Anonymous</replace>
-      <replace>oamUserController.oamUserFormBean</replace>
-      <replace>roleController.oamRoleFormBean</replace>
-      <replace>'roleDialog'</replace>
-      <replace>oamRoleController</replace>
-      <replace>mine</replace>
-      <replace>oamUserController</replace>
-      <replace>PF('addDialog').show()</replace>
-      <replace>ProjectEntity</replace>
-      <replace>Long</replace>
-      <replace>myTable</replace>
       <replace>addDlg</replace>
       <replace>Integer</replace>
       <replace>projectController</replace>
@@ -326,7 +269,25 @@
       <replace>bbbgService</replace>
       <replace>BbbgEntity</replace>
       <replace>bbbgController</replace>
+      <replace>haService</replace>
+      <replace>HaServiceImpl</replace>
+      <replace>HatEntity</replace>
+      <replace>HaEntity</replace>
       <replace>bBBGController</replace>
+      <replace>haController</replace>
+      <replace>PoolEntity</replace>
+      <replace>PoolServiceImpl</replace>
+      <replace>PoolController</replace>
+      <replace>poolController</replace>
+      <replace>poolService</replace>
+      <replace>UnitEntity</replace>
+      <replace>UnitServiceImpl</replace>
+      <replace>unitService</replace>
+      <replace>unitController</replace>
+      <replace>DeviceServiceImpl</replace>
+      <replace>DeviceEntity</replace>
+      <replace>deviceService</replace>
+      <replace>deviceController</replace>
     </replaceStrings>
     <dirStrings>
       <dir>D:\PROJECTS\QLTN\03.SOURCECODE\MAIN\SOURCE_WEB\IIM\WebContent\faces</dir>
@@ -350,6 +311,8 @@
       <dir>C:\running_projects\infra_supply\source\refer\GameOnlineMarketBack\WebContent</dir>
       <dir>C:\running_projects\infra_supply\source\infra_supply</dir>
       <dir>C:\running_projects\infra_supply\source\infra_supply\WebContent\faces</dir>
+      <dir>C:\running_projects\infra_supply\source\infra_supply\src</dir>
+      <dir>C:\running_projects\infra_supply\source\infra_supply\WebContent</dir>
     </dirStrings>
   </component>
   <component name="GradleLocalSettings">
@@ -363,42 +326,18 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/com/mine/authen/SessionUtil.java" />
-        <option value="$PROJECT_DIR$/src/com/mine/lazy/LazyDataModelBaseNew.java" />
-        <option value="$PROJECT_DIR$/src/com/mine/filter/ActionLogFilter.java" />
-        <option value="$PROJECT_DIR$/src/com/mine/authen/OamRoleFormBean.java" />
-        <option value="$PROJECT_DIR$/src/com/mine/authen/OamUserFormBean.java" />
-        <option value="$PROJECT_DIR$/src/com/mine/authen/bean/CheckRoles.java" />
-        <option value="$PROJECT_DIR$/src/com/mine/authen/bean/ForwardController.java" />
-        <option value="$PROJECT_DIR$/src/com/mine/authen/bean/OamRoleController.java" />
-        <option value="$PROJECT_DIR$/src/com/mine/authen/bean/LogoutController.java" />
-        <option value="$PROJECT_DIR$/src/com/mine/authen/services/RoleUserMappingServiceImpl.java" />
-        <option value="$PROJECT_DIR$/src/com/mine/authen/services/UserManageServiceImpl.java" />
-        <option value="$PROJECT_DIR$/src/com/mine/authen/services/RoleUserMappingService.java" />
-        <option value="$PROJECT_DIR$/src/com/mine/authen/bean/OamUserController.java" />
-        <option value="$PROJECT_DIR$/src/com/mine/authen/util/RoleConverter.java" />
-        <option value="$PROJECT_DIR$/WebContent/WEB-INF/applicationContext.xml" />
-        <option value="$PROJECT_DIR$/src/com/mine/authen/controller/OamUserController.java" />
-        <option value="$PROJECT_DIR$/src/com/mine/authen/bean/OamRoleFormBean.java" />
-        <option value="$PROJECT_DIR$/src/com/mine/authen/bean/OamUserFormBean.java" />
         <option value="$PROJECT_DIR$/src/com/mine/authen/controller/OamRoleController.java" />
         <option value="$PROJECT_DIR$/src/com/mine/authen/bean/OamUserRole.java" />
         <option value="$PROJECT_DIR$/src/com/mine/authen/bean/OamRoleActionMapping.java" />
         <option value="$PROJECT_DIR$/src/com/mine/authen/bean/OamUser.java" />
         <option value="$PROJECT_DIR$/src/com/mine/authen/bean/OamUserRoleMapping.java" />
         <option value="$PROJECT_DIR$/WebContent/faces/oam/rolemanage/index.xhtml" />
-        <option value="$PROJECT_DIR$/WebContent/layout/olympos/othertabsubmenus.xhtml" />
         <option value="$PROJECT_DIR$/src/BlackListPass.properties" />
         <option value="$PROJECT_DIR$/WebContent/faces/oam/usermanage/index.xhtml" />
         <option value="$PROJECT_DIR$/src/com/mine/authen/util/SessionUtil.java" />
         <option value="$PROJECT_DIR$/src/com/mine/authen/util/SessionWrapper.java" />
         <option value="$PROJECT_DIR$/src/com/mine/persistence/ProjectServiceImpl.java" />
-        <option value="$PROJECT_DIR$/src/hibernate.cfg.xml" />
-        <option value="$PROJECT_DIR$/src/com/mine/datamodel/HaEntity.java" />
-        <option value="$PROJECT_DIR$/src/com/mine/datamodel/PoolEntity.java" />
-        <option value="$PROJECT_DIR$/src/com/mine/datamodel/UnitEntity.java" />
         <option value="$PROJECT_DIR$/WebContent/WEB-INF/lib/hibernate-jpa-2.1-api-1.0.0.Final.jar!/javax/persistence/Basic.class" />
-        <option value="$PROJECT_DIR$/WebContent/WEB-INF/web.xml" />
         <option value="$PROJECT_DIR$/WebContent/layout/olympos/topbar.xhtml" />
         <option value="$PROJECT_DIR$/WebContent/layout/olympos/footer.xhtml" />
         <option value="$PROJECT_DIR$/src/com/mine/resource/messages_en_US.properties" />
@@ -410,10 +349,34 @@
         <option value="$PROJECT_DIR$/src/com/mine/datamodel/ContractEntity.java" />
         <option value="$PROJECT_DIR$/src/com/mine/persistence/BBBGServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/com/mine/persistence/ContractServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/com/mine/util/Config.java" />
         <option value="$PROJECT_DIR$/src/com/mine/datamodel/BbbgEntity.java" />
+        <option value="$PROJECT_DIR$/WebContent/WEB-INF/web.xml" />
+        <option value="$PROJECT_DIR$/src/com/mine/util/Util.java" />
+        <option value="$PROJECT_DIR$/src/com/mine/controller/BBBGController.java" />
+        <option value="$PROJECT_DIR$/src/com/mine/controller/GameController.java" />
+        <option value="$PROJECT_DIR$/src/com/mine/persistence/HaServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/com/mine/controller/HaController.java" />
+        <option value="$PROJECT_DIR$/src/com/mine/datamodel/HaEntity.java" />
+        <option value="$PROJECT_DIR$/src/com/mine/persistence/PoolServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/com/mine/controller/PoolController.java" />
+        <option value="$PROJECT_DIR$/WebContent/faces/ha/index.xhtml" />
         <option value="$PROJECT_DIR$/WebContent/faces/contract/index.xhtml" />
         <option value="$PROJECT_DIR$/WebContent/faces/bbbg/index.xhtml" />
-        <option value="$PROJECT_DIR$/src/com/mine/controller/BBBGController.java" />
+        <option value="$PROJECT_DIR$/WebContent/faces/pool/index.xhtml" />
+        <option value="$PROJECT_DIR$/src/com/mine/datamodel/PoolEntity.java" />
+        <option value="$PROJECT_DIR$/WebContent/WEB-INF/pretty-config.xml" />
+        <option value="$PROJECT_DIR$/WebContent/layout/olympos/othertabsubmenus.xhtml" />
+        <option value="$PROJECT_DIR$/src/com/mine/persistence/UnitServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/com/mine/controller/UnitController.java" />
+        <option value="$PROJECT_DIR$/WebContent/faces/unit/index.xhtml" />
+        <option value="$PROJECT_DIR$/src/com/mine/datamodel/UnitEntity.java" />
+        <option value="$PROJECT_DIR$/src/com/mine/persistence/DeviceServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/com/mine/controller/DeviceController.java" />
+        <option value="$PROJECT_DIR$/src/hibernate.cfg.xml" />
+        <option value="$PROJECT_DIR$/src/com/mine/datamodel/DeviceEntity.java" />
+        <option value="$PROJECT_DIR$/WebContent/faces/device/index.xhtml" />
+        <option value="$PROJECT_DIR$/WebContent/resources/olympos-layout/css/olympos-layout.css" />
       </list>
     </option>
   </component>
@@ -497,6 +460,112 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="WEB-INF" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="infra_supply" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="infra_supply" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="WebContent" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="resources" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="infra_supply" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="infra_supply" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="WebContent" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="resources" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="olympos-layout" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="infra_supply" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="infra_supply" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="WebContent" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="resources" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="olympos-layout" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="images" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="infra_supply" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="infra_supply" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="WebContent" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="resources" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="myimages" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="infra_supply" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="infra_supply" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="WebContent" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="faces" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -519,105 +588,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="project" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="infra_supply" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="infra_supply" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="WebContent" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="faces" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="game" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="infra_supply" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="infra_supply" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="WebContent" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="faces" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="contract" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="infra_supply" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="infra_supply" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="WebContent" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="faces" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="bbbg" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="infra_supply" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="infra_supply" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="infra_supply" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="infra_supply" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mine" />
+              <option name="myItemId" value="device" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -1293,12 +1264,12 @@
       <workItem from="1514861982737" duration="2252000" />
       <workItem from="1514867238542" duration="12837000" />
       <workItem from="1633232789086" duration="20674000" />
-      <workItem from="1633324073713" duration="14451000" />
+      <workItem from="1633324073713" duration="28046000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="260061000" />
+    <option name="totallyTimeSpent" value="273656000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1311,7 +1282,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1296" height="1000" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -1327,9 +1297,9 @@
       <window_info id="JSF" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.40786517" sideWeight="0.49707174" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.35842696" sideWeight="0.49707174" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32991454" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.41348314" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.41348314" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.58426964" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -1339,9 +1309,9 @@
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.43033707" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" x="0" y="23" width="1366" height="685" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32991454" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Persistence" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2375" sideWeight="0.5263158" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2375" sideWeight="0.4731801" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2375" sideWeight="0.52681994" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Persistence" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2375" sideWeight="0.46067417" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2375" sideWeight="0.53932583" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2375" sideWeight="0.27586207" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3223684" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.22913505" sideWeight="0.516129" order="2" side_tool="true" content_ui="tabs" />
@@ -1422,35 +1392,11 @@
           <properties />
           <option name="timeStamp" value="81" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/com/mine/persistence/GenericDaoImplNewV2.java</url>
-          <line>871</line>
-          <properties />
-          <option name="timeStamp" value="85" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/com/mine/persistence/GenericDaoImplNewV2.java</url>
-          <line>849</line>
-          <properties />
-          <option name="timeStamp" value="86" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/com/mine/persistence/GenericDaoImplNewV2.java</url>
-          <line>852</line>
-          <properties />
-          <option name="timeStamp" value="87" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/com/mine/persistence/GenericDaoImplNewV2.java</url>
-          <line>832</line>
-          <properties />
-          <option name="timeStamp" value="88" />
-        </line-breakpoint>
       </breakpoints>
       <breakpoints-dialog>
         <breakpoints-dialog />
       </breakpoints-dialog>
-      <option name="time" value="94" />
+      <option name="time" value="105" />
     </breakpoint-manager>
     <watches-manager>
       <configuration name="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory">
@@ -1463,275 +1409,7 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/com/mine/authen/util/SessionWrapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="527">
-          <caret line="35" column="4" lean-forward="false" selection-start-line="35" selection-start-column="4" selection-end-line="35" selection-end-column="4" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/mine/authen/bean/OamRoleActionMapping.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="21" column="26" lean-forward="false" selection-start-line="21" selection-start-column="26" selection-end-line="21" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/mine/authen/bean/OamRoleFormBean.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/mine/authen/bean/OamRolePageMapping.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="26" column="13" lean-forward="false" selection-start-line="26" selection-start-column="13" selection-end-line="26" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/mine/authen/bean/OamUserFormBean.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="14" column="13" lean-forward="false" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/mine/authen/bean/OamUserRole.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="278">
-          <caret line="26" column="13" lean-forward="false" selection-start-line="26" selection-start-column="13" selection-end-line="26" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/mine/authen/bean/OamUserRoleMapping.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="329">
-          <caret line="31" column="65" lean-forward="false" selection-start-line="31" selection-start-column="65" selection-end-line="31" selection-end-column="65" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/mine/filter/ActionLogFilter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="303">
-          <caret line="105" column="57" lean-forward="false" selection-start-line="105" selection-start-column="57" selection-end-line="105" selection-end-column="57" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/mine/authen/util/PasswordEncoder.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="369">
-          <caret line="101" column="65" lean-forward="false" selection-start-line="101" selection-start-column="55" selection-end-line="101" selection-end-column="65" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/mine/authen/controller/OamRoleController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="139">
-          <caret line="127" column="48" lean-forward="false" selection-start-line="127" selection-start-column="48" selection-end-line="127" selection-end-column="48" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/c4c383f6-2fda-4268-ba52-7d27c72e539e/console.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/mine/util/Constants.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="28" selection-end-column="55" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/mine/common/util/Constant.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/hibernate.reveng.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/hibernate.cfg.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="106">
-          <caret line="11" column="55" lean-forward="false" selection-start-line="11" selection-start-column="55" selection-end-line="11" selection-end-column="55" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/WebContent/layout/olympos/layouttabmenu.xhtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/WebContent/layout/olympos/layouttabmenuforsite.xhtml" />
-    <entry file="file://$PROJECT_DIR$/WebContent/layout/olympos/othertabsubmenus.xhtml" />
-    <entry file="file://$PROJECT_DIR$/src/com/mine/model/Comment.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="91" column="0" lean-forward="true" selection-start-line="85" selection-start-column="3" selection-end-line="91" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/mine/persistence/GenericDaoImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="157">
-          <caret line="735" column="0" lean-forward="false" selection-start-line="735" selection-start-column="0" selection-end-line="735" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/mine/authen/util/CheckLoginFilter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="157">
-          <caret line="78" column="0" lean-forward="false" selection-start-line="78" selection-start-column="0" selection-end-line="78" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/WebContent/WEB-INF/lib/hibernate-jpa-2.1-api-1.0.0.Final.jar!/javax/persistence/Basic.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="14" column="18" lean-forward="false" selection-start-line="14" selection-start-column="18" selection-end-line="14" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/mine/authen/bean/OamUser.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="797">
-          <caret line="47" column="16" lean-forward="false" selection-start-line="47" selection-start-column="12" selection-end-line="47" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/mine/datamodel/PoolEntity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1153">
-          <caret line="72" column="5" lean-forward="false" selection-start-line="72" selection-start-column="5" selection-end-line="72" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/mine/datamodel/UnitEntity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1544">
-          <caret line="92" column="45" lean-forward="false" selection-start-line="92" selection-start-column="45" selection-end-line="92" selection-end-column="45" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#564#565#0" expanded="false" />
-            <element signature="e#589#590#0" expanded="false" />
-            <element signature="e#626#627#0" expanded="false" />
-            <element signature="e#654#655#0" expanded="false" />
-            <element signature="e#723#724#0" expanded="false" />
-            <element signature="e#750#751#0" expanded="false" />
-            <element signature="e#790#791#0" expanded="false" />
-            <element signature="e#822#823#0" expanded="false" />
-            <element signature="e#891#892#0" expanded="false" />
-            <element signature="e#918#919#0" expanded="false" />
-            <element signature="e#958#959#0" expanded="false" />
-            <element signature="e#990#991#0" expanded="false" />
-            <element signature="e#1069#1070#0" expanded="false" />
-            <element signature="e#1100#1101#0" expanded="false" />
-            <element signature="e#1149#1150#0" expanded="false" />
-            <element signature="e#1189#1190#0" expanded="false" />
-            <element signature="e#1260#1261#0" expanded="false" />
-            <element signature="e#1288#1289#0" expanded="false" />
-            <element signature="e#1330#1331#0" expanded="false" />
-            <element signature="e#1364#1365#0" expanded="false" />
-            <element signature="e#1433#1434#0" expanded="false" />
-            <element signature="e#1460#1461#0" expanded="false" />
-            <element signature="e#1500#1501#0" expanded="false" />
-            <element signature="e#1532#1533#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/mine/datamodel/HaEntity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1649">
-          <caret line="97" column="0" lean-forward="true" selection-start-line="97" selection-start-column="0" selection-end-line="97" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/WebContent/WEB-INF/web.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1190">
-          <caret line="70" column="13" lean-forward="false" selection-start-line="70" selection-start-column="13" selection-end-line="70" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/mine/authen/controller/LoginController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="50" column="0" lean-forward="false" selection-start-line="50" selection-start-column="0" selection-end-line="50" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#6986#0" expanded="false" />
-            <element signature="imports" expanded="false" />
-            <element signature="e#6192#6193#0" expanded="false" />
-            <element signature="e#6223#6224#0" expanded="false" />
-            <element signature="e#6271#6272#0" expanded="false" />
-            <element signature="e#6311#6312#0" expanded="false" />
-            <element signature="e#6346#6347#0" expanded="false" />
-            <element signature="e#6377#6378#0" expanded="false" />
-            <element signature="e#6425#6426#0" expanded="false" />
-            <element signature="e#6465#6466#0" expanded="false" />
-            <element signature="e#6503#6504#0" expanded="false" />
-            <element signature="e#6537#6538#0" expanded="false" />
-            <element signature="e#6591#6592#0" expanded="false" />
-            <element signature="e#6637#6638#0" expanded="false" />
-            <element signature="e#6675#6676#0" expanded="false" />
-            <element signature="e#6709#6710#0" expanded="false" />
-            <element signature="e#6763#6764#0" expanded="false" />
-            <element signature="e#6809#6810#0" expanded="false" />
-            <element signature="e#6848#6849#0" expanded="false" />
-            <element signature="e#6882#6883#0" expanded="false" />
-            <element signature="e#6936#6937#0" expanded="false" />
-            <element signature="e#6982#6983#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/WebContent/resources/olympos-layout/css/core-layout.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="5525">
-          <caret line="325" column="46" lean-forward="false" selection-start-line="325" selection-start-column="46" selection-end-line="325" selection-end-column="46" />
-          <folding>
-            <marker date="1504606448618" expanded="true" signature="13996:16581" ph="{...}" />
-            <marker date="1504606448618" expanded="true" signature="16675:19327" ph="{...}" />
-            <marker date="1504606448618" expanded="true" signature="19411:22034" ph="{...}" />
-            <marker date="1504606448618" expanded="true" signature="22134:22195" ph="{...}" />
-            <marker date="1504606448618" expanded="true" signature="22232:22253" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/WebContent/faces/vehicle/index.xhtml" />
-    <entry file="file://$PROJECT_DIR$/WebContent/layout/olympos/topbar.xhtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="138">
-          <caret line="26" column="52" lean-forward="false" selection-start-line="26" selection-start-column="52" selection-end-line="26" selection-end-column="52" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/WebContent/layout/olympos/footer.xhtml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
@@ -1780,14 +1458,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/mine/persistence/GenericDaoImplNewV2.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="157">
-          <caret line="811" column="0" lean-forward="false" selection-start-line="811" selection-start-column="0" selection-end-line="811" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/mine/controller/ProjectController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
@@ -1832,14 +1502,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/mine/persistence/ContractServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="20" column="68" lean-forward="false" selection-start-line="20" selection-start-column="68" selection-end-line="20" selection-end-column="68" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/mine/controller/ContractController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="598">
@@ -1874,54 +1536,47 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/WebContent/faces/contract/index.xhtml">
+    <entry file="jar://$PROJECT_DIR$/WebContent/WEB-INF/lib/primefaces-6.1.jar!/org/primefaces/event/FileUploadEvent.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="328">
-          <caret line="98" column="55" lean-forward="false" selection-start-line="98" selection-start-column="55" selection-end-line="98" selection-end-column="55" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/WebContent/faces/project/index.xhtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="153" column="95" lean-forward="true" selection-start-line="153" selection-start-column="24" selection-end-line="153" selection-end-column="95" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/WebContent/faces/bbbg/index.xhtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2737">
-          <caret line="161" column="26" lean-forward="false" selection-start-line="161" selection-start-column="26" selection-end-line="161" selection-end-column="26" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/WebContent/faces/game/index.xhtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="219" column="87" lean-forward="false" selection-start-line="219" selection-start-column="87" selection-end-line="219" selection-end-column="87" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/mine/datamodel/BbbgEntity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="292">
-          <caret line="82" column="16" lean-forward="false" selection-start-line="82" selection-start-column="16" selection-end-line="82" selection-end-column="16" />
+        <state relative-caret-position="306">
+          <caret line="28" column="24" lean-forward="false" selection-start-line="28" selection-start-column="24" selection-end-line="28" selection-end-column="24" />
           <folding>
-            <element signature="e#1706#1707#0" expanded="true" />
-            <element signature="e#1750#1751#0" expanded="true" />
+            <element signature="e#757#758#0" expanded="true" />
+            <element signature="e#789#790#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/mine/util/Config.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="20" column="66" lean-forward="false" selection-start-line="20" selection-start-column="66" selection-end-line="20" selection-end-column="66" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/mine/persistence/GenericDaoImplNewV2.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="157">
+          <caret line="871" column="0" lean-forward="false" selection-start-line="871" selection-start-column="0" selection-end-line="871" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/WebContent/WEB-INF/lib/primefaces-6.1.jar!/org/primefaces/model/UploadedFile.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="17" column="25" lean-forward="true" selection-start-line="17" selection-start-column="4" selection-end-line="17" selection-end-column="25" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/mine/model/Game.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1400">
-          <caret line="266" column="5" lean-forward="true" selection-start-line="266" selection-start-column="5" selection-end-line="266" selection-end-column="5" />
+        <state relative-caret-position="255">
+          <caret line="67" column="21" lean-forward="true" selection-start-line="67" selection-start-column="21" selection-end-line="67" selection-end-column="21" />
           <folding>
+            <element signature="imports" expanded="true" />
             <element signature="e#6046#6047#0" expanded="true" />
             <element signature="e#6077#6078#0" expanded="true" />
             <element signature="e#6131#6132#0" expanded="true" />
@@ -1930,51 +1585,439 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/mine/filter/ActionLogFilter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="52">
+          <caret line="23" column="28" lean-forward="false" selection-start-line="23" selection-start-column="13" selection-end-line="23" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WebContent/404.xhtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WebContent/WEB-INF/web.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="89" column="28" lean-forward="true" selection-start-line="89" selection-start-column="28" selection-end-line="89" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/mine/util/Util.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="322">
+          <caret line="133" column="32" lean-forward="true" selection-start-line="133" selection-start-column="32" selection-end-line="133" selection-end-column="32" />
+          <folding>
+            <element signature="e#1059#1073#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/mine/controller/GameController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="355">
-          <caret line="171" column="53" lean-forward="true" selection-start-line="169" selection-start-column="12" selection-end-line="171" selection-end-column="53" />
+        <state relative-caret-position="190">
+          <caret line="146" column="40" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="204" selection-end-column="0" />
           <folding>
-            <element signature="e#2596#2597#0" expanded="true" />
-            <element signature="e#2651#2652#0" expanded="true" />
+            <element signature="imports" expanded="false" />
+            <marker date="1633614281185" expanded="true" signature="904:937" ph="/**...*/" />
+            <marker date="1633614281185" expanded="true" signature="940:966" ph="@{...}" />
+            <marker date="1633614281185" expanded="false" signature="1379:1392" ph=" { " />
+            <marker date="1633614281185" expanded="false" signature="1410:1418" ph=" }" />
+            <marker date="1633614281185" expanded="false" signature="1470:1483" ph=" { " />
+            <marker date="1633614281185" expanded="false" signature="1512:1520" ph=" }" />
+            <marker date="1633614281185" expanded="false" signature="1565:1578" ph=" { " />
+            <marker date="1633614281185" expanded="false" signature="1598:1606" ph=" }" />
+            <marker date="1633614281185" expanded="false" signature="1668:1681" ph=" { " />
+            <marker date="1633614281185" expanded="false" signature="1714:1722" ph=" }" />
+            <marker date="1633614281185" expanded="false" signature="1771:1784" ph=" { " />
+            <marker date="1633614281185" expanded="false" signature="1803:1811" ph=" }" />
+            <marker date="1633614281185" expanded="false" signature="1876:1889" ph=" { " />
+            <marker date="1633614281185" expanded="false" signature="1920:1928" ph=" }" />
+            <marker date="1633614281185" expanded="false" signature="1978:1991" ph=" { " />
+            <marker date="1633614281185" expanded="false" signature="2007:2015" ph=" }" />
+            <marker date="1633614281185" expanded="false" signature="2078:2091" ph=" { " />
+            <marker date="1633614281185" expanded="false" signature="2116:2124" ph=" }" />
+            <marker date="1633614281185" expanded="false" signature="2176:2189" ph=" { " />
+            <marker date="1633614281185" expanded="false" signature="2252:2260" ph=" }" />
+            <marker date="1633614281185" expanded="true" signature="2334:2475" ph="{...}" />
+            <marker date="1633614281185" expanded="false" signature="2536:2549" ph=" { " />
+            <marker date="1633614281185" expanded="false" signature="2590:2598" ph=" }" />
+            <marker date="1633614281185" expanded="true" signature="2664:2677" ph=" { " />
+            <marker date="1633614281185" expanded="true" signature="2724:2732" ph=" }" />
+            <marker date="1633614281185" expanded="true" signature="2793:2806" ph=" { " />
+            <marker date="1633614281185" expanded="true" signature="2846:2854" ph=" }" />
+            <marker date="1633614281185" expanded="true" signature="2887:3118" ph="{...}" />
+            <marker date="1633614281185" expanded="true" signature="3176:4098" ph="{...}" />
+            <marker date="1633614281185" expanded="true" signature="4137:7381" ph="{...}" />
+            <marker date="1633614281185" expanded="false" signature="7416:7429" ph=" { " />
+            <marker date="1633614281185" expanded="false" signature="7443:7451" ph=" }" />
+            <marker date="1633614281185" expanded="false" signature="7498:7511" ph=" { " />
+            <marker date="1633614281185" expanded="false" signature="7532:7540" ph=" }" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/mine/controller/BBBGController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="309">
-          <caret line="112" column="43" lean-forward="false" selection-start-line="112" selection-start-column="43" selection-end-line="112" selection-end-column="43" />
+        <state relative-caret-position="186">
+          <caret line="81" column="0" lean-forward="false" selection-start-line="81" selection-start-column="0" selection-end-line="81" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#3382#3383#0" expanded="true" />
-            <element signature="e#3435#3436#0" expanded="true" />
-            <element signature="e#4137#4138#0" expanded="true" />
-            <element signature="e#4169#4170#0" expanded="true" />
-            <element signature="e#4238#4239#0" expanded="true" />
-            <element signature="e#4280#4281#0" expanded="true" />
-            <element signature="e#4327#4328#0" expanded="true" />
-            <element signature="e#4363#4364#0" expanded="true" />
-            <element signature="e#4428#4429#0" expanded="true" />
-            <element signature="e#4478#4479#0" expanded="true" />
-            <element signature="e#4656#4657#0" expanded="true" />
-            <element signature="e#4685#4686#0" expanded="true" />
-            <element signature="e#4733#4734#0" expanded="true" />
-            <element signature="e#4769#4770#0" expanded="true" />
-            <element signature="e#4803#4804#0" expanded="true" />
-            <element signature="e#4832#4833#0" expanded="true" />
-            <element signature="e#4877#4878#0" expanded="true" />
-            <element signature="e#4913#4914#0" expanded="true" />
-            <element signature="e#4960#4961#0" expanded="true" />
-            <element signature="e#4994#4995#0" expanded="true" />
-            <element signature="e#5057#5058#0" expanded="true" />
-            <element signature="e#5103#5104#0" expanded="true" />
-            <element signature="e#5151#5152#0" expanded="true" />
-            <element signature="e#5185#5186#0" expanded="true" />
-            <element signature="e#5249#5250#0" expanded="true" />
-            <element signature="e#5295#5296#0" expanded="true" />
+            <element signature="e#6437#6438#0" expanded="true" />
+            <element signature="e#6469#6470#0" expanded="true" />
+            <element signature="e#6538#6539#0" expanded="true" />
+            <element signature="e#6580#6581#0" expanded="true" />
+            <element signature="e#6627#6628#0" expanded="true" />
+            <element signature="e#6663#6664#0" expanded="true" />
+            <element signature="e#6728#6729#0" expanded="true" />
+            <element signature="e#6778#6779#0" expanded="true" />
+            <element signature="e#6956#6957#0" expanded="true" />
+            <element signature="e#6985#6986#0" expanded="true" />
+            <element signature="e#7033#7034#0" expanded="true" />
+            <element signature="e#7069#7070#0" expanded="true" />
+            <element signature="e#7103#7104#0" expanded="true" />
+            <element signature="e#7132#7133#0" expanded="true" />
+            <element signature="e#7177#7178#0" expanded="true" />
+            <element signature="e#7213#7214#0" expanded="true" />
+            <element signature="e#7260#7261#0" expanded="true" />
+            <element signature="e#7294#7295#0" expanded="true" />
+            <element signature="e#7357#7358#0" expanded="true" />
+            <element signature="e#7403#7404#0" expanded="true" />
+            <element signature="e#7451#7452#0" expanded="true" />
+            <element signature="e#7485#7486#0" expanded="true" />
+            <element signature="e#7549#7550#0" expanded="true" />
+            <element signature="e#7595#7596#0" expanded="true" />
+            <element signature="e#7640#7641#0" expanded="true" />
+            <element signature="e#7675#7676#0" expanded="true" />
+            <element signature="e#7737#7738#0" expanded="true" />
+            <element signature="e#7785#7786#0" expanded="true" />
           </folding>
         </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/mine/persistence/ContractServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="22" column="0" lean-forward="true" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WebContent/faces/game/index.xhtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="214">
+          <caret line="214" column="48" lean-forward="true" selection-start-line="214" selection-start-column="48" selection-end-line="214" selection-end-column="48" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WebContent/faces/project/index.xhtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="153" column="95" lean-forward="true" selection-start-line="153" selection-start-column="24" selection-end-line="153" selection-end-column="95" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WebContent/faces/contract/index.xhtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="31" column="85" lean-forward="false" selection-start-line="31" selection-start-column="85" selection-end-line="31" selection-end-column="85" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WebContent/faces/bbbg/index.xhtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="31" column="89" lean-forward="false" selection-start-line="31" selection-start-column="89" selection-end-line="31" selection-end-column="89" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WebContent/faces/ha/index.xhtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-146">
+          <caret line="11" column="46" lean-forward="false" selection-start-line="11" selection-start-column="34" selection-end-line="11" selection-end-column="46" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WebContent/faces/pool/index.xhtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="297">
+          <caret line="110" column="73" lean-forward="false" selection-start-line="110" selection-start-column="73" selection-end-line="110" selection-end-column="73" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/mine/controller/PoolController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="227">
+          <caret line="33" column="28" lean-forward="false" selection-start-line="33" selection-start-column="28" selection-end-line="33" selection-end-column="28" />
+          <folding>
+            <element signature="e#3942#3943#0" expanded="true" />
+            <element signature="e#3974#3975#0" expanded="true" />
+            <element signature="e#4043#4044#0" expanded="true" />
+            <element signature="e#4085#4086#0" expanded="true" />
+            <element signature="e#4132#4133#0" expanded="true" />
+            <element signature="e#4168#4169#0" expanded="true" />
+            <element signature="e#4233#4234#0" expanded="true" />
+            <element signature="e#4283#4284#0" expanded="true" />
+            <element signature="e#4461#4462#0" expanded="true" />
+            <element signature="e#4490#4491#0" expanded="true" />
+            <element signature="e#4538#4539#0" expanded="true" />
+            <element signature="e#4574#4575#0" expanded="true" />
+            <element signature="e#4608#4609#0" expanded="true" />
+            <element signature="e#4637#4638#0" expanded="true" />
+            <element signature="e#4682#4683#0" expanded="true" />
+            <element signature="e#4718#4719#0" expanded="true" />
+            <element signature="e#4765#4766#0" expanded="true" />
+            <element signature="e#4799#4800#0" expanded="true" />
+            <element signature="e#4862#4863#0" expanded="true" />
+            <element signature="e#4908#4909#0" expanded="true" />
+            <element signature="e#4956#4957#0" expanded="true" />
+            <element signature="e#4990#4991#0" expanded="true" />
+            <element signature="e#5054#5055#0" expanded="true" />
+            <element signature="e#5100#5101#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/mine/datamodel/PoolEntity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="20" column="44" lean-forward="false" selection-start-line="20" selection-start-column="44" selection-end-line="20" selection-end-column="44" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WebContent/layout/olympos/othertabsubmenus.xhtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1312">
+          <caret line="83" column="68" lean-forward="false" selection-start-line="83" selection-start-column="68" selection-end-line="83" selection-end-column="68" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WebContent/WEB-INF/pretty-config.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="326">
+          <caret line="26" column="18" lean-forward="false" selection-start-line="26" selection-start-column="18" selection-end-line="26" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/mine/controller/HaController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1581">
+          <caret line="114" column="20" lean-forward="false" selection-start-line="114" selection-start-column="20" selection-end-line="114" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/mine/persistence/HaServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="20" column="13" lean-forward="false" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/mine/persistence/UnitServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="20" column="32" lean-forward="false" selection-start-line="20" selection-start-column="32" selection-end-line="20" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/mine/controller/UnitController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2126">
+          <caret line="158" column="38" lean-forward="false" selection-start-line="158" selection-start-column="38" selection-end-line="158" selection-end-column="38" />
+          <folding>
+            <element signature="e#3942#3943#0" expanded="true" />
+            <element signature="e#3974#3975#0" expanded="true" />
+            <element signature="e#4043#4044#0" expanded="true" />
+            <element signature="e#4085#4086#0" expanded="true" />
+            <element signature="e#4132#4133#0" expanded="true" />
+            <element signature="e#4168#4169#0" expanded="true" />
+            <element signature="e#4233#4234#0" expanded="true" />
+            <element signature="e#4283#4284#0" expanded="true" />
+            <element signature="e#4461#4462#0" expanded="true" />
+            <element signature="e#4490#4491#0" expanded="true" />
+            <element signature="e#4538#4539#0" expanded="true" />
+            <element signature="e#4574#4575#0" expanded="true" />
+            <element signature="e#4608#4609#0" expanded="true" />
+            <element signature="e#4637#4638#0" expanded="true" />
+            <element signature="e#4682#4683#0" expanded="true" />
+            <element signature="e#4718#4719#0" expanded="true" />
+            <element signature="e#4765#4766#0" expanded="true" />
+            <element signature="e#4799#4800#0" expanded="true" />
+            <element signature="e#4862#4863#0" expanded="true" />
+            <element signature="e#4908#4909#0" expanded="true" />
+            <element signature="e#4956#4957#0" expanded="true" />
+            <element signature="e#4990#4991#0" expanded="true" />
+            <element signature="e#5054#5055#0" expanded="true" />
+            <element signature="e#5100#5101#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/mine/datamodel/UnitEntity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="22" column="44" lean-forward="false" selection-start-line="22" selection-start-column="44" selection-end-line="22" selection-end-column="44" />
+          <folding>
+            <element signature="e#723#724#0" expanded="true" />
+            <element signature="e#750#751#0" expanded="true" />
+            <element signature="e#1260#1261#0" expanded="true" />
+            <element signature="e#1288#1289#0" expanded="true" />
+            <element signature="e#1433#1434#0" expanded="true" />
+            <element signature="e#1460#1461#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/mine/datamodel/BbbgEntity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="26" column="44" lean-forward="true" selection-start-line="25" selection-start-column="4" selection-end-line="26" selection-end-column="44" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/mine/persistence/PoolServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="20" column="13" lean-forward="false" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WebContent/faces/unit/index.xhtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="121" column="40" lean-forward="true" selection-start-line="121" selection-start-column="40" selection-end-line="121" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/hibernate.reveng.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/hibernate.cfg.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="55" lean-forward="false" selection-start-line="11" selection-start-column="55" selection-end-line="11" selection-end-column="55" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/mine/persistence/DeviceServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="15" column="2" lean-forward="true" selection-start-line="15" selection-start-column="2" selection-end-line="15" selection-end-column="2" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/mine/controller/DeviceController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="153" column="45" lean-forward="false" selection-start-line="153" selection-start-column="32" selection-end-line="153" selection-end-column="45" />
+          <folding>
+            <element signature="e#3978#3979#0" expanded="true" />
+            <element signature="e#4010#4011#0" expanded="true" />
+            <element signature="e#4081#4082#0" expanded="true" />
+            <element signature="e#4123#4124#0" expanded="true" />
+            <element signature="e#4170#4171#0" expanded="true" />
+            <element signature="e#4206#4207#0" expanded="true" />
+            <element signature="e#4271#4272#0" expanded="true" />
+            <element signature="e#4321#4322#0" expanded="true" />
+            <element signature="e#4501#4502#0" expanded="true" />
+            <element signature="e#4530#4531#0" expanded="true" />
+            <element signature="e#4580#4581#0" expanded="true" />
+            <element signature="e#4616#4617#0" expanded="true" />
+            <element signature="e#4650#4651#0" expanded="true" />
+            <element signature="e#4679#4680#0" expanded="true" />
+            <element signature="e#4724#4725#0" expanded="true" />
+            <element signature="e#4760#4761#0" expanded="true" />
+            <element signature="e#4811#4812#0" expanded="true" />
+            <element signature="e#4847#4848#0" expanded="true" />
+            <element signature="e#4916#4917#0" expanded="true" />
+            <element signature="e#4966#4967#0" expanded="true" />
+            <element signature="e#5016#5017#0" expanded="true" />
+            <element signature="e#5050#5051#0" expanded="true" />
+            <element signature="e#5116#5117#0" expanded="true" />
+            <element signature="e#5162#5163#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/mine/datamodel/DeviceEntity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="292">
+          <caret line="22" column="30" lean-forward="true" selection-start-line="22" selection-start-column="30" selection-end-line="22" selection-end-column="30" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/mine/datamodel/HaEntity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="29" column="5" lean-forward="true" selection-start-line="19" selection-start-column="4" selection-end-line="29" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WebContent/faces/device/index.xhtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="24">
+          <caret line="111" column="53" lean-forward="false" selection-start-line="111" selection-start-column="53" selection-end-line="111" selection-end-column="53" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WebContent/resources/olympos-layout/css/olympos-layout.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="406">
+          <caret line="219" column="23" lean-forward="false" selection-start-line="219" selection-start-column="23" selection-end-line="219" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WebContent/layout/olympos/topbar.xhtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" column="91" lean-forward="true" selection-start-line="15" selection-start-column="91" selection-end-line="15" selection-end-column="91" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WebContent/resources/olympos-layout/images/logo.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
       </provider>
     </entry>
   </component>

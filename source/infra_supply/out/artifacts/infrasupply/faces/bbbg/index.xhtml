@@ -29,7 +29,7 @@
 
                         </div>
                         <div class="Container40 Responsive40">
-                            <h:outputText styleClass="Fs18" value="Danh sách dự án"/>
+                            <h:outputText styleClass="Fs18" value="Danh sách biên bản bàn giao"/>
                         </div>
                         <div class="Container40" style="text-align: right;">
                             <p:commandButton icon="fa fa-plus-circle"
@@ -87,7 +87,9 @@
                 <p:column headerText="File đính kèm" filterStyle="width:70%"
                           filterBy="#{obj.attachFile}" sortBy="#{obj.attachFile}" groupRow="true"
                           visible="#{bBBGController.togglerColumn[4]}">
-                    <h:outputText value="#{obj.attachFile}"/>
+                    <h:commandLink action="#{bBBGController.downloadFile((obj.attachFile))}" value="#{obj.attachFile}" style="color:red;">
+                    </h:commandLink>
+
                 </p:column>
                 <p:column headerText="Ghi chú" filterStyle="width:70%"
                           filterBy="#{obj.note}" sortBy="#{obj.note}" groupRow="true"
@@ -158,11 +160,26 @@
                         <p:calendar id="popup" value="#{bBBGController.newObj.approvedTime}"/>
                     </div>
                     <div class="ui-g-2">
-                        <h:outputText class="cd-text-required" value="Đối tác:" style="margin-left: 15px;"/>
+                        <h:outputText class="cd-text-required" value="Ghi chú:" style="margin-left: 15px;"/>
                     </div>
                     <div class="ui-g-3">
-                        <p:inputText maxlength="100"
+                        <p:inputTextarea maxlength="100"
                                      value="#{bBBGController.newObj.note}"/>
+                    </div>
+
+                    <div class="ui-g-2">
+                        <h:outputText class="cd-text-required" value="File đính kèm:" style="margin-left: 15px;"/>
+                    </div>
+                    <div class="ui-g-3">
+                        <p:outputLabel maxlength="100"
+                                     value="#{bBBGController.newObj.attachFile}" id ="fileName"/>
+                    </div>
+
+                    <div class="Card NoPadding">
+                        <div class="Container50 Responsive50">
+                            <p:fileUpload fileUploadListener="#{bBBGController.handleFileUpload}" mode="advanced" dragDropSupport="true"
+                                       ajax="false"   multiple="true" update="fileName" sizeLimit="1000000000000" fileLimit="10" allowTypes="/(\.|\/)(pdf|doc|docx|xls|xlsx)$/" previewWidth="100"/>
+                        </div>
                     </div>
 
 
