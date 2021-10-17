@@ -48,7 +48,7 @@
                     <p:selectOneMenu id="selectInfraType" value="#{deviceInfraController.selectedInfraType}"
                                      filterMatchMode="contains"
                                      required="true"
-                                     requiredMessage="Chọn địa phương quảng cáo"
+                                     requiredMessage="Chọn loại hạ tầng"
                                      valueChangeListener="#{deviceInfraController.handleChangeInfraType}">
                         <f:selectItem itemLabel="--Chọn loại dự án--" noSelectionOption="true"/>
                         <f:selectItem itemLabel="Dự án" itemValue="PROJECT" />
@@ -56,21 +56,15 @@
                         <f:selectItem itemLabel="Hợp đồng" itemValue="CONTRACT" />
                         <f:selectItem itemLabel="HA" itemValue="HA" />
                         <f:selectItem itemLabel="Đơn vị" itemValue="UNIT" />
+                        <p:ajax event="valueChange" immediate="true" process="@this"/>
                     </p:selectOneMenu>
 
                     <h:outputText class="cd-text-required" value="Chọn thiết bị:"/>
                     <p:autoComplete id="infra" value="#{deviceInfraController.selectedInfraCode}"
                                     completeMethod="#{deviceInfraController.onSearchInfra}" scrollHeight="250"
                                     minQueryLength="3"
-                                    queryDelay="50"
-                    >
-                        <p:column>
-                            <h:outputText style="vertical-align: middle; margin-left: .5rem" value="Mã thiết bị: #{device.code}"/>
-                        </p:column>
-                        <p:column>
-                            <h:outputText style="vertical-align: middle; margin-left: .5rem" value="Tên thiết bị: #{device.name}"/>
-                        </p:column>
-                    </p:autoComplete>
+                                    queryDelay="50" />
+
 
                 </h:panelGrid>
                 <div class="row"
