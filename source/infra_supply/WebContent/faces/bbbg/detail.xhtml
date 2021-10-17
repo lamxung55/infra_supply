@@ -1,0 +1,29 @@
+<ui:composition
+        xmlns="http://www.w3.org/1999/xhtml"
+        xmlns:f="http://java.sun.com/jsf/core"
+        xmlns:h="http://java.sun.com/jsf/html"
+        xmlns:ui="http://java.sun.com/jsf/facelets"
+        xmlns:p="http://primefaces.org/ui"
+        xmlns:pe="http://primefaces.org/ui/extensions">
+        <p:dialog widgetVar="detailDlg" width="60%" id="detailDlg"
+                  height="50%" modal="true" showEffect="size" closeOnEscape="true">
+            <f:facet name="header">
+                <h:outputText value="Xem chi tiết"/>
+            </f:facet>
+            <ui:include src="detailFragment.xhtml"></ui:include>
+        </p:dialog>
+
+        <p:confirmDialog global="true" closeOnEscape="true">
+            <p:commandButton value="Đồng ý" type="button" styleClass="ui-confirmdialog-yes" icon="ui-icon-check"/>
+            <p:commandButton value="Bỏ qua" type="button" styleClass="ui-confirmdialog-no" icon="ui-icon-close"/>
+        </p:confirmDialog>
+
+
+        <!--<editor-fold desc="dangth8 edited at 8/18/2017 10:23 AM">-->
+        <script type="text/javascript">
+            $(window).on('load', function () {
+                setUpTab('tab-6', 'tab-6-2');
+            });
+        </script>
+
+</ui:composition>

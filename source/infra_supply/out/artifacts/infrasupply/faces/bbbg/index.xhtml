@@ -109,6 +109,14 @@
                             style="color:green; font-weight: bold;font-size: 13px ">
                     </p:commandButton>
 
+                    <p:commandButton
+                            title="Xem chi tiết" styleClass="Fs14 White YellowButton"
+                            icon="fa fa-info-circle " update="detailDlg"
+                            actionListener="#{bBBGController.preDetail(obj.id)}"
+                            oncomplete="PF('detailDlg').show();"
+                            style="color:green; font-weight: bold;font-size: 13px " id="detailBtn">
+                    </p:commandButton>
+
                     <p:spacer width="2px;"/>
                     <p:commandButton icon="fa fa-trash" actionListener="#{bBBGController.delete(obj)}"
                                      update="myTable, depentPropCatForm:mainMessage"
@@ -196,6 +204,8 @@
                 </div>
             </h:form>
         </p:dialog>
+
+        <ui:include src="detail.xhtml"></ui:include>
 
         <p:confirmDialog global="true" closeOnEscape="true">
             <p:commandButton value="Đồng ý" type="button" styleClass="ui-confirmdialog-yes" icon="ui-icon-check"/>

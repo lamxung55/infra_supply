@@ -36,6 +36,7 @@
         <mapping class="com.mine.datamodel.ProjectEntity"/>
         <mapping class="com.mine.datamodel.UnitEntity"/>
         <mapping class="com.mine.datamodel.DeviceEntity"/>
+        <mapping class="com.mine.datamodel.DeviceInfraEntity"/>
 
     </session-factory>
 

@@ -74,6 +74,16 @@ public class BBBGController {
         }
     }
 
+    private BbbgEntity detailObj;
+    public void preDetail(Long id) {
+        try {
+            detailObj = bbbgService.findById(id);
+        } catch (Exception e) {
+            logger.error(e.getMessage(), e);
+            MessageUtil.setErrorMessage("Xảy ra lỗi!!!");
+        }
+    }
+
     public void onSaveOrUpdate() {
         if (!validate()) {
             return;
@@ -234,5 +244,13 @@ public class BBBGController {
 
     public void setUploadedFile(UploadedFile uploadedFile) {
         this.uploadedFile = uploadedFile;
+    }
+
+    public BbbgEntity getDetailObj() {
+        return detailObj;
+    }
+
+    public void setDetailObj(BbbgEntity detailObj) {
+        this.detailObj = detailObj;
     }
 }

@@ -1,0 +1,66 @@
+<ui:composition
+        xmlns="http://www.w3.org/1999/xhtml"
+        xmlns:f="http://java.sun.com/jsf/core"
+        xmlns:h="http://java.sun.com/jsf/html"
+        xmlns:ui="http://java.sun.com/jsf/facelets"
+        xmlns:p="http://primefaces.org/ui"
+        xmlns:pe="http://primefaces.org/ui/extensions">
+            <h:form id="detailForm">
+                <p:growl id="growldepentPropCatDlg" showDetail="true" showSummary="false"/>
+                <h:panelGrid columns="4" width="100%" cellpadding="5" id="panelGridId">
+
+                    <div class="ui-g-2">
+                        <h:outputText class="cd-text-required" value="Mã biên bản:"
+                                      style="margin-left: 15px;"/>
+                    </div>
+                    <div class="ui-g-3">
+                        <p:inputText maxlength="100"
+                                     value="#{bBBGController.detailObj.code}"/>
+                    </div>
+                    <div class="ui-g-2">
+                        <h:outputText class="cd-text-required" value="Tên biên bản:" style="margin-left: 15px;"/>
+                    </div>
+                    <div class="ui-g-3">
+                        <p:inputText maxlength="100"
+                                     value="#{bBBGController.detailObj.name}"/>
+                    </div>
+                    <div class="ui-g-2">
+                        <h:outputText class="cd-text-required" value="Người trình ký:" style="margin-left: 15px;"/>
+                    </div>
+                    <div class="ui-g-3">
+                        <p:inputText maxlength="100"
+                                     value="#{bBBGController.detailObj.submitter}"/>
+                    </div>
+                    <div class="ui-g">
+                        <div class="ui-g-2">
+                            <h:outputText value="Thời gian duyệt" style="margin-left: 15px;"/>
+                        </div>
+                        <p:calendar id="popup" value="#{bBBGController.detailObj.approvedTime}"/>
+                    </div>
+                    <div class="ui-g-2">
+                        <h:outputText class="cd-text-required" value="Ghi chú:" style="margin-left: 15px;"/>
+                    </div>
+                    <div class="ui-g-3">
+                        <p:inputTextarea maxlength="100"
+                                     value="#{bBBGController.detailObj.note}"/>
+                    </div>
+
+                    <div class="ui-g-2">
+                        <h:outputText class="cd-text-required" value="File đính kèm:" style="margin-left: 15px;"/>
+                    </div>
+                    <div class="ui-g-3">
+                        <p:outputLabel maxlength="100"
+                                     value="#{bBBGController.detailObj.attachFile}" id ="fileName"/>
+                    </div>
+
+                    <div class="Card NoPadding">
+                        <div class="Container50 Responsive50">
+                            <p:fileUpload fileUploadListener="#{bBBGController.handleFileUpload}" mode="advanced" dragDropSupport="true"
+                                       ajax="false"   multiple="true" update="fileName" sizeLimit="1000000000000" fileLimit="10" allowTypes="/(\.|\/)(pdf|doc|docx|xls|xlsx)$/" previewWidth="100"/>
+                        </div>
+                    </div>
+
+
+                </h:panelGrid>
+            </h:form>
+</ui:composition>

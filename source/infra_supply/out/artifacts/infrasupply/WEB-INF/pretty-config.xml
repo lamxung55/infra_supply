@@ -49,6 +49,10 @@
         <pattern value="/device" />
         <view-id value="/faces/device/index.xhtml" />
     </url-mapping>
+    <url-mapping id="assign-device" >
+        <pattern value="/assign-device" />
+        <view-id value="/faces/assign-device/index.xhtml" />
+    </url-mapping>
 
 
     <url-mapping id="oam">

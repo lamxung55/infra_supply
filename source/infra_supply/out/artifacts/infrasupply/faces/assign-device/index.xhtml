@@ -1,0 +1,104 @@
+<ui:composition
+        xmlns="http://www.w3.org/1999/xhtml"
+        xmlns:f="http://java.sun.com/jsf/core"
+        xmlns:h="http://java.sun.com/jsf/html"
+        xmlns:ui="http://java.sun.com/jsf/facelets"
+        xmlns:p="http://primefaces.org/ui"
+        xmlns:pe="http://primefaces.org/ui/extensions"
+        template="/layout/olympos/template.xhtml">
+    <ui:define name="content">
+        <h:form id="depentPropCatForm">
+            <p:growl id="mainMessage" showDetail="true" showSummary="false"/>
+            <p:commandButton icon="fa fa-plus-circle"
+                             update="addDlg"
+                             actionListener="#{deviceInfraController.preInsert}"
+                             onclick="PF('blockDlgCommon').show()"
+                             oncomplete="PF('blockDlgCommon').hide();PF('addDlg').show()"
+                             title="Thêm mới" value="Thêm mới"
+            />
+        </h:form>
+
+        <p:dialog widgetVar="addDlg" width="60%" id="addDlg"
+                  height="50%" modal="true" showEffect="size" closeOnEscape="true">
+            <f:facet name="header">
+                <!--<h:outputText value="Sửa" rendered="#{deviceController.isEdit}"/>-->
+                <!--<h:outputText value="Thêm" rendered="#{!deviceController.isEdit}"/>-->
+            </f:facet>
+            <h:form id="depentPropCatDlgForm">
+                <p:growl id="growldepentPropCatDlg" showDetail="true" showSummary="false"/>
+                <h:panelGrid columns="4" width="100%"  id="panelGridId">
+                    <h:outputText class="cd-text-required" value="Chọn thiết bị:"/>
+                    <p:autoComplete id="device" value="#{deviceInfraController.selectedDevice}"
+                                    completeMethod="#{deviceInfraController.onSearchDevice}" scrollHeight="250"
+                                    minQueryLength="2"
+                                    var="device" itemLabel="#{device.code}" itemValue="#{device}"
+                                    converter="deviceConverter"
+                                    queryDelay="50"
+                                    >
+                        <p:column>
+                            <h:outputText style="vertical-align: middle; margin-left: .5rem" value="Mã thiết bị: #{device.code}"/>
+                        </p:column>
+                        <p:column>
+                            <h:outputText style="vertical-align: middle; margin-left: .5rem" value="Tên thiết bị: #{device.name}"/>
+                        </p:column>
+                    </p:autoComplete>
+
+                    <h:outputText class="cd-text-required" value="Chọn loại hạ tầng:"/>
+
+                    <p:selectOneMenu id="selectInfraType" value="#{deviceInfraController.selectedInfraType}"
+                                     filterMatchMode="contains"
+                                     required="true"
+                                     requiredMessage="Chọn địa phương quảng cáo"
+                                     valueChangeListener="#{deviceInfraController.handleChangeInfraType}">
+                        <f:selectItem itemLabel="--Chọn loại dự án--" noSelectionOption="true"/>
+                        <f:selectItem itemLabel="Dự án" itemValue="PROJECT" />
+                        <f:selectItem itemLabel="BBBG" itemValue="BBBG" />
+                        <f:selectItem itemLabel="Hợp đồng" itemValue="CONTRACT" />
+                        <f:selectItem itemLabel="HA" itemValue="HA" />
+                        <f:selectItem itemLabel="Đơn vị" itemValue="UNIT" />
+                    </p:selectOneMenu>
+
+                    <h:outputText class="cd-text-required" value="Chọn thiết bị:"/>
+                    <p:autoComplete id="infra" value="#{deviceInfraController.selectedInfraCode}"
+                                    completeMethod="#{deviceInfraController.onSearchInfra}" scrollHeight="250"
+                                    minQueryLength="3"
+                                    queryDelay="50"
+                    >
+                        <p:column>
+                            <h:outputText style="vertical-align: middle; margin-left: .5rem" value="Mã thiết bị: #{device.code}"/>
+                        </p:column>
+                        <p:column>
+                            <h:outputText style="vertical-align: middle; margin-left: .5rem" value="Tên thiết bị: #{device.name}"/>
+                        </p:column>
+                    </p:autoComplete>
+
+                </h:panelGrid>
+                <div class="row"
+                     style="margin-bottom: 10px; text-align: center;margin-left: auto;margin-right: auto;display: block">
+                    <p:commandButton style="color: white;" icon="fa fa-save"
+                                     actionListener="#{deviceInfraController.onSaveOrUpdate()}"
+                                     oncomplete="PF('addDlg').hide();"
+                                     update=":depentPropCatForm, :depentPropCatDlgForm:growldepentPropCatDlg"
+                                     value="Lưu"/>
+                    <p:commandButton style="color: white;" icon="fa fa-close" styleClass="RedButton"
+                                     onclick="PF('addDlg').hide()" value="Đóng lại"/>
+                </div>
+            </h:form>
+        </p:dialog>
+
+        <p:confirmDialog global="true" closeOnEscape="true">
+            <p:commandButton value="Đồng ý" type="button" styleClass="ui-confirmdialog-yes" icon="ui-icon-check"/>
+            <p:commandButton value="Bỏ qua" type="button" styleClass="ui-confirmdialog-no" icon="ui-icon-close"/>
+        </p:confirmDialog>
+
+
+        <!--<editor-fold desc="dangth8 edited at 8/18/2017 10:23 AM">-->
+        <script type="text/javascript">
+            $(window).on('load', function () {
+                setUpTab('tab-6', 'tab-6-2');
+            });
+        </script>
+
+    </ui:define>
+
+</ui:composition>
