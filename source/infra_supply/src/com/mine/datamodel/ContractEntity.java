@@ -10,25 +10,25 @@ import javax.persistence.*;
 @Entity
 @Table(name = "contract", schema = "infra_supply")
 public class ContractEntity {
-    private Integer id;
+    private Long id;
     private String code;
     private String name;
-    private Integer progressPercent;
+    private Long progressPercent;
     private String progressDesc;
     private String partner;
     private String owner;
     private String note;
-    private Integer status;
+    private Long status;
 
     @Id
     @Column(name = "ID")
     @GenericGenerator(name = "generator", strategy = "increment")
     @GeneratedValue(generator = "generator")
-    public Integer getId() {
+    public Long getId() {
         return id;
     }
 
-    public void setId(Integer id) {
+    public void setId(Long id) {
         this.id = id;
     }
 
@@ -54,11 +54,11 @@ public class ContractEntity {
 
     @Basic
     @Column(name = "PROGRESS_PERCENT")
-    public Integer getProgressPercent() {
+    public Long getProgressPercent() {
         return progressPercent;
     }
 
-    public void setProgressPercent(Integer progressPercent) {
+    public void setProgressPercent(Long progressPercent) {
         this.progressPercent = progressPercent;
     }
 
@@ -104,11 +104,11 @@ public class ContractEntity {
 
     @Basic
     @Column(name = "STATUS")
-    public Integer getStatus() {
+    public Long getStatus() {
         return status;
     }
 
-    public void setStatus(Integer status) {
+    public void setStatus(Long status) {
         this.status = status;
     }
 

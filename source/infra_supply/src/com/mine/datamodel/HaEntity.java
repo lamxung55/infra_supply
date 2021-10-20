@@ -10,7 +10,7 @@ import javax.persistence.*;
 @Entity
 @Table(name = "ha", schema = "infra_supply")
 public class HaEntity {
-    private Integer id;
+    private Long id;
     private String code;
     private String name;
     private String infraType;
@@ -21,11 +21,11 @@ public class HaEntity {
     @Column(name = "ID")
     @GenericGenerator(name = "generator", strategy = "increment")
     @GeneratedValue(generator = "generator")
-    public Integer getId() {
+    public Long getId() {
         return id;
     }
 
-    public void setId(Integer id) {
+    public void setId(Long id) {
         this.id = id;
     }
 

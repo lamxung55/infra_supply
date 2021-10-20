@@ -88,26 +88,100 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="index.xhtml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/WebContent/faces/assign-device/index.xhtml">
+      <file leaf-file-name="DeviceInfraEntity.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/mine/datamodel/DeviceInfraEntity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="231">
-              <caret line="64" column="54" lean-forward="true" selection-start-line="64" selection-start-column="54" selection-end-line="64" selection-end-column="54" />
-              <folding />
+            <state relative-caret-position="615">
+              <caret line="41" column="35" lean-forward="false" selection-start-line="41" selection-start-column="35" selection-end-line="41" selection-end-column="35" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#697#698#0" expanded="true" />
+                <element signature="e#722#723#0" expanded="true" />
+                <element signature="e#756#757#0" expanded="true" />
+                <element signature="e#784#785#0" expanded="true" />
+                <element signature="e#860#861#0" expanded="true" />
+                <element signature="e#891#892#0" expanded="true" />
+                <element signature="e#937#938#0" expanded="true" />
+                <element signature="e#977#978#0" expanded="true" />
+                <element signature="e#1125#1126#0" expanded="true" />
+                <element signature="e#1163#1164#0" expanded="true" />
+                <element signature="e#1300#1301#0" expanded="true" />
+                <element signature="e#1334#1335#0" expanded="true" />
+                <element signature="e#1414#1415#0" expanded="true" />
+                <element signature="e#1446#1447#0" expanded="true" />
+                <element signature="e#1496#1497#0" expanded="true" />
+                <element signature="e#1538#1539#0" expanded="true" />
+                <element signature="e#1607#1608#0" expanded="true" />
+                <element signature="e#1634#1635#0" expanded="true" />
+                <element signature="e#1786#1787#0" expanded="true" />
+                <element signature="e#1818#1819#0" expanded="true" />
+                <element signature="e#1868#1869#0" expanded="true" />
+                <element signature="e#1910#1911#0" expanded="true" />
+                <element signature="e#1992#1993#0" expanded="true" />
+                <element signature="e#2025#2026#0" expanded="true" />
+                <element signature="e#2077#2078#0" expanded="true" />
+                <element signature="e#2121#2122#0" expanded="true" />
+                <element signature="e#2203#2204#0" expanded="true" />
+                <element signature="e#2236#2237#0" expanded="true" />
+                <element signature="e#2288#2289#0" expanded="true" />
+                <element signature="e#2332#2333#0" expanded="true" />
+                <element signature="e#2412#2413#0" expanded="true" />
+                <element signature="e#2444#2445#0" expanded="true" />
+                <element signature="e#2494#2495#0" expanded="true" />
+                <element signature="e#2536#2537#0" expanded="true" />
+                <marker date="1634747224370" expanded="false" signature="1050:1061" ph=" { " />
+                <marker date="1634747224370" expanded="false" signature="1076:1082" ph=" }" />
+                <marker date="1634747224370" expanded="false" signature="1231:1242" ph=" { " />
+                <marker date="1634747224370" expanded="false" signature="1255:1261" ph=" }" />
+                <marker date="1634747224370" expanded="false" signature="1673:1684" ph=" { " />
+                <marker date="1634747224370" expanded="false" signature="1701:1707" ph=" }" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DeviceInfraEntity.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/mine/datamodel/DeviceInfraEntity.java">
+      <file leaf-file-name="DeviceInfraController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/mine/controller/DeviceInfraController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="190">
-              <caret line="58" column="30" lean-forward="false" selection-start-line="58" selection-start-column="30" selection-end-line="58" selection-end-column="30" />
+            <state relative-caret-position="441">
+              <caret line="135" column="13" lean-forward="false" selection-start-line="135" selection-start-column="13" selection-end-line="135" selection-end-column="13" />
               <folding>
-                <element signature="e#1153#1154#0" expanded="true" />
-                <element signature="e#1185#1186#0" expanded="true" />
-                <element signature="e#1235#1236#0" expanded="true" />
-                <element signature="e#1277#1278#0" expanded="true" />
+                <element signature="e#3591#3592#0" expanded="true" />
+                <element signature="e#3655#3656#0" expanded="true" />
+                <element signature="e#9348#9349#0" expanded="true" />
+                <element signature="e#9380#9381#0" expanded="true" />
+                <element signature="e#9881#9882#0" expanded="true" />
+                <element signature="e#9910#9911#0" expanded="true" />
+                <element signature="e#10446#10447#0" expanded="true" />
+                <element signature="e#10480#10481#0" expanded="true" />
+                <element signature="e#10648#10649#0" expanded="true" />
+                <element signature="e#10684#10685#0" expanded="true" />
+                <element signature="e#10753#10754#0" expanded="true" />
+                <element signature="e#10803#10804#0" expanded="true" />
+                <element signature="e#10850#10851#0" expanded="true" />
+                <element signature="e#10887#10888#0" expanded="true" />
+                <element signature="e#10953#10954#0" expanded="true" />
+                <element signature="e#11005#11006#0" expanded="true" />
+                <element signature="e#11053#11054#0" expanded="true" />
+                <element signature="e#11085#11086#0" expanded="true" />
+                <element signature="e#11147#11148#0" expanded="true" />
+                <element signature="e#11189#11190#0" expanded="true" />
+                <element signature="e#11233#11234#0" expanded="true" />
+                <element signature="e#11273#11274#0" expanded="true" />
+                <element signature="e#11339#11340#0" expanded="true" />
+                <element signature="e#11397#11398#0" expanded="true" />
+                <element signature="e#11441#11442#0" expanded="true" />
+                <element signature="e#11481#11482#0" expanded="true" />
+                <element signature="e#11547#11548#0" expanded="true" />
+                <element signature="e#11605#11606#0" expanded="true" />
+                <element signature="e#11638#11639#0" expanded="true" />
+                <element signature="e#11669#11670#0" expanded="true" />
+                <element signature="e#11715#11716#0" expanded="true" />
+                <element signature="e#11755#11756#0" expanded="true" />
+                <element signature="e#11786#11787#0" expanded="true" />
+                <element signature="e#11813#11814#0" expanded="true" />
+                <element signature="e#11853#11854#0" expanded="true" />
+                <element signature="e#11885#11886#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -116,96 +190,18 @@
       <file leaf-file-name="index.xhtml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/WebContent/faces/bbbg/index.xhtml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1450">
-              <caret line="40" column="30" lean-forward="true" selection-start-line="34" selection-start-column="28" selection-end-line="40" selection-end-column="30" />
+            <state relative-caret-position="1187">
+              <caret line="134" column="76" lean-forward="false" selection-start-line="134" selection-start-column="72" selection-end-line="134" selection-end-column="76" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="index.xhtml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/WebContent/faces/device/index.xhtml">
+        <entry file="file://$PROJECT_DIR$/WebContent/faces/contract/index.xhtml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="126">
-              <caret line="174" column="72" lean-forward="false" selection-start-line="174" selection-start-column="72" selection-end-line="174" selection-end-column="72" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.xhtml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/WebContent/faces/ha/index.xhtml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="338">
-              <caret line="149" column="42" lean-forward="true" selection-start-line="146" selection-start-column="24" selection-end-line="149" selection-end-column="42" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="DeviceInfraController.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/com/mine/controller/DeviceInfraController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="257">
-              <caret line="71" column="25" lean-forward="false" selection-start-line="71" selection-start-column="25" selection-end-line="71" selection-end-column="25" />
-              <folding>
-                <element signature="e#3852#3853#0" expanded="true" />
-                <element signature="e#3916#3917#0" expanded="true" />
-                <element signature="e#6732#6733#0" expanded="true" />
-                <element signature="e#6761#6762#0" expanded="true" />
-                <element signature="e#7499#7500#0" expanded="true" />
-                <element signature="e#7535#7536#0" expanded="true" />
-                <element signature="e#7604#7605#0" expanded="true" />
-                <element signature="e#7654#7655#0" expanded="true" />
-                <element signature="e#7701#7702#0" expanded="true" />
-                <element signature="e#7738#7739#0" expanded="true" />
-                <element signature="e#7804#7805#0" expanded="true" />
-                <element signature="e#7856#7857#0" expanded="true" />
-                <element signature="e#7904#7905#0" expanded="true" />
-                <element signature="e#7936#7937#0" expanded="true" />
-                <element signature="e#7998#7999#0" expanded="true" />
-                <element signature="e#8040#8041#0" expanded="true" />
-                <element signature="e#8084#8085#0" expanded="true" />
-                <element signature="e#8124#8125#0" expanded="true" />
-                <element signature="e#8190#8191#0" expanded="true" />
-                <element signature="e#8248#8249#0" expanded="true" />
-                <element signature="e#8292#8293#0" expanded="true" />
-                <element signature="e#8332#8333#0" expanded="true" />
-                <element signature="e#8398#8399#0" expanded="true" />
-                <element signature="e#8456#8457#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.xhtml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/WebContent/faces/game/index.xhtml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="45">
-              <caret line="105" column="18" lean-forward="false" selection-start-line="105" selection-start-column="18" selection-end-line="105" selection-end-column="18" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="DeviceConverter.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/mine/converter/DeviceConverter.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="343">
-              <caret line="38" column="25" lean-forward="true" selection-start-line="38" selection-start-column="25" selection-end-line="38" selection-end-column="25" />
-              <folding>
-                <element signature="e#0#2478#0" expanded="true" />
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AutoCompleteRenderer.class" pinned="false" current-in-tab="false">
-        <entry file="jar://$PROJECT_DIR$/WebContent/WEB-INF/lib/primefaces-6.1.jar!/org/primefaces/component/autocomplete/AutoCompleteRenderer.class">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="215">
-              <caret line="550" column="0" lean-forward="false" selection-start-line="550" selection-start-column="0" selection-end-line="550" selection-end-column="0" />
+            <state relative-caret-position="408">
+              <caret line="120" column="27" lean-forward="true" selection-start-line="102" selection-start-column="16" selection-end-line="120" selection-end-column="27" />
               <folding />
             </state>
           </provider>
@@ -214,11 +210,124 @@
       <file leaf-file-name="DeviceEntity.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/mine/datamodel/DeviceEntity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="11" column="13" lean-forward="false" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+            <state relative-caret-position="171">
+              <caret line="32" column="16" lean-forward="false" selection-start-line="32" selection-start-column="16" selection-end-line="32" selection-end-column="16" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#809#810#0" expanded="true" />
+                <element signature="e#834#835#0" expanded="true" />
+                <element signature="e#868#869#0" expanded="true" />
+                <element signature="e#896#897#0" expanded="true" />
+                <marker date="1634747244952" expanded="false" signature="964:975" ph=" { " />
+                <marker date="1634747244952" expanded="false" signature="987:993" ph=" }" />
+                <marker date="1634747244952" expanded="false" signature="1031:1042" ph=" { " />
+                <marker date="1634747244952" expanded="false" signature="1059:1065" ph=" }" />
+                <marker date="1634747244952" expanded="false" signature="1132:1143" ph=" { " />
+                <marker date="1634747244952" expanded="false" signature="1155:1161" ph=" }" />
+                <marker date="1634747244952" expanded="false" signature="1199:1210" ph=" { " />
+                <marker date="1634747244952" expanded="false" signature="1227:1233" ph=" }" />
+                <marker date="1634747244952" expanded="false" signature="1318:1329" ph=" { " />
+                <marker date="1634747244952" expanded="false" signature="1350:1356" ph=" }" />
+                <marker date="1634747244952" expanded="false" signature="1412:1423" ph=" { " />
+                <marker date="1634747244952" expanded="false" signature="1458:1464" ph=" }" />
+                <marker date="1634747244952" expanded="false" signature="1533:1544" ph=" { " />
+                <marker date="1634747244952" expanded="false" signature="1557:1563" ph=" }" />
+                <marker date="1634747244952" expanded="false" signature="1603:1614" ph=" { " />
+                <marker date="1634747244952" expanded="false" signature="1633:1639" ph=" }" />
+                <marker date="1634747244952" expanded="false" signature="1706:1717" ph=" { " />
+                <marker date="1634747244952" expanded="false" signature="1729:1735" ph=" }" />
+                <marker date="1634747244952" expanded="false" signature="1773:1784" ph=" { " />
+                <marker date="1634747244952" expanded="false" signature="1801:1807" ph=" }" />
+                <marker date="1634747244952" expanded="false" signature="1887:1898" ph=" { " />
+                <marker date="1634747244952" expanded="false" signature="1916:1922" ph=" }" />
+                <marker date="1634747244952" expanded="false" signature="1972:1983" ph=" { " />
+                <marker date="1634747244952" expanded="false" signature="2012:2018" ph=" }" />
+                <marker date="1634747244952" expanded="false" signature="2096:2107" ph=" { " />
+                <marker date="1634747244952" expanded="false" signature="2124:2130" ph=" }" />
+                <marker date="1634747244952" expanded="false" signature="2178:2189" ph=" { " />
+                <marker date="1634747244952" expanded="false" signature="2216:2222" ph=" }" />
+                <marker date="1634747244952" expanded="false" signature="2290:2301" ph=" { " />
+                <marker date="1634747244952" expanded="false" signature="2313:2319" ph=" }" />
+                <marker date="1634747244952" expanded="false" signature="2357:2368" ph=" { " />
+                <marker date="1634747244952" expanded="false" signature="2385:2391" ph=" }" />
+                <marker date="1634747244952" expanded="false" signature="2459:2470" ph=" { " />
+                <marker date="1634747244952" expanded="false" signature="2482:2488" ph=" }" />
+                <marker date="1634747244952" expanded="false" signature="2526:2537" ph=" { " />
+                <marker date="1634747244952" expanded="false" signature="2554:2560" ph=" }" />
+                <marker date="1634747244952" expanded="false" signature="2640:2651" ph=" { " />
+                <marker date="1634747244952" expanded="false" signature="2669:2675" ph=" }" />
+                <marker date="1634747244952" expanded="false" signature="2725:2736" ph=" { " />
+                <marker date="1634747244952" expanded="false" signature="2765:2771" ph=" }" />
+                <marker date="1634747244952" expanded="false" signature="2836:2847" ph=" { " />
+                <marker date="1634747244952" expanded="false" signature="2858:2864" ph=" }" />
+                <marker date="1634747244952" expanded="false" signature="2900:2911" ph=" { " />
+                <marker date="1634747244952" expanded="false" signature="2926:2932" ph=" }" />
+                <marker date="1634747244952" expanded="false" signature="2997:3008" ph=" { " />
+                <marker date="1634747244952" expanded="false" signature="3019:3025" ph=" }" />
+                <marker date="1634747244952" expanded="false" signature="3061:3072" ph=" { " />
+                <marker date="1634747244952" expanded="false" signature="3087:3093" ph=" }" />
+                <marker date="1634747244952" expanded="false" signature="3166:3177" ph=" { " />
+                <marker date="1634747244952" expanded="false" signature="3192:3198" ph=" }" />
+                <marker date="1634747244952" expanded="false" signature="3242:3253" ph=" { " />
+                <marker date="1634747244952" expanded="false" signature="3276:3282" ph=" }" />
+                <marker date="1634747244952" expanded="false" signature="3349:3360" ph=" { " />
+                <marker date="1634747244952" expanded="false" signature="3372:3378" ph=" }" />
+                <marker date="1634747244952" expanded="false" signature="3416:3427" ph=" { " />
+                <marker date="1634747244952" expanded="false" signature="3444:3450" ph=" }" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.xhtml" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/WebContent/faces/assign-device/index.xhtml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="176">
+              <caret line="31" column="93" lean-forward="false" selection-start-line="31" selection-start-column="93" selection-end-line="31" selection-end-column="93" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="primefaces-p.taglib.xml" pinned="false" current-in-tab="false">
+        <entry file="jar://$PROJECT_DIR$/WebContent/WEB-INF/lib/primefaces-6.1.jar!/META-INF/primefaces-p.taglib.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="140">
+              <caret line="3657" column="4" lean-forward="false" selection-start-line="3657" selection-start-column="4" selection-end-line="3657" selection-end-column="4" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DeviceConverter.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/mine/converter/DeviceConverter.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="104">
+              <caret line="30" column="54" lean-forward="true" selection-start-line="30" selection-start-column="54" selection-end-line="30" selection-end-column="54" />
+              <folding>
+                <element signature="e#0#2476#0" expanded="true" />
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="GenericDaoImplNewV2.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/mine/persistence/GenericDaoImplNewV2.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="189">
+              <caret line="380" column="0" lean-forward="false" selection-start-line="380" selection-start-column="0" selection-end-line="380" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="LazyDataModelBaseNew.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/mine/lazy/LazyDataModelBaseNew.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="189">
+              <caret line="77" column="0" lean-forward="false" selection-start-line="77" selection-start-column="0" selection-end-line="77" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -235,29 +344,12 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>logo.</find>
-      <find>logo.p</find>
-      <find>logo.pn</find>
-      <find>logo.png</find>
-      <find>fa-server</find>
-      <find>fa fa-gamepad Green89CC97</find>
-      <find>Liên hệ</find>
-      <find>j</find>
-      <find>jo</find>
-      <find>joi</find>
-      <find>deviceService</find>
-      <find>DeviceServiceImpl</find>
-      <find>DeviceEntity</find>
-      <find>addDlg</find>
-      <find>detailDlg</find>
       <find>join</find>
       <find>menu-btn-icon</find>
       <find>depentPropCatDlgFormdet</find>
       <find>depentPropCatDlgForm</find>
-      <find>Integer</find>
       <find>onSearchKeyword</find>
       <find>gameService</find>
-      <find>selectedDevice</find>
       <find>s</find>
       <find>selec</find>
       <find>select</find>
@@ -265,9 +357,25 @@
       <find>selectOn</find>
       <find>selectedInfraType</find>
       <find>handleChangeInfraType</find>
+      <find>quality</find>
+      <find>quantity</find>
+      <find>note</find>
+      <find>bBBGController</find>
+      <find>session</find>
+      <find>selectedInfraCode</find>
+      <find>infraId</find>
+      <find>device_infra</find>
+      <find>.name</find>
+      <find>merge</find>
+      <find>name</find>
+      <find>Edit</find>
+      <find>selectedDevice</find>
+      <find>Integer</find>
+      <find>Bieen</find>
+      <find>Biên</find>
+      <find>biên bản bàn giao</find>
     </findStrings>
     <replaceStrings>
-      <replace>contractController</replace>
       <replace>bbbgService</replace>
       <replace>BbbgEntity</replace>
       <replace>bbbgController</replace>
@@ -295,8 +403,9 @@
       <replace>DeviceInfraEntity</replace>
       <replace>detailDlg</replace>
       <replace>detailForm</replace>
-      <replace>Long</replace>
       <replace>detailObj</replace>
+      <replace>deviceInfraController</replace>
+      <replace>Long</replace>
     </replaceStrings>
     <dirStrings>
       <dir>D:\PROJECTS\QLTN\03.SOURCECODE\MAIN\SOURCE_WEB\IIM\WebContent\faces</dir>
@@ -338,16 +447,11 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/com/mine/persistence/ProjectServiceImpl.java" />
-        <option value="$PROJECT_DIR$/WebContent/WEB-INF/lib/hibernate-jpa-2.1-api-1.0.0.Final.jar!/javax/persistence/Basic.class" />
-        <option value="$PROJECT_DIR$/WebContent/layout/olympos/footer.xhtml" />
         <option value="$PROJECT_DIR$/src/com/mine/resource/messages_en_US.properties" />
         <option value="$PROJECT_DIR$/src/com/mine/resource/messages_vi_VN.properties" />
-        <option value="$PROJECT_DIR$/src/com/mine/datamodel/ProjectEntity.java" />
         <option value="$PROJECT_DIR$/src/com/mine/controller/ProjectController.java" />
         <option value="$PROJECT_DIR$/src/com/mine/controller/ContractController.java" />
         <option value="$PROJECT_DIR$/WebContent/faces/project/index.xhtml" />
-        <option value="$PROJECT_DIR$/src/com/mine/datamodel/ContractEntity.java" />
         <option value="$PROJECT_DIR$/src/com/mine/persistence/BBBGServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/com/mine/persistence/ContractServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/com/mine/util/Config.java" />
@@ -356,17 +460,14 @@
         <option value="$PROJECT_DIR$/src/com/mine/controller/GameController.java" />
         <option value="$PROJECT_DIR$/src/com/mine/persistence/HaServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/com/mine/controller/HaController.java" />
-        <option value="$PROJECT_DIR$/src/com/mine/datamodel/HaEntity.java" />
         <option value="$PROJECT_DIR$/src/com/mine/persistence/PoolServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/com/mine/controller/PoolController.java" />
         <option value="$PROJECT_DIR$/WebContent/faces/ha/index.xhtml" />
         <option value="$PROJECT_DIR$/WebContent/faces/contract/index.xhtml" />
         <option value="$PROJECT_DIR$/WebContent/faces/pool/index.xhtml" />
-        <option value="$PROJECT_DIR$/src/com/mine/datamodel/PoolEntity.java" />
         <option value="$PROJECT_DIR$/src/com/mine/persistence/UnitServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/com/mine/controller/UnitController.java" />
         <option value="$PROJECT_DIR$/WebContent/faces/unit/index.xhtml" />
-        <option value="$PROJECT_DIR$/src/com/mine/datamodel/UnitEntity.java" />
         <option value="$PROJECT_DIR$/src/com/mine/persistence/DeviceServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/com/mine/controller/DeviceController.java" />
         <option value="$PROJECT_DIR$/WebContent/faces/device/index.xhtml" />
@@ -375,7 +476,6 @@
         <option value="$PROJECT_DIR$/WebContent/layout/olympos/topbar.xhtml" />
         <option value="$PROJECT_DIR$/WebContent/layout/olympos/othertabsubmenus.xhtml" />
         <option value="$PROJECT_DIR$/WebContent/WEB-INF/pretty-config.xml" />
-        <option value="$PROJECT_DIR$/src/com/mine/datamodel/DeviceEntity.java" />
         <option value="$PROJECT_DIR$/src/com/mine/persistence/DeviceInfraServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/com/mine/datamodel/DeviceInfraDisplayEntity.java" />
         <option value="$PROJECT_DIR$/src/hibernate.cfg.xml" />
@@ -385,8 +485,17 @@
         <option value="$PROJECT_DIR$/WebContent/faces/bbbg/detailFragment.xhtml" />
         <option value="$PROJECT_DIR$/WebContent/faces/bbbg/detail.xhtml" />
         <option value="$PROJECT_DIR$/src/com/mine/persistence/GenericDaoImplNewV2.java" />
-        <option value="$PROJECT_DIR$/src/com/mine/converter/DeviceConverter.java" />
+        <option value="$PROJECT_DIR$/src/com/mine/lazy/LazyDataModelBaseNew.java" />
+        <option value="$PROJECT_DIR$/WebContent/WEB-INF/lib/hibernate-core-5.1.0.Final.jar!/org/hibernate/criterion/Restrictions.class" />
+        <option value="$PROJECT_DIR$/src/com/mine/lazy/LazyDataModelDeviceInfra.java" />
+        <option value="$PROJECT_DIR$/src/com/mine/datamodel/ProjectEntity.java" />
+        <option value="$PROJECT_DIR$/src/com/mine/datamodel/ContractEntity.java" />
+        <option value="$PROJECT_DIR$/src/com/mine/datamodel/PoolEntity.java" />
+        <option value="$PROJECT_DIR$/src/com/mine/datamodel/HaEntity.java" />
+        <option value="$PROJECT_DIR$/src/com/mine/datamodel/UnitEntity.java" />
         <option value="$PROJECT_DIR$/src/com/mine/datamodel/DeviceInfraEntity.java" />
+        <option value="$PROJECT_DIR$/src/com/mine/datamodel/DeviceEntity.java" />
+        <option value="$PROJECT_DIR$/src/com/mine/converter/DeviceConverter.java" />
         <option value="$PROJECT_DIR$/src/com/mine/controller/DeviceInfraController.java" />
         <option value="$PROJECT_DIR$/WebContent/faces/assign-device/index.xhtml" />
       </list>
@@ -484,7 +593,135 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="WebContent" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="faces" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="contract" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="infra_supply" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="infra_supply" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="WebContent" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="faces" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bbbg" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="infra_supply" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="infra_supply" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="WebContent" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="faces" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="assign-device" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="infra_supply" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="infra_supply" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="infra_supply" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="infra_supply" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mine" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="infra_supply" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="infra_supply" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mine" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lazy" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="infra_supply" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="infra_supply" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mine" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="datamodel" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -520,11 +757,11 @@
       <recent name="C:\running_projects\infra_supply\source\refer\GameOnlineMarketBack\src\com\mine\persistence" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.mine.lazy" />
       <recent name="com.mine.datamodel" />
       <recent name="com.mine.persistence" />
       <recent name="com.mine.controller" />
       <recent name="com.mine.authen" />
-      <recent name="com.mine.converter" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="H:\TuanAnh\Projects\TNT2\tnt\GameOnlineMarket\backend\GOM\src\com\mine\authen" />
@@ -1185,12 +1422,12 @@
       <workItem from="1514867238542" duration="12837000" />
       <workItem from="1633232789086" duration="20674000" />
       <workItem from="1633324073713" duration="41136000" />
-      <workItem from="1634392975816" duration="12040000" />
+      <workItem from="1634392975816" duration="26826000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="298786000" />
+    <option name="totallyTimeSpent" value="313572000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1213,12 +1450,13 @@
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24921875" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2515625" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="JSF" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3011236" sideWeight="0.49375" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.40561798" sideWeight="0.49375" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32991454" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.41348314" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1233,7 +1471,7 @@
       <window_info id="Persistence" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25078124" sideWeight="0.46067417" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25078124" sideWeight="0.53932583" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2375" sideWeight="0.27586207" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3223684" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3213483" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.22913505" sideWeight="0.516129" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -1241,7 +1479,6 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="JRebel Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="JRebel Executor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24921875" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
       <window_info id="JRebel" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -1314,17 +1551,11 @@
           <properties />
           <option name="timeStamp" value="81" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/com/mine/controller/DeviceInfraController.java</url>
-          <line>127</line>
-          <properties />
-          <option name="timeStamp" value="109" />
-        </line-breakpoint>
       </breakpoints>
       <breakpoints-dialog>
         <breakpoints-dialog />
       </breakpoints-dialog>
-      <option name="time" value="115" />
+      <option name="time" value="130" />
     </breakpoint-manager>
     <watches-manager>
       <configuration name="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory">
@@ -1337,115 +1568,11 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/com/mine/util/Config.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="20" column="66" lean-forward="false" selection-start-line="20" selection-start-column="66" selection-end-line="20" selection-end-column="66" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/WebContent/WEB-INF/lib/primefaces-6.1.jar!/org/primefaces/model/UploadedFile.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="17" column="25" lean-forward="true" selection-start-line="17" selection-start-column="4" selection-end-line="17" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/mine/model/Game.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="67" column="21" lean-forward="true" selection-start-line="67" selection-start-column="21" selection-end-line="67" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/mine/filter/ActionLogFilter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="52">
-          <caret line="23" column="28" lean-forward="false" selection-start-line="23" selection-start-column="13" selection-end-line="23" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/WebContent/404.xhtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/WebContent/WEB-INF/web.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="89" column="28" lean-forward="true" selection-start-line="89" selection-start-column="28" selection-end-line="89" selection-end-column="28" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/mine/util/Util.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="322">
-          <caret line="133" column="32" lean-forward="true" selection-start-line="133" selection-start-column="32" selection-end-line="133" selection-end-column="32" />
-          <folding>
-            <element signature="e#1059#1073#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/mine/persistence/ContractServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="22" column="0" lean-forward="true" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/WebContent/faces/project/index.xhtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="153" column="95" lean-forward="true" selection-start-line="153" selection-start-column="24" selection-end-line="153" selection-end-column="95" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/WebContent/faces/contract/index.xhtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="31" column="85" lean-forward="false" selection-start-line="31" selection-start-column="85" selection-end-line="31" selection-end-column="85" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/WebContent/faces/pool/index.xhtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="297">
-          <caret line="110" column="73" lean-forward="false" selection-start-line="110" selection-start-column="73" selection-end-line="110" selection-end-column="73" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/mine/controller/PoolController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="227">
-          <caret line="33" column="28" lean-forward="false" selection-start-line="33" selection-start-column="28" selection-end-line="33" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/mine/datamodel/PoolEntity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="20" column="44" lean-forward="false" selection-start-line="20" selection-start-column="44" selection-end-line="20" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/mine/controller/HaController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1581">
-          <caret line="114" column="20" lean-forward="false" selection-start-line="114" selection-start-column="20" selection-end-line="114" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/mine/persistence/HaServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
           <caret line="20" column="13" lean-forward="false" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1453,6 +1580,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
           <caret line="20" column="32" lean-forward="false" selection-start-line="20" selection-start-column="32" selection-end-line="20" selection-end-column="32" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1460,13 +1588,32 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2126">
           <caret line="158" column="38" lean-forward="false" selection-start-line="158" selection-start-column="38" selection-end-line="158" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/mine/datamodel/UnitEntity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="22" column="44" lean-forward="false" selection-start-line="22" selection-start-column="44" selection-end-line="22" selection-end-column="44" />
+          <folding>
+            <element signature="e#3942#3943#0" expanded="false" />
+            <element signature="e#3974#3975#0" expanded="false" />
+            <element signature="e#4043#4044#0" expanded="false" />
+            <element signature="e#4085#4086#0" expanded="false" />
+            <element signature="e#4132#4133#0" expanded="false" />
+            <element signature="e#4168#4169#0" expanded="false" />
+            <element signature="e#4233#4234#0" expanded="false" />
+            <element signature="e#4283#4284#0" expanded="false" />
+            <element signature="e#4461#4462#0" expanded="false" />
+            <element signature="e#4490#4491#0" expanded="false" />
+            <element signature="e#4538#4539#0" expanded="false" />
+            <element signature="e#4574#4575#0" expanded="false" />
+            <element signature="e#4608#4609#0" expanded="false" />
+            <element signature="e#4637#4638#0" expanded="false" />
+            <element signature="e#4682#4683#0" expanded="false" />
+            <element signature="e#4718#4719#0" expanded="false" />
+            <element signature="e#4765#4766#0" expanded="false" />
+            <element signature="e#4799#4800#0" expanded="false" />
+            <element signature="e#4862#4863#0" expanded="false" />
+            <element signature="e#4908#4909#0" expanded="false" />
+            <element signature="e#4956#4957#0" expanded="false" />
+            <element signature="e#4990#4991#0" expanded="false" />
+            <element signature="e#5054#5055#0" expanded="false" />
+            <element signature="e#5100#5101#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1474,6 +1621,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
           <caret line="20" column="13" lean-forward="false" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1482,24 +1630,6 @@
         <state relative-caret-position="221">
           <caret line="121" column="40" lean-forward="true" selection-start-line="121" selection-start-column="40" selection-end-line="121" selection-end-column="40" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/hibernate.reveng.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/mine/datamodel/HaEntity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="29" column="5" lean-forward="true" selection-start-line="19" selection-start-column="4" selection-end-line="29" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1526,6 +1656,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="308">
           <caret line="99" column="36" lean-forward="false" selection-start-line="99" selection-start-column="36" selection-end-line="99" selection-end-column="36" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1540,6 +1671,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="156">
           <caret line="66" column="20" lean-forward="false" selection-start-line="66" selection-start-column="20" selection-end-line="66" selection-end-column="20" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1555,22 +1687,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
           <caret line="20" column="13" lean-forward="false" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/hibernate.cfg.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" column="37" lean-forward="false" selection-start-line="17" selection-start-column="37" selection-end-line="17" selection-end-column="37" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/mine/datamodel/DeviceInfraDisplayEntity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="19" lean-forward="false" selection-start-line="8" selection-start-column="19" selection-end-line="8" selection-end-column="19" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1728,36 +1844,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/mine/persistence/GenericDaoImplNewV2.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="57" column="39" lean-forward="false" selection-start-line="57" selection-start-column="37" selection-end-line="57" selection-end-column="39" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/mine/datamodel/DeviceEntity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="11" column="13" lean-forward="false" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$PROJECT_DIR$/WebContent/WEB-INF/lib/primefaces-6.1.jar!/org/primefaces/component/autocomplete/AutoCompleteRenderer.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="215">
           <caret line="550" column="0" lean-forward="false" selection-start-line="550" selection-start-column="0" selection-end-line="550" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/WebContent/faces/bbbg/index.xhtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1450">
-          <caret line="40" column="30" lean-forward="true" selection-start-line="34" selection-start-column="28" selection-end-line="40" selection-end-column="30" />
           <folding />
         </state>
       </provider>
@@ -1778,30 +1868,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/mine/datamodel/DeviceInfraEntity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="58" column="30" lean-forward="false" selection-start-line="58" selection-start-column="30" selection-end-line="58" selection-end-column="30" />
-          <folding>
-            <element signature="e#1153#1154#0" expanded="true" />
-            <element signature="e#1185#1186#0" expanded="true" />
-            <element signature="e#1235#1236#0" expanded="true" />
-            <element signature="e#1277#1278#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/mine/converter/DeviceConverter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="343">
-          <caret line="38" column="25" lean-forward="true" selection-start-line="38" selection-start-column="25" selection-end-line="38" selection-end-column="25" />
-          <folding>
-            <element signature="e#0#2478#0" expanded="true" />
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/WebContent/faces/game/index.xhtml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="45">
@@ -1810,44 +1876,492 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/WebContent/faces/assign-device/index.xhtml">
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_261/src.zip!/java/lang/Integer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="231">
-          <caret line="64" column="54" lean-forward="true" selection-start-line="64" selection-start-column="54" selection-end-line="64" selection-end-column="54" />
+        <state relative-caret-position="287">
+          <caret line="51" column="26" lean-forward="false" selection-start-line="51" selection-start-column="19" selection-end-line="51" selection-end-column="26" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/mine/persistence/GenericDaoImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-4580">
+          <caret line="37" column="22" lean-forward="false" selection-start-line="37" selection-start-column="22" selection-end-line="37" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/mine/persistence/ProjectServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="19" column="73" lean-forward="false" selection-start-line="19" selection-start-column="60" selection-end-line="19" selection-end-column="73" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/WebContent/WEB-INF/lib/primefaces-6.1.jar!/org/primefaces/model/LazyDataModel.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="37" lean-forward="true" selection-start-line="2" selection-start-column="37" selection-end-line="2" selection-end-column="37" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/mine/persistence/GenericDaoServiceNewV2.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="278">
+          <caret line="40" column="15" lean-forward="false" selection-start-line="40" selection-start-column="15" selection-end-line="40" selection-end-column="15" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/mine/util/HibernateUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="30" column="50" lean-forward="false" selection-start-line="30" selection-start-column="33" selection-end-line="30" selection-end-column="50" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/mine/datamodel/DeviceInfraDisplayEntity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="13" lean-forward="false" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/WebContent/WEB-INF/lib/hibernate-core-5.1.0.Final.jar!/org/hibernate/criterion/Restrictions.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="164">
+          <caret line="50" column="28" lean-forward="false" selection-start-line="50" selection-start-column="28" selection-end-line="50" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/mine/lazy/LazyDataModelDeviceInfra.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="156">
+          <caret line="201" column="71" lean-forward="false" selection-start-line="201" selection-start-column="71" selection-end-line="201" selection-end-column="71" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/mine/datamodel/ProjectEntity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="191">
+          <caret line="30" column="32" lean-forward="true" selection-start-line="30" selection-start-column="32" selection-end-line="30" selection-end-column="32" />
+          <folding>
+            <element signature="e#640#641#0" expanded="true" />
+            <element signature="e#665#666#0" expanded="true" />
+            <element signature="e#727#728#0" expanded="true" />
+            <marker date="1634745149451" expanded="false" signature="795:806" ph=" { " />
+            <marker date="1634745149451" expanded="false" signature="818:824" ph=" }" />
+            <marker date="1634745149451" expanded="false" signature="862:873" ph=" { " />
+            <marker date="1634745149451" expanded="false" signature="890:896" ph=" }" />
+            <marker date="1634745149451" expanded="false" signature="965:976" ph=" { " />
+            <marker date="1634745149451" expanded="false" signature="989:995" ph=" }" />
+            <marker date="1634745149451" expanded="false" signature="1035:1046" ph=" { " />
+            <marker date="1634745149451" expanded="false" signature="1065:1071" ph=" }" />
+            <marker date="1634745149451" expanded="false" signature="1187:1198" ph=" { " />
+            <marker date="1634745149451" expanded="false" signature="1216:1222" ph=" }" />
+            <marker date="1634745149451" expanded="false" signature="1270:1281" ph=" { " />
+            <marker date="1634745149451" expanded="false" signature="1310:1316" ph=" }" />
+            <marker date="1634745149451" expanded="false" signature="1387:1398" ph=" { " />
+            <marker date="1634745149451" expanded="false" signature="1412:1418" ph=" }" />
+            <marker date="1634745149451" expanded="false" signature="1460:1471" ph=" { " />
+            <marker date="1634745149451" expanded="false" signature="1492:1498" ph=" }" />
+            <marker date="1634745149451" expanded="false" signature="1565:1576" ph=" { " />
+            <marker date="1634745149451" expanded="false" signature="1588:1594" ph=" }" />
+            <marker date="1634745149451" expanded="false" signature="1632:1643" ph=" { " />
+            <marker date="1634745149451" expanded="false" signature="1660:1666" ph=" }" />
+            <marker date="1634745149451" expanded="false" signature="1733:1744" ph=" { " />
+            <marker date="1634745149451" expanded="false" signature="1756:1762" ph=" }" />
+            <marker date="1634745149451" expanded="false" signature="1800:1811" ph=" { " />
+            <marker date="1634745149451" expanded="false" signature="1828:1834" ph=" }" />
+            <marker date="1634745149451" expanded="false" signature="2616:2627" ph=" { " />
+            <marker date="1634745149451" expanded="false" signature="2651:2657" ph=" }" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/mine/datamodel/ContractEntity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1539">
+          <caret line="110" column="33" lean-forward="false" selection-start-line="110" selection-start-column="33" selection-end-line="110" selection-end-column="33" />
+          <folding>
+            <element signature="e#656#657#0" expanded="true" />
+            <element signature="e#681#682#0" expanded="true" />
+            <element signature="e#715#716#0" expanded="true" />
+            <element signature="e#743#744#0" expanded="true" />
+            <element signature="e#812#813#0" expanded="true" />
+            <element signature="e#839#840#0" expanded="true" />
+            <element signature="e#879#880#0" expanded="true" />
+            <element signature="e#911#912#0" expanded="true" />
+            <element signature="e#980#981#0" expanded="true" />
+            <element signature="e#1007#1008#0" expanded="true" />
+            <element signature="e#1047#1048#0" expanded="true" />
+            <element signature="e#1079#1080#0" expanded="true" />
+            <element signature="e#1169#1170#0" expanded="true" />
+            <element signature="e#1207#1208#0" expanded="true" />
+            <element signature="e#1267#1268#0" expanded="true" />
+            <element signature="e#1321#1322#0" expanded="true" />
+            <element signature="e#1407#1408#0" expanded="true" />
+            <element signature="e#1442#1443#0" expanded="true" />
+            <element signature="e#1498#1499#0" expanded="true" />
+            <element signature="e#1546#1547#0" expanded="true" />
+            <element signature="e#1621#1622#0" expanded="true" />
+            <element signature="e#1651#1652#0" expanded="true" />
+            <element signature="e#1697#1698#0" expanded="true" />
+            <element signature="e#1735#1736#0" expanded="true" />
+            <element signature="e#1806#1807#0" expanded="true" />
+            <element signature="e#1834#1835#0" expanded="true" />
+            <element signature="e#1876#1877#0" expanded="true" />
+            <element signature="e#1910#1911#0" expanded="true" />
+            <element signature="e#1979#1980#0" expanded="true" />
+            <element signature="e#2006#2007#0" expanded="true" />
+            <element signature="e#2046#2047#0" expanded="true" />
+            <element signature="e#2078#2079#0" expanded="true" />
+            <element signature="e#2149#2150#0" expanded="true" />
+            <element signature="e#2178#2179#0" expanded="true" />
+            <element signature="e#2220#2221#0" expanded="true" />
+            <element signature="e#2256#2257#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/mine/datamodel/PoolEntity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="232">
+          <caret line="25" column="29" lean-forward="false" selection-start-line="25" selection-start-column="29" selection-end-line="25" selection-end-column="29" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#502#503#0" expanded="true" />
+            <element signature="e#527#528#0" expanded="true" />
+            <element signature="e#561#562#0" expanded="true" />
+            <element signature="e#589#590#0" expanded="true" />
+            <marker date="1634745172640" expanded="false" signature="657:668" ph=" { " />
+            <marker date="1634745172640" expanded="false" signature="680:686" ph=" }" />
+            <marker date="1634745172640" expanded="false" signature="724:735" ph=" { " />
+            <marker date="1634745172640" expanded="false" signature="752:758" ph=" }" />
+            <marker date="1634745172640" expanded="false" signature="825:836" ph=" { " />
+            <marker date="1634745172640" expanded="false" signature="848:854" ph=" }" />
+            <marker date="1634745172640" expanded="false" signature="892:903" ph=" { " />
+            <marker date="1634745172640" expanded="false" signature="920:926" ph=" }" />
+            <marker date="1634745172640" expanded="false" signature="993:1004" ph=" { " />
+            <marker date="1634745172640" expanded="false" signature="1016:1022" ph=" }" />
+            <marker date="1634745172640" expanded="false" signature="1060:1071" ph=" { " />
+            <marker date="1634745172640" expanded="false" signature="1088:1094" ph=" }" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/mine/datamodel/HaEntity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="232">
+          <caret line="27" column="29" lean-forward="false" selection-start-line="27" selection-start-column="29" selection-end-line="27" selection-end-column="29" />
+          <folding>
+            <element signature="e#559#560#0" expanded="true" />
+            <element signature="e#584#585#0" expanded="true" />
+            <element signature="e#618#619#0" expanded="true" />
+            <element signature="e#646#647#0" expanded="true" />
+            <marker date="1634745172633" expanded="false" signature="714:725" ph=" { " />
+            <marker date="1634745172633" expanded="false" signature="737:743" ph=" }" />
+            <marker date="1634745172633" expanded="false" signature="781:792" ph=" { " />
+            <marker date="1634745172633" expanded="false" signature="809:815" ph=" }" />
+            <marker date="1634745172633" expanded="false" signature="882:893" ph=" { " />
+            <marker date="1634745172633" expanded="false" signature="905:911" ph=" }" />
+            <marker date="1634745172633" expanded="false" signature="949:960" ph=" { " />
+            <marker date="1634745172633" expanded="false" signature="977:983" ph=" }" />
+            <marker date="1634745172633" expanded="false" signature="1061:1072" ph=" { " />
+            <marker date="1634745172633" expanded="false" signature="1089:1095" ph=" }" />
+            <marker date="1634745172633" expanded="false" signature="1143:1154" ph=" { " />
+            <marker date="1634745172633" expanded="false" signature="1181:1187" ph=" }" />
+            <marker date="1634745172633" expanded="false" signature="1267:1278" ph=" { " />
+            <marker date="1634745172633" expanded="false" signature="1296:1302" ph=" }" />
+            <marker date="1634745172633" expanded="false" signature="1352:1363" ph=" { " />
+            <marker date="1634745172633" expanded="false" signature="1392:1398" ph=" }" />
+            <marker date="1634745172633" expanded="false" signature="1465:1476" ph=" { " />
+            <marker date="1634745172633" expanded="false" signature="1488:1494" ph=" }" />
+            <marker date="1634745172633" expanded="false" signature="1532:1543" ph=" { " />
+            <marker date="1634745172633" expanded="false" signature="1560:1566" ph=" }" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/mine/datamodel/UnitEntity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="79">
+          <caret line="18" column="0" lean-forward="true" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+          <folding>
+            <element signature="e#555#556#0" expanded="true" />
+            <element signature="e#580#581#0" expanded="true" />
+            <element signature="e#614#615#0" expanded="true" />
+            <element signature="e#642#643#0" expanded="true" />
+            <element signature="e#711#712#0" expanded="true" />
+            <element signature="e#738#739#0" expanded="true" />
+            <element signature="e#778#779#0" expanded="true" />
+            <element signature="e#810#811#0" expanded="true" />
+            <element signature="e#879#880#0" expanded="true" />
+            <element signature="e#906#907#0" expanded="true" />
+            <element signature="e#946#947#0" expanded="true" />
+            <element signature="e#978#979#0" expanded="true" />
+            <element signature="e#1054#1055#0" expanded="true" />
+            <element signature="e#1085#1086#0" expanded="true" />
+            <element signature="e#1131#1132#0" expanded="true" />
+            <element signature="e#1171#1172#0" expanded="true" />
+            <marker date="1634745182702" expanded="false" signature="1241:1252" ph=" { " />
+            <marker date="1634745182702" expanded="false" signature="1265:1271" ph=" }" />
+            <marker date="1634745182702" expanded="false" signature="1311:1322" ph=" { " />
+            <marker date="1634745182702" expanded="false" signature="1341:1347" ph=" }" />
+            <marker date="1634745182702" expanded="false" signature="1414:1425" ph=" { " />
+            <marker date="1634745182702" expanded="false" signature="1437:1443" ph=" }" />
+            <marker date="1634745182702" expanded="false" signature="1481:1492" ph=" { " />
+            <marker date="1634745182702" expanded="false" signature="1509:1515" ph=" }" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/hibernate.reveng.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/hibernate.cfg.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="449">
+          <caret line="37" column="45" lean-forward="true" selection-start-line="37" selection-start-column="45" selection-end-line="37" selection-end-column="45" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WebContent/faces/bbbg/index.xhtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1187">
+          <caret line="134" column="76" lean-forward="false" selection-start-line="134" selection-start-column="72" selection-end-line="134" selection-end-column="76" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WebContent/faces/contract/index.xhtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="120" column="27" lean-forward="true" selection-start-line="102" selection-start-column="16" selection-end-line="120" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/mine/datamodel/DeviceInfraEntity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="615">
+          <caret line="41" column="35" lean-forward="false" selection-start-line="41" selection-start-column="35" selection-end-line="41" selection-end-column="35" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#697#698#0" expanded="true" />
+            <element signature="e#722#723#0" expanded="true" />
+            <element signature="e#756#757#0" expanded="true" />
+            <element signature="e#784#785#0" expanded="true" />
+            <element signature="e#860#861#0" expanded="true" />
+            <element signature="e#891#892#0" expanded="true" />
+            <element signature="e#937#938#0" expanded="true" />
+            <element signature="e#977#978#0" expanded="true" />
+            <element signature="e#1125#1126#0" expanded="true" />
+            <element signature="e#1163#1164#0" expanded="true" />
+            <element signature="e#1300#1301#0" expanded="true" />
+            <element signature="e#1334#1335#0" expanded="true" />
+            <element signature="e#1414#1415#0" expanded="true" />
+            <element signature="e#1446#1447#0" expanded="true" />
+            <element signature="e#1496#1497#0" expanded="true" />
+            <element signature="e#1538#1539#0" expanded="true" />
+            <element signature="e#1607#1608#0" expanded="true" />
+            <element signature="e#1634#1635#0" expanded="true" />
+            <element signature="e#1786#1787#0" expanded="true" />
+            <element signature="e#1818#1819#0" expanded="true" />
+            <element signature="e#1868#1869#0" expanded="true" />
+            <element signature="e#1910#1911#0" expanded="true" />
+            <element signature="e#1992#1993#0" expanded="true" />
+            <element signature="e#2025#2026#0" expanded="true" />
+            <element signature="e#2077#2078#0" expanded="true" />
+            <element signature="e#2121#2122#0" expanded="true" />
+            <element signature="e#2203#2204#0" expanded="true" />
+            <element signature="e#2236#2237#0" expanded="true" />
+            <element signature="e#2288#2289#0" expanded="true" />
+            <element signature="e#2332#2333#0" expanded="true" />
+            <element signature="e#2412#2413#0" expanded="true" />
+            <element signature="e#2444#2445#0" expanded="true" />
+            <element signature="e#2494#2495#0" expanded="true" />
+            <element signature="e#2536#2537#0" expanded="true" />
+            <marker date="1634747224370" expanded="false" signature="1050:1061" ph=" { " />
+            <marker date="1634747224370" expanded="false" signature="1076:1082" ph=" }" />
+            <marker date="1634747224370" expanded="false" signature="1231:1242" ph=" { " />
+            <marker date="1634747224370" expanded="false" signature="1255:1261" ph=" }" />
+            <marker date="1634747224370" expanded="false" signature="1673:1684" ph=" { " />
+            <marker date="1634747224370" expanded="false" signature="1701:1707" ph=" }" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/mine/lazy/LazyDataModelBaseNew.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="77" column="0" lean-forward="false" selection-start-line="77" selection-start-column="0" selection-end-line="77" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/mine/persistence/GenericDaoImplNewV2.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="380" column="0" lean-forward="false" selection-start-line="380" selection-start-column="0" selection-end-line="380" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/mine/datamodel/DeviceEntity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="32" column="16" lean-forward="false" selection-start-line="32" selection-start-column="16" selection-end-line="32" selection-end-column="16" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#809#810#0" expanded="true" />
+            <element signature="e#834#835#0" expanded="true" />
+            <element signature="e#868#869#0" expanded="true" />
+            <element signature="e#896#897#0" expanded="true" />
+            <marker date="1634747244952" expanded="false" signature="964:975" ph=" { " />
+            <marker date="1634747244952" expanded="false" signature="987:993" ph=" }" />
+            <marker date="1634747244952" expanded="false" signature="1031:1042" ph=" { " />
+            <marker date="1634747244952" expanded="false" signature="1059:1065" ph=" }" />
+            <marker date="1634747244952" expanded="false" signature="1132:1143" ph=" { " />
+            <marker date="1634747244952" expanded="false" signature="1155:1161" ph=" }" />
+            <marker date="1634747244952" expanded="false" signature="1199:1210" ph=" { " />
+            <marker date="1634747244952" expanded="false" signature="1227:1233" ph=" }" />
+            <marker date="1634747244952" expanded="false" signature="1318:1329" ph=" { " />
+            <marker date="1634747244952" expanded="false" signature="1350:1356" ph=" }" />
+            <marker date="1634747244952" expanded="false" signature="1412:1423" ph=" { " />
+            <marker date="1634747244952" expanded="false" signature="1458:1464" ph=" }" />
+            <marker date="1634747244952" expanded="false" signature="1533:1544" ph=" { " />
+            <marker date="1634747244952" expanded="false" signature="1557:1563" ph=" }" />
+            <marker date="1634747244952" expanded="false" signature="1603:1614" ph=" { " />
+            <marker date="1634747244952" expanded="false" signature="1633:1639" ph=" }" />
+            <marker date="1634747244952" expanded="false" signature="1706:1717" ph=" { " />
+            <marker date="1634747244952" expanded="false" signature="1729:1735" ph=" }" />
+            <marker date="1634747244952" expanded="false" signature="1773:1784" ph=" { " />
+            <marker date="1634747244952" expanded="false" signature="1801:1807" ph=" }" />
+            <marker date="1634747244952" expanded="false" signature="1887:1898" ph=" { " />
+            <marker date="1634747244952" expanded="false" signature="1916:1922" ph=" }" />
+            <marker date="1634747244952" expanded="false" signature="1972:1983" ph=" { " />
+            <marker date="1634747244952" expanded="false" signature="2012:2018" ph=" }" />
+            <marker date="1634747244952" expanded="false" signature="2096:2107" ph=" { " />
+            <marker date="1634747244952" expanded="false" signature="2124:2130" ph=" }" />
+            <marker date="1634747244952" expanded="false" signature="2178:2189" ph=" { " />
+            <marker date="1634747244952" expanded="false" signature="2216:2222" ph=" }" />
+            <marker date="1634747244952" expanded="false" signature="2290:2301" ph=" { " />
+            <marker date="1634747244952" expanded="false" signature="2313:2319" ph=" }" />
+            <marker date="1634747244952" expanded="false" signature="2357:2368" ph=" { " />
+            <marker date="1634747244952" expanded="false" signature="2385:2391" ph=" }" />
+            <marker date="1634747244952" expanded="false" signature="2459:2470" ph=" { " />
+            <marker date="1634747244952" expanded="false" signature="2482:2488" ph=" }" />
+            <marker date="1634747244952" expanded="false" signature="2526:2537" ph=" { " />
+            <marker date="1634747244952" expanded="false" signature="2554:2560" ph=" }" />
+            <marker date="1634747244952" expanded="false" signature="2640:2651" ph=" { " />
+            <marker date="1634747244952" expanded="false" signature="2669:2675" ph=" }" />
+            <marker date="1634747244952" expanded="false" signature="2725:2736" ph=" { " />
+            <marker date="1634747244952" expanded="false" signature="2765:2771" ph=" }" />
+            <marker date="1634747244952" expanded="false" signature="2836:2847" ph=" { " />
+            <marker date="1634747244952" expanded="false" signature="2858:2864" ph=" }" />
+            <marker date="1634747244952" expanded="false" signature="2900:2911" ph=" { " />
+            <marker date="1634747244952" expanded="false" signature="2926:2932" ph=" }" />
+            <marker date="1634747244952" expanded="false" signature="2997:3008" ph=" { " />
+            <marker date="1634747244952" expanded="false" signature="3019:3025" ph=" }" />
+            <marker date="1634747244952" expanded="false" signature="3061:3072" ph=" { " />
+            <marker date="1634747244952" expanded="false" signature="3087:3093" ph=" }" />
+            <marker date="1634747244952" expanded="false" signature="3166:3177" ph=" { " />
+            <marker date="1634747244952" expanded="false" signature="3192:3198" ph=" }" />
+            <marker date="1634747244952" expanded="false" signature="3242:3253" ph=" { " />
+            <marker date="1634747244952" expanded="false" signature="3276:3282" ph=" }" />
+            <marker date="1634747244952" expanded="false" signature="3349:3360" ph=" { " />
+            <marker date="1634747244952" expanded="false" signature="3372:3378" ph=" }" />
+            <marker date="1634747244952" expanded="false" signature="3416:3427" ph=" { " />
+            <marker date="1634747244952" expanded="false" signature="3444:3450" ph=" }" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/mine/converter/DeviceConverter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="104">
+          <caret line="30" column="54" lean-forward="true" selection-start-line="30" selection-start-column="54" selection-end-line="30" selection-end-column="54" />
+          <folding>
+            <element signature="e#0#2476#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/mine/controller/DeviceInfraController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="257">
-          <caret line="71" column="25" lean-forward="false" selection-start-line="71" selection-start-column="25" selection-end-line="71" selection-end-column="25" />
+        <state relative-caret-position="441">
+          <caret line="135" column="13" lean-forward="false" selection-start-line="135" selection-start-column="13" selection-end-line="135" selection-end-column="13" />
           <folding>
-            <element signature="e#3852#3853#0" expanded="true" />
-            <element signature="e#3916#3917#0" expanded="true" />
-            <element signature="e#6732#6733#0" expanded="true" />
-            <element signature="e#6761#6762#0" expanded="true" />
-            <element signature="e#7499#7500#0" expanded="true" />
-            <element signature="e#7535#7536#0" expanded="true" />
-            <element signature="e#7604#7605#0" expanded="true" />
-            <element signature="e#7654#7655#0" expanded="true" />
-            <element signature="e#7701#7702#0" expanded="true" />
-            <element signature="e#7738#7739#0" expanded="true" />
-            <element signature="e#7804#7805#0" expanded="true" />
-            <element signature="e#7856#7857#0" expanded="true" />
-            <element signature="e#7904#7905#0" expanded="true" />
-            <element signature="e#7936#7937#0" expanded="true" />
-            <element signature="e#7998#7999#0" expanded="true" />
-            <element signature="e#8040#8041#0" expanded="true" />
-            <element signature="e#8084#8085#0" expanded="true" />
-            <element signature="e#8124#8125#0" expanded="true" />
-            <element signature="e#8190#8191#0" expanded="true" />
-            <element signature="e#8248#8249#0" expanded="true" />
-            <element signature="e#8292#8293#0" expanded="true" />
-            <element signature="e#8332#8333#0" expanded="true" />
-            <element signature="e#8398#8399#0" expanded="true" />
-            <element signature="e#8456#8457#0" expanded="true" />
+            <element signature="e#3591#3592#0" expanded="true" />
+            <element signature="e#3655#3656#0" expanded="true" />
+            <element signature="e#9348#9349#0" expanded="true" />
+            <element signature="e#9380#9381#0" expanded="true" />
+            <element signature="e#9881#9882#0" expanded="true" />
+            <element signature="e#9910#9911#0" expanded="true" />
+            <element signature="e#10446#10447#0" expanded="true" />
+            <element signature="e#10480#10481#0" expanded="true" />
+            <element signature="e#10648#10649#0" expanded="true" />
+            <element signature="e#10684#10685#0" expanded="true" />
+            <element signature="e#10753#10754#0" expanded="true" />
+            <element signature="e#10803#10804#0" expanded="true" />
+            <element signature="e#10850#10851#0" expanded="true" />
+            <element signature="e#10887#10888#0" expanded="true" />
+            <element signature="e#10953#10954#0" expanded="true" />
+            <element signature="e#11005#11006#0" expanded="true" />
+            <element signature="e#11053#11054#0" expanded="true" />
+            <element signature="e#11085#11086#0" expanded="true" />
+            <element signature="e#11147#11148#0" expanded="true" />
+            <element signature="e#11189#11190#0" expanded="true" />
+            <element signature="e#11233#11234#0" expanded="true" />
+            <element signature="e#11273#11274#0" expanded="true" />
+            <element signature="e#11339#11340#0" expanded="true" />
+            <element signature="e#11397#11398#0" expanded="true" />
+            <element signature="e#11441#11442#0" expanded="true" />
+            <element signature="e#11481#11482#0" expanded="true" />
+            <element signature="e#11547#11548#0" expanded="true" />
+            <element signature="e#11605#11606#0" expanded="true" />
+            <element signature="e#11638#11639#0" expanded="true" />
+            <element signature="e#11669#11670#0" expanded="true" />
+            <element signature="e#11715#11716#0" expanded="true" />
+            <element signature="e#11755#11756#0" expanded="true" />
+            <element signature="e#11786#11787#0" expanded="true" />
+            <element signature="e#11813#11814#0" expanded="true" />
+            <element signature="e#11853#11854#0" expanded="true" />
+            <element signature="e#11885#11886#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/WebContent/WEB-INF/lib/primefaces-6.1.jar!/META-INF/primefaces-p.taglib.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="140">
+          <caret line="3657" column="4" lean-forward="false" selection-start-line="3657" selection-start-column="4" selection-end-line="3657" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WebContent/faces/assign-device/index.xhtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="31" column="93" lean-forward="false" selection-start-line="31" selection-start-column="93" selection-end-line="31" selection-end-column="93" />
+          <folding />
         </state>
       </provider>
     </entry>

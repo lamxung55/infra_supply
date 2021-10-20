@@ -34,7 +34,7 @@ public class DeviceConverter implements Converter {
                 if(neededBean != null){
                     List<DeviceEntity> lstKeyword = neededBean.getLstdevice();
                     for(DeviceEntity key:lstKeyword){
-                        if(key.getId().equals(Integer.parseInt(value))){
+                        if(key.getId().equals(Long.parseLong(value))){
                             return key;
                         }
                     }

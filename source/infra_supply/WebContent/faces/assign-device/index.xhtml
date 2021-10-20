@@ -9,13 +9,118 @@
     <ui:define name="content">
         <h:form id="depentPropCatForm">
             <p:growl id="mainMessage" showDetail="true" showSummary="false"/>
-            <p:commandButton icon="fa fa-plus-circle"
-                             update="addDlg"
-                             actionListener="#{deviceInfraController.preInsert}"
-                             onclick="PF('blockDlgCommon').show()"
-                             oncomplete="PF('blockDlgCommon').hide();PF('addDlg').show()"
-                             title="Thêm mới" value="Thêm mới"
-            />
+            <p:dataTable value="#{deviceInfraController.lazyModel}" id="myTable" widgetVar="myTable"
+                         lazy="true" var="obj" rowKey="#{obj.id}"
+                         selection="#{deviceInfraController.selectedObj}"
+                         rowIndexVar="cusIdx" editable="true" editMode="cell"
+                         rows="20" paginator="true" paginatorPosition="bottom"
+                         paginatorTemplate="{CurrentPageReport} {FirstPageLink} {PreviousPageLink} {PageLinks} {NextPageLink} {LastPageLink} {RowsPerPageDropdown}"
+                         currentPageReportTemplate="Tổng số {totalRecords} bản ghi"
+                         rowsPerPageTemplate="10,15,20,30,50,60,80,100,150,200"
+                         resizableColumns="false"
+                         emptyMessage="Không có dữ liệu" tableStyle="text-align: center;"
+                         tableStyleClass="nodpadding_table"
+                         styleClass="Container100 NoPadding MarTop10 upperColumnTitle nodpadding_table"
+                         style="padding: 0px 0px !important;">
+
+                <f:facet name="header">
+                    <div class="Card NoPadding" style="background: transparent;">
+                        <div class="Container20 Responsive50" style="text-align: left;">
+
+                        </div>
+                        <div class="Container40 Responsive40">
+                            <h:outputText styleClass="Fs18" value="Danh sách sử dụng thiết bị"/>
+                        </div>
+                        <div class="Container40" style="text-align: right;">
+                            <p:commandButton icon="fa fa-plus-circle"
+                                             update="addDlg"
+                                             actionListener="#{deviceInfraController.preInsert}"
+                                             onclick="PF('blockDlgCommon').show()"
+                                             oncomplete="PF('blockDlgCommon').hide();PF('addDlg').show()"
+                                             title="Thêm mới" value="Thêm mới"
+                            />
+                            <p:commandButton icon="fa fa-download" ajax="false" title="Export" value="Export">
+                                <p:dataExporter type="xls" target="myTable" fileName="Data"
+                                                pageOnly="false"/>
+                            </p:commandButton>
+                            <p:commandButton icon="fa fa-trash"
+                                             onclick="PF('blockDlgCommon').show()"
+                                             actionListener="#{deviceInfraController.onDelete}"
+                                             oncomplete="PF('blockDlgCommon').hide()"
+                                             update="myTable"
+                                             value="Xóa"/>
+
+                            <p:commandButton id="toggler" type="button"
+                                             icon="fa fa-sliders" value="Hiển thị"/>
+                            <p:columnToggler datasource="myTable" trigger="toggler">
+                                <p:ajax event="toggle" listener="#{deviceInfraController.onToggler}"/>
+
+                            </p:columnToggler>
+                        </div>
+                    </div>
+
+                </f:facet>
+                <p:column headerText="STT" width="20" style="text-align: center"
+                          visible="#{deviceInfraController.togglerColumn[0]}">
+                    <h:outputText value="#{cusIdx +1 }"/>
+                </p:column>
+                <p:column headerText="Mã thiết bị" filterStyle="width:70%"
+                          filterBy="#{obj.deviceCode}" sortBy="#{obj.deviceCode}" groupRow="true"
+                          visible="#{deviceInfraController.togglerColumn[2]}">
+                    <h:outputText value="#{obj.deviceCode}"/>
+                </p:column>
+                <p:column headerText="Tên thiết bị" filterStyle="width:70%"
+                          filterBy="#{obj.deviceName}" sortBy="#{obj.deviceName}" groupRow="true"
+                          visible="#{deviceInfraController.togglerColumn[1]}">
+                    <h:outputText value="#{obj.deviceName}"/>
+                </p:column>
+                <p:column headerText="Loại hạ tầng" filterStyle="width:70%"
+                          filterBy="#{obj.infraType}" sortBy="#{obj.infraType}" groupRow="true"
+                          visible="#{deviceInfraController.togglerColumn[1]}">
+                    <h:outputText value="#{obj.infraType}"/>
+                </p:column>
+                <p:column headerText="Mã hạ tầng" filterStyle="width:70%"
+                          filterBy="#{obj.infraCode}" sortBy="#{obj.infraCode}" groupRow="true"
+                          visible="#{deviceInfraController.togglerColumn[1]}">
+                    <h:outputText value="#{obj.infraCode}"/>
+                </p:column>
+                <p:column headerText="Tên hạ tầng" filterStyle="width:70%"
+                          filterBy="#{obj.infraName}" sortBy="#{obj.infraName}" groupRow="true"
+                          visible="#{deviceInfraController.togglerColumn[1]}">
+                    <h:outputText value="#{obj.infraName}"/>
+                </p:column>
+                <p:column headerText="Số lượng" filterStyle="width:70%"
+                          filterBy="#{obj.count}" sortBy="#{obj.count}" groupRow="true"
+                          visible="#{deviceInfraController.togglerColumn[1]}">
+                    <h:outputText value="#{obj.count}"/>
+                </p:column>
+                <p:column headerText="Ghi chú" filterStyle="width:70%"
+                          filterBy="#{obj.note}" sortBy="#{obj.note}" groupRow="true"
+                          visible="#{deviceInfraController.togglerColumn[1]}">
+                    <h:outputText value="#{obj.note}"/>
+                </p:column>
+                <p:column width="100px" exportable="false"
+                          headerText="Thao tác" style="text-align:center;">
+
+                    <p:tooltip position="left"/>
+                    <p:commandButton
+                            title="Sửa" styleClass="Fs14 White GreenButton"
+                            icon="fa fa-edit" update="addDlg"
+                            actionListener="#{deviceInfraController.preUpdate(obj)}"
+                            oncomplete="PF('addDlg').show();"
+                            style="color:green; font-weight: bold;font-size: 13px ">
+                    </p:commandButton>
+
+                    <p:spacer width="2px;"/>
+                    <p:commandButton icon="fa fa-trash" actionListener="#{deviceInfraController.delete(obj)}"
+                                     update="myTable, depentPropCatForm:mainMessage"
+                                     title="Xóa" styleClass="White RedButton Fs14 MarTop5">
+                        <p:confirm header="Xác nhận xóa" message="Bạn chắc chắn xóa?" icon="ui-icon-alert"/>
+                    </p:commandButton>
+                </p:column>
+                <p:column selectionMode="multiple" width="25" headerText=" " exportable="false">
+                </p:column>
+            </p:dataTable>
         </h:form>
 
         <p:dialog widgetVar="addDlg" width="60%" id="addDlg"
@@ -33,7 +138,7 @@
                                     minQueryLength="2"
                                     var="device" itemLabel="#{device.code}" itemValue="#{device}"
                                     converter="deviceConverter"
-                                    queryDelay="50"
+                                    queryDelay="50" dropdown="true"
                                     >
                         <p:column>
                             <h:outputText style="vertical-align: middle; margin-left: .5rem" value="Mã thiết bị: #{device.code}"/>
@@ -59,11 +164,18 @@
                         <p:ajax event="valueChange" immediate="true" process="@this"/>
                     </p:selectOneMenu>
 
-                    <h:outputText class="cd-text-required" value="Chọn thiết bị:"/>
+                    <h:outputText class="cd-text-required" value="Chọn mã thiết bị:"/>
                     <p:autoComplete id="infra" value="#{deviceInfraController.selectedInfraCode}"
                                     completeMethod="#{deviceInfraController.onSearchInfra}" scrollHeight="250"
                                     minQueryLength="3"
-                                    queryDelay="50" />
+                                    queryDelay="50" dropdown="true"/>
+
+                    <h:outputText class="cd-text-required" value="Nhập số lượng:"/>
+                    <p:inputText maxlength="100"
+                                 value="#{deviceInfraController.quantity}"/>
+                    <h:outputText class="cd-text-required" value="Ghi chú:"/>
+                    <p:inputTextarea maxlength="100"
+                                 value="#{deviceInfraController.note}"/>
 
 
                 </h:panelGrid>

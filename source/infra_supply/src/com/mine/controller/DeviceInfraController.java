@@ -6,17 +6,10 @@
 package com.mine.controller;
 
 import com.mine.common.util.Constant;
-import com.mine.datamodel.DeviceEntity;
-import com.mine.datamodel.DeviceInfraEntity;
-import com.mine.datamodel.ProjectEntity;
-import com.mine.exception.SysException;
+import com.mine.datamodel.*;
 import com.mine.lazy.LazyDataModelBaseNew;
-import com.mine.persistence.DeviceInfraServiceImpl;
-import com.mine.persistence.DeviceServiceImpl;
-import com.mine.persistence.ProjectServiceImpl;
-import com.mine.util.HibernateUtil;
+import com.mine.persistence.*;
 import com.mine.util.MessageUtil;
-import org.hibernate.Session;
 import org.primefaces.event.ToggleEvent;
 import org.primefaces.model.LazyDataModel;
 import org.primefaces.model.Visibility;
@@ -53,7 +46,7 @@ public class DeviceInfraController {
     public void onStart() {
         Map<String, Object> filters = new HashMap<>();
         LinkedHashMap<String, String> orders = new LinkedHashMap<>();
-        orders.put("name", Constant.ORDERS.ASC);
+        orders.put("deviceName", Constant.ORDERS.ASC);
         lazyModel = new LazyDataModelBaseNew<>(deviceInfraService, filters, orders);
         togglerColumn = Arrays.asList(true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true);
     }
@@ -78,6 +71,8 @@ public class DeviceInfraController {
 
     private String selectedInfraType;
     private String selectedInfraCode;
+    private long quantity;
+    private String note;
 
     public List<String> onSearchInfra(String input) {
         List<String> result = new ArrayList<>();
@@ -108,12 +103,23 @@ public class DeviceInfraController {
     public void preInsert() {
         newObj = new DeviceInfraEntity();
         isEdit = false;
+        selectedInfraType=null;
+        selectedInfraCode=null;
+        quantity = 0;
+        note = null;
+        selectedDevice = new DeviceEntity();
     }
 
     public void preUpdate(DeviceInfraEntity node) {
         try {
             newObj = node;
             isEdit = true;
+            selectedDevice = deviceService.findById(newObj.getDeviceId());
+            selectedInfraType = newObj.getInfraType();
+            selectedInfraCode = newObj.getInfraCode();
+            quantity = newObj.getCount();
+            note = newObj.getNote();
+            lstdevice = new ArrayList<>();
         } catch (Exception e) {
             logger.error(e.getMessage(), e);
             MessageUtil.setErrorMessage("Xảy ra lỗi!!!");
@@ -125,6 +131,62 @@ public class DeviceInfraController {
             return;
         }
         try {
+            if(!isEdit) {
+                newObj = new DeviceInfraEntity();
+            }
+            newObj.setDeviceId(selectedDevice.getId());
+            newObj.setDeviceCode(selectedDevice.getCode());
+            newObj.setDeviceName(selectedDevice.getName());
+            newObj.setInfraType(selectedInfraType);
+            newObj.setInfraCode(selectedInfraCode);
+            newObj.setCount(quantity);
+            newObj.setNote(note);
+            Map<String, Object> filters = new HashMap<>();
+            filters.put("code",selectedInfraCode);
+            List lst = new ArrayList<>();
+            if("PROJECT".equalsIgnoreCase(selectedInfraType)) {
+                ProjectServiceImpl service = new ProjectServiceImpl();
+                lst = service.findList(filters);
+                if(lst.size()>=0 ) {
+                    newObj.setInfraId(((ProjectEntity)lst.get(0)).getId());
+                    newObj.setInfraName(((ProjectEntity)lst.get(0)).getName());
+                }
+            } else if ("BBBG".equalsIgnoreCase(selectedInfraType)){
+                BBBGServiceImpl service = new BBBGServiceImpl();
+                lst = service.findList(filters);
+                if(lst.size()>=0 ) {
+                    newObj.setInfraId(((BbbgEntity)lst.get(0)).getId());
+                    newObj.setInfraName(((ProjectEntity)lst.get(0)).getName());
+                }
+            } else if ("CONTRACT".equalsIgnoreCase(selectedInfraType)){
+                ContractServiceImpl service = new ContractServiceImpl();
+                lst = service.findList(filters);
+                if(lst.size()>=0 ) {
+                    newObj.setInfraId(((ContractEntity)lst.get(0)).getId());
+                    newObj.setInfraName(((ContractEntity)lst.get(0)).getName());
+                }
+            } else if ("UNIT".equalsIgnoreCase(selectedInfraType)){
+                UnitServiceImpl service = new UnitServiceImpl();
+                lst = service.findList(filters);
+                if(lst.size()>=0 ) {
+                    newObj.setInfraId(((UnitEntity)lst.get(0)).getId());
+                    newObj.setInfraName(((UnitEntity)lst.get(0)).getName());
+                }
+            } else if ("POOL".equalsIgnoreCase(selectedInfraType)){
+                PoolServiceImpl service = new PoolServiceImpl();
+                lst = service.findList(filters);
+                if(lst.size()>=0 ) {
+                    newObj.setInfraId(((PoolEntity)lst.get(0)).getId());
+                    newObj.setInfraName(((PoolEntity)lst.get(0)).getName());
+                }
+            }else if ("HA".equalsIgnoreCase(selectedInfraType)){
+                HaServiceImpl service = new HaServiceImpl();
+                lst = service.findList(filters);
+                if(lst.size()>=0 ) {
+                    newObj.setInfraId(((HaEntity)lst.get(0)).getId());
+                    newObj.setInfraName(((HaEntity)lst.get(0)).getName());
+                }
+            }
             deviceInfraService.saveOrUpdate(newObj);
             //RequestContext.getCurrentInstance().execute("PF('addDlg').hide();");
             MessageUtil.setInfoMessage("Thao tác thành công");
@@ -264,5 +326,21 @@ public class DeviceInfraController {
 
     public void setSelectedInfraCode(String selectedInfraCode) {
         this.selectedInfraCode = selectedInfraCode;
+    }
+
+    public long getQuantity() {
+        return quantity;
+    }
+
+    public void setQuantity(long quantity) {
+        this.quantity = quantity;
+    }
+
+    public String getNote() {
+        return note;
+    }
+
+    public void setNote(String note) {
+        this.note = note;
     }
 }

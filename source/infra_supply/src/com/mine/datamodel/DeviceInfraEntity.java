@@ -1,5 +1,7 @@
 package com.mine.datamodel;
 
+import org.hibernate.annotations.GenericGenerator;
+
 import javax.persistence.*;
 
 /**
@@ -8,50 +10,56 @@ import javax.persistence.*;
 @Entity
 @Table(name = "device_infra", schema = "infra_supply")
 public class DeviceInfraEntity {
-    private int id;
-    private Integer deviceId;
-    private Integer infraId;
+    private Long id;
+    private Long deviceId;
+    private String deviceCode;
+    private String deviceName;
+    private Long infraId;
+    private String infraCode;
+    private String infraName;
     private String infraType;
-    private Integer count;
+    private Long count;
     private String note;
 
     @Id
     @Column(name = "ID")
-    public int getId() {
+    @GenericGenerator(name = "generator", strategy = "increment")
+    @GeneratedValue(generator = "generator")
+    public Long getId() {
         return id;
     }
 
-    public void setId(int id) {
+    public void setId(Long id) {
         this.id = id;
     }
 
     @Basic
     @Column(name = "DEVICE_ID")
-    public Integer getDeviceId() {
+    public Long getDeviceId() {
         return deviceId;
     }
 
-    public void setDeviceId(Integer deviceId) {
+    public void setDeviceId(Long deviceId) {
         this.deviceId = deviceId;
     }
 
     @Basic
     @Column(name = "INFRA_ID")
-    public Integer getInfraId() {
+    public Long getInfraId() {
         return infraId;
     }
 
-    public void setInfraId(Integer infraId) {
+    public void setInfraId(Long infraId) {
         this.infraId = infraId;
     }
 
     @Basic
     @Column(name = "COUNT")
-    public Integer getCount() {
+    public Long getCount() {
         return count;
     }
 
-    public void setCount(Integer count) {
+    public void setCount(Long count) {
         this.count = count;
     }
 
@@ -75,6 +83,46 @@ public class DeviceInfraEntity {
         this.note = note;
     }
 
+    @Basic
+    @Column(name = "INFRA_CODE")
+    public String getInfraCode() {
+        return infraCode;
+    }
+
+    public void setInfraCode(String infraCode) {
+        this.infraCode = infraCode;
+    }
+
+    @Basic
+    @Column(name = "DEVICE_CODE")
+    public String getDeviceCode() {
+        return deviceCode;
+    }
+
+    public void setDeviceCode(String deviceCode) {
+        this.deviceCode = deviceCode;
+    }
+
+    @Basic
+    @Column(name = "DEVICE_NAME")
+    public String getDeviceName() {
+        return deviceName;
+    }
+
+    public void setDeviceName(String deviceName) {
+        this.deviceName = deviceName;
+    }
+
+    @Basic
+    @Column(name = "INFRA_NAME")
+    public String getInfraName() {
+        return infraName;
+    }
+
+    public void setInfraName(String infraName) {
+        this.infraName = infraName;
+    }
+
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
@@ -91,14 +139,14 @@ public class DeviceInfraEntity {
         return true;
     }
 
-    @Override
-    public int hashCode() {
-        int result = id;
-        result = 31 * result + (deviceId != null ? deviceId.hashCode() : 0);
-        result = 31 * result + (infraId != null ? infraId.hashCode() : 0);
-        result = 31 * result + (count != null ? count.hashCode() : 0);
-        result = 31 * result + (note != null ? note.hashCode() : 0);
-        return result;
-    }
+//    @Override
+//    public long hashCode() {
+//        long result = id;
+//        result = 31 * result + (deviceId != null ? deviceId.hashCode() : 0);
+//        result = 31 * result + (infraId != null ? infraId.hashCode() : 0);
+//        result = 31 * result + (count != null ? count.hashCode() : 0);
+//        result = 31 * result + (note != null ? note.hashCode() : 0);
+//        return result;
+//    }
 
 }
