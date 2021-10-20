@@ -87,6 +87,36 @@ public class DeviceInfraController {
                 for(ProjectEntity obj:lst) {
                     result.add(obj.getCode());
                 }
+            }else if("BBBG".equalsIgnoreCase(selectedInfraType)) {
+                BBBGServiceImpl service = new BBBGServiceImpl();
+                List<BbbgEntity> lst = service.findList(filters,orders);
+                for(BbbgEntity obj:lst) {
+                    result.add(obj.getCode());
+                }
+            }else if("CONTRACT".equalsIgnoreCase(selectedInfraType)) {
+                ContractServiceImpl service = new ContractServiceImpl();
+                List<ContractEntity> lst = service.findList(filters,orders);
+                for(ContractEntity obj:lst) {
+                    result.add(obj.getCode());
+                }
+            }else if("UNIT".equalsIgnoreCase(selectedInfraType)) {
+                UnitServiceImpl service = new UnitServiceImpl();
+                List<UnitEntity> lst = service.findList(filters,orders);
+                for(UnitEntity obj:lst) {
+                    result.add(obj.getCode());
+                }
+            }else if("POOL".equalsIgnoreCase(selectedInfraType)) {
+                PoolServiceImpl service = new PoolServiceImpl();
+                List<PoolEntity> lst = service.findList(filters,orders);
+                for(PoolEntity obj:lst) {
+                    result.add(obj.getCode());
+                }
+            }else if("HA".equalsIgnoreCase(selectedInfraType)) {
+                HaServiceImpl service = new HaServiceImpl();
+                List<HaEntity> lst = service.findList(filters,orders);
+                for(HaEntity obj:lst) {
+                    result.add(obj.getCode());
+                }
             }
         } catch (Exception e) {
             logger.error(e.getMessage(), e);
